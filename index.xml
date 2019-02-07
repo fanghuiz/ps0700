@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Political Science Research Methods on Political Science Research Methods</title>
-    <link>https://fanghuiz.github.io/</link>
+    <link>https://github.com/fanghuiz/ps0700/</link>
     <description>Recent content in Political Science Research Methods on Political Science Research Methods</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; Fanghui Zhao 2019 &lt;i class=&#34;fas fa-tree&#34; style=&#34;color: #40a990;&#34;&gt;&lt;/i&gt;</copyright>
     <lastBuildDate>Sun, 15 Oct 2017 00:00:00 -0400</lastBuildDate>
-    <atom:link href="/" rel="self" type="application/rss+xml" />
+    <atom:link href="/fanghuiz/ps0700/" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Q&amp;A Week 3: Experiments and Ethics</title>
-      <link>https://fanghuiz.github.io/post/2019-01-25-experiment/</link>
+      <link>https://github.com/fanghuiz/ps0700/post/2019-01-25-experiment/</link>
       <pubDate>Fri, 25 Jan 2019 00:00:00 -0500</pubDate>
       
-      <guid>https://fanghuiz.github.io/post/2019-01-25-experiment/</guid>
+      <guid>https://github.com/fanghuiz/ps0700/post/2019-01-25-experiment/</guid>
       <description>
 
 &lt;h2&gt;Table of Contents&lt;/h2&gt;
@@ -132,10 +132,10 @@
     
     <item>
       <title>Example: Testing for measurement validity and reliability</title>
-      <link>https://fanghuiz.github.io/post/2019-01-19-example-measurement-stata/</link>
+      <link>https://github.com/fanghuiz/ps0700/post/2019-01-19-example-measurement-stata/</link>
       <pubDate>Sat, 19 Jan 2019 00:00:00 -0500</pubDate>
       
-      <guid>https://fanghuiz.github.io/post/2019-01-19-example-measurement-stata/</guid>
+      <guid>https://github.com/fanghuiz/ps0700/post/2019-01-19-example-measurement-stata/</guid>
       <description>
 
 &lt;h2 id=&#34;example-racial-resentment-scale&#34;&gt;Example: Racial Resentment Scale&lt;/h2&gt;
@@ -167,7 +167,7 @@
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://fanghuiz.github.io/img/stata/validity_1.svg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://github.com/fanghuiz/ps0700/img/stata/validity_1.svg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;We see that higher disagreement with the statement (&lt;code&gt;1 = Strongly Agree&lt;/code&gt;, &lt;code&gt;5 = Strongly Disagree&lt;/code&gt;) correlates with lower scores on the feeling thermometer (higher value means warmer feeling towards the group, lower value means colder feeling). Resentment towards African Americans (as indicated by denying the effects of slavery on their current day hardship) indeed predicts a more negative attitudes towards them (as indicated by expressing less warm feelings).&lt;/p&gt;
 
@@ -179,7 +179,7 @@
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://fanghuiz.github.io/img/stata/validity_2.svg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://github.com/fanghuiz/ps0700/img/stata/validity_2.svg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;We see that there is no discernible correlation between responses to statement 2 and feelings towards the Supreme Court.&lt;/p&gt;
 
@@ -206,10 +206,10 @@ Scale reliability coefficient:      0.8451
     
     <item>
       <title>Q&amp;A Week 2: Measurement</title>
-      <link>https://fanghuiz.github.io/post/2019-01-18-measurement/</link>
+      <link>https://github.com/fanghuiz/ps0700/post/2019-01-18-measurement/</link>
       <pubDate>Fri, 18 Jan 2019 00:00:00 -0500</pubDate>
       
-      <guid>https://fanghuiz.github.io/post/2019-01-18-measurement/</guid>
+      <guid>https://github.com/fanghuiz/ps0700/post/2019-01-18-measurement/</guid>
       <description>
 
 &lt;h2&gt;Table of Contents&lt;/h2&gt;
@@ -319,7 +319,7 @@ Scale reliability coefficient:      0.8451
 &lt;/tbody&gt;
 &lt;/table&gt;
 
-&lt;p&gt;Ideally, we should try to minimize both types of measurement errors. Degree of random error can be empirically assessed (e.g. using Cronbach&amp;rsquo;s alpha, see example &lt;a href=&#34;https://fanghuiz.github.io/post/2019-01-19-example-measurement-stata/&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt;), and can be reduced (e.g. using multiple indicators). Systematic error however, is harder to detect, harder to quantify, and harder to correct for.&lt;/p&gt;
+&lt;p&gt;Ideally, we should try to minimize both types of measurement errors. Degree of random error can be empirically assessed (e.g. using Cronbach&amp;rsquo;s alpha, see example &lt;a href=&#34;https://github.com/fanghuiz/ps0700/post/2019-01-19-example-measurement-stata/&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt;), and can be reduced (e.g. using multiple indicators). Systematic error however, is harder to detect, harder to quantify, and harder to correct for.&lt;/p&gt;
 
 &lt;h4 id=&#34;about-the-true-score-theory-t-x-epsilon-how-do-we-know-how-close-our-measured-value-x-is-close-to-the-true-score-t-if-we-cannot-truly-know-t&#34;&gt;About the True Score Theory $T = X + \epsilon$, how do we know how close our measured value $X$ is close to the true score $T$, if we cannot truly know $T$?&lt;/h4&gt;
 
@@ -402,7 +402,7 @@ Scale reliability coefficient:      0.8451
 
 &lt;p&gt;Face validity is rarely explicitly tested for &amp;ndash; we already &lt;em&gt;implicitly&lt;/em&gt; test for face validity when we are making the choice of which indicators to use to measure the concept. Although having face validity is important, high face validity alone is a rather weak evidence.&lt;/p&gt;
 
-&lt;p&gt;Construct validity can be empirically assessed in two ways: &lt;em&gt;convergent validity&lt;/em&gt; and &lt;em&gt;divergent validity&lt;/em&gt;. See &lt;a href=&#34;https://fanghuiz.github.io/post/2019-01-19-example-measurement-stata/&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt; for an example.&lt;/p&gt;
+&lt;p&gt;Construct validity can be empirically assessed in two ways: &lt;em&gt;convergent validity&lt;/em&gt; and &lt;em&gt;divergent validity&lt;/em&gt;. See &lt;a href=&#34;https://github.com/fanghuiz/ps0700/post/2019-01-19-example-measurement-stata/&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt; for an example.&lt;/p&gt;
 
 &lt;p&gt;Generally, if we are using the measures that have been used in published literature, we do not have to conduct separate validity test. The assumption is that they have already been previously validated (though we should still remain critical). If we are using new measures in our study, instead of established ones used in published literature, then it is recommended to first conduct a pilot study to test the measure&amp;rsquo;s validity and reliability. Use the measures as part of the actual study only after we know it&amp;rsquo;s valid and reliable.&lt;/p&gt;
 
@@ -495,10 +495,10 @@ graph TB
     
     <item>
       <title>Search</title>
-      <link>https://fanghuiz.github.io/docs/search/</link>
+      <link>https://github.com/fanghuiz/ps0700/docs/search/</link>
       <pubDate>Mon, 23 Jul 2018 00:00:00 -0400</pubDate>
       
-      <guid>https://fanghuiz.github.io/docs/search/</guid>
+      <guid>https://github.com/fanghuiz/ps0700/docs/search/</guid>
       <description>
 
 &lt;p&gt;&lt;strong&gt;Empower your users&lt;/strong&gt; to search your website content for keywords so that they can quickly discover relevant content.&lt;/p&gt;
@@ -514,7 +514,7 @@ graph TB
 
 &lt;figure&gt;
 
-&lt;img src=&#34;https://fanghuiz.github.io/img/docs/search.png&#34; /&gt;
+&lt;img src=&#34;https://github.com/fanghuiz/ps0700/fanghuiz/ps0700/img/docs/search.png&#34; /&gt;
 
 
 
@@ -556,7 +556,7 @@ graph TB
 &lt;p&gt;Alternative search providers, such as Google search, are not integrated with Academic, but can be implemented by creating your own custom widget. For example,&lt;/p&gt;
 
 &lt;ol&gt;
-&lt;li&gt;Create a &lt;a href=&#34;https://fanghuiz.github.io/docs/widgets/&#34; target=&#34;_blank&#34;&gt;custom widget&lt;/a&gt; in your &lt;code&gt;/content/home/&lt;/code&gt; folder&lt;/li&gt;
+&lt;li&gt;Create a &lt;a href=&#34;https://github.com/fanghuiz/ps0700/fanghuiz/ps0700/docs/widgets/&#34; target=&#34;_blank&#34;&gt;custom widget&lt;/a&gt; in your &lt;code&gt;/content/home/&lt;/code&gt; folder&lt;/li&gt;
 &lt;li&gt;Signup for &lt;a href=&#34;https://cse.google.com/cse/&#34; target=&#34;_blank&#34;&gt;Google Custom Search Engine&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Paste the HTML which Google provide into the body of your custom widget&lt;/li&gt;
 &lt;/ol&gt;
@@ -565,10 +565,10 @@ graph TB
     
     <item>
       <title>Domain Name</title>
-      <link>https://fanghuiz.github.io/docs/domain/</link>
+      <link>https://github.com/fanghuiz/ps0700/docs/domain/</link>
       <pubDate>Sun, 24 Dec 2017 00:00:00 -0500</pubDate>
       
-      <guid>https://fanghuiz.github.io/docs/domain/</guid>
+      <guid>https://github.com/fanghuiz/ps0700/docs/domain/</guid>
       <description>&lt;p&gt;If you choose a deployment option such as Netlify or Github pages, you will be automatically assigned a free URL for your website. You can further personalize your website with your own domain name.&lt;/p&gt;
 
 &lt;p&gt;We can highly recommend &lt;a href=&#34;https://www.namecheap.com/?aff=105828&#34; target=&#34;_blank&#34;&gt;Namecheap&lt;/a&gt; for &lt;strong&gt;registering a domain&lt;/strong&gt;, as they provide great value for money whilst providing fast support. To find a good domain that is available, try a mix of your first and last names or initials, with either a &lt;code&gt;.com&lt;/code&gt; or &lt;code&gt;.me&lt;/code&gt; ending.&lt;/p&gt;
@@ -583,21 +583,21 @@ graph TB
     
     <item>
       <title>Overview</title>
-      <link>https://fanghuiz.github.io/docs/deployment/</link>
+      <link>https://github.com/fanghuiz/ps0700/docs/deployment/</link>
       <pubDate>Sun, 24 Dec 2017 00:00:00 -0500</pubDate>
       
-      <guid>https://fanghuiz.github.io/docs/deployment/</guid>
+      <guid>https://github.com/fanghuiz/ps0700/docs/deployment/</guid>
       <description>
 
 &lt;p&gt;Sites built using Academic can be deployed in a large variety of ways due to the static nature of the generated website. The recommended deployment method alongside a few of the other most popular techniques are described below.&lt;/p&gt;
 
 &lt;p&gt;If using Netlify, your site will be built automatically, otherwise run the &lt;code&gt;hugo&lt;/code&gt; command in your terminal to generate your site in the &lt;code&gt;public/&lt;/code&gt; folder - now it is ready to copy across to your host.&lt;/p&gt;
 
-&lt;p&gt;With Academic, you can make a great impression on your visitors with your own &lt;a href=&#34;https://fanghuiz.github.io/docs/domain/&#34; target=&#34;_blank&#34;&gt;custom domain name&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;With Academic, you can make a great impression on your visitors with your own &lt;a href=&#34;https://github.com/fanghuiz/ps0700/fanghuiz/ps0700/docs/domain/&#34; target=&#34;_blank&#34;&gt;custom domain name&lt;/a&gt;.&lt;/p&gt;
 
 &lt;h2 id=&#34;netlify&#34;&gt;Netlify&lt;/h2&gt;
 
-&lt;p&gt;We recommend deploying your site with Netlify. Netlify is free and provides fast global access, automated deployment when you add or modify content, and one-click HTTPS security. &lt;a href=&#34;https://fanghuiz.github.io/docs/install/#install-with-web-browser&#34; target=&#34;_blank&#34;&gt;Check out our guide to deploy with Netlify&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;We recommend deploying your site with Netlify. Netlify is free and provides fast global access, automated deployment when you add or modify content, and one-click HTTPS security. &lt;a href=&#34;https://github.com/fanghuiz/ps0700/fanghuiz/ps0700/docs/install/#install-with-web-browser&#34; target=&#34;_blank&#34;&gt;Check out our guide to deploy with Netlify&lt;/a&gt;.&lt;/p&gt;
 
 &lt;h2 id=&#34;github-pages&#34;&gt;GitHub Pages&lt;/h2&gt;
 
@@ -667,10 +667,10 @@ cd ..
     
     <item>
       <title>Migrate from Wordpress</title>
-      <link>https://fanghuiz.github.io/docs/migrate-from-wordpress/</link>
+      <link>https://github.com/fanghuiz/ps0700/docs/migrate-from-wordpress/</link>
       <pubDate>Sun, 03 Dec 2017 00:00:00 -0500</pubDate>
       
-      <guid>https://fanghuiz.github.io/docs/migrate-from-wordpress/</guid>
+      <guid>https://github.com/fanghuiz/ps0700/docs/migrate-from-wordpress/</guid>
       <description>
 
 &lt;p&gt;To migrate your website from Wordpress to Academic is a two phase process:&lt;/p&gt;
@@ -689,16 +689,16 @@ cd ..
 
 &lt;h2 id=&#34;phase-two&#34;&gt;Phase Two&lt;/h2&gt;
 
-&lt;p&gt;Given the Jekyll formatted contents of your generated zip file in the step above, proceed to follow the guide on &lt;a href=&#34;https://fanghuiz.github.io/docs/migrate-from-jekyll/&#34; target=&#34;_blank&#34;&gt;importing a Jekyll site into Academic&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Given the Jekyll formatted contents of your generated zip file in the step above, proceed to follow the guide on &lt;a href=&#34;https://github.com/fanghuiz/ps0700/fanghuiz/ps0700/docs/migrate-from-jekyll/&#34; target=&#34;_blank&#34;&gt;importing a Jekyll site into Academic&lt;/a&gt;.&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Front Matter</title>
-      <link>https://fanghuiz.github.io/docs/front-matter/</link>
+      <link>https://github.com/fanghuiz/ps0700/docs/front-matter/</link>
       <pubDate>Sun, 03 Dec 2017 00:00:00 -0500</pubDate>
       
-      <guid>https://fanghuiz.github.io/docs/front-matter/</guid>
+      <guid>https://github.com/fanghuiz/ps0700/docs/front-matter/</guid>
       <description>
 
 &lt;p&gt;Front matter allows page-specific variables to be included at the top of a Markdown file using &lt;a href=&#34;https://learnxinyminutes.com/docs/toml/&#34; target=&#34;_blank&#34;&gt;TOML format&lt;/a&gt;, set between triple-plus &lt;code&gt;+++&lt;/code&gt; lines. The variables may include metadata such as page title, date published, author, categories, tags, and so on. Here is a simple example:&lt;/p&gt;
@@ -733,10 +733,10 @@ title: My first blog post
     
     <item>
       <title>Themes</title>
-      <link>https://fanghuiz.github.io/themes/</link>
+      <link>https://github.com/fanghuiz/ps0700/themes/</link>
       <pubDate>Thu, 16 Nov 2017 00:00:00 -0500</pubDate>
       
-      <guid>https://fanghuiz.github.io/themes/</guid>
+      <guid>https://github.com/fanghuiz/ps0700/themes/</guid>
       <description>
 
 &lt;p&gt;The following color themes are available and can be set by the &lt;code&gt;color_theme&lt;/code&gt; option in &lt;code&gt;config.toml&lt;/code&gt;:&lt;/p&gt;
@@ -831,7 +831,7 @@ title: My first blog post
 &lt;p&gt;In this section, we will curate themes submitted by users. To create your own theme and request it to be added to this section, follow these steps:&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;Follow the &lt;a href=&#34;https://fanghuiz.github.io/docs/get-started/#themes&#34; target=&#34;_blank&#34;&gt;guide to create a new theme&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Follow the &lt;a href=&#34;https://github.com/fanghuiz/ps0700/fanghuiz/ps0700/docs/get-started/#themes&#34; target=&#34;_blank&#34;&gt;guide to create a new theme&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Upload your theme file to a new Github repository&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/sourcethemes/academic-www/issues&#34; target=&#34;_blank&#34;&gt;Open a ticket&lt;/a&gt; with a link to your theme&amp;rsquo;s Github repository and a screenshot&lt;/li&gt;
 &lt;/ul&gt;
@@ -840,10 +840,10 @@ title: My first blog post
     
     <item>
       <title>Example Talk</title>
-      <link>https://fanghuiz.github.io/talk/example/</link>
+      <link>https://github.com/fanghuiz/ps0700/talk/example/</link>
       <pubDate>Sun, 01 Jan 2017 00:00:00 -0500</pubDate>
       
-      <guid>https://fanghuiz.github.io/talk/example/</guid>
+      <guid>https://github.com/fanghuiz/ps0700/talk/example/</guid>
       <description>&lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;p&gt;Click on the &lt;strong&gt;Slides&lt;/strong&gt; button above to view the built-in slides feature.&lt;/p&gt;
 
@@ -864,19 +864,19 @@ title: My first blog post
     
     <item>
       <title>External Project</title>
-      <link>https://fanghuiz.github.io/project/external-project/</link>
+      <link>https://github.com/fanghuiz/ps0700/project/external-project/</link>
       <pubDate>Wed, 27 Apr 2016 00:00:00 -0400</pubDate>
       
-      <guid>https://fanghuiz.github.io/project/external-project/</guid>
+      <guid>https://github.com/fanghuiz/ps0700/project/external-project/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Internal Project</title>
-      <link>https://fanghuiz.github.io/project/internal-project/</link>
+      <link>https://github.com/fanghuiz/ps0700/project/internal-project/</link>
       <pubDate>Wed, 27 Apr 2016 00:00:00 -0400</pubDate>
       
-      <guid>https://fanghuiz.github.io/project/internal-project/</guid>
+      <guid>https://github.com/fanghuiz/ps0700/project/internal-project/</guid>
       <description>&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum. Sed ac faucibus dolor, scelerisque sollicitudin nisi. Cras purus urna, suscipit quis sapien eu, pulvinar tempor diam. Quisque risus orci, mollis id ante sit amet, gravida egestas nisl. Sed ac tempus magna. Proin in dui enim. Donec condimentum, sem id dapibus fringilla, tellus enim condimentum arcu, nec volutpat est felis vel metus. Vestibulum sit amet erat at nulla eleifend gravida.&lt;/p&gt;
 
 &lt;p&gt;Nullam vel molestie justo. Curabitur vitae efficitur leo. In hac habitasse platea dictumst. Sed pulvinar mauris dui, eget varius purus congue ac. Nulla euismod, lorem vel elementum dapibus, nunc justo porta mi, sed tempus est est vel tellus. Nam et enim eleifend, laoreet sem sit amet, elementum sem. Morbi ut leo congue, maximus velit ut, finibus arcu. In et libero cursus, rutrum risus non, molestie leo. Nullam congue quam et volutpat malesuada. Sed risus tortor, pulvinar et dictum nec, sodales non mi. Phasellus lacinia commodo laoreet. Nam mollis, erat in feugiat consectetur, purus eros egestas tellus, in auctor urna odio at nibh. Mauris imperdiet nisi ac magna convallis, at rhoncus ligula cursus.&lt;/p&gt;
@@ -891,10 +891,10 @@ title: My first blog post
     
     <item>
       <title>Customization</title>
-      <link>https://fanghuiz.github.io/docs/customization/</link>
+      <link>https://github.com/fanghuiz/ps0700/docs/customization/</link>
       <pubDate>Wed, 20 Apr 2016 00:00:00 -0400</pubDate>
       
-      <guid>https://fanghuiz.github.io/docs/customization/</guid>
+      <guid>https://github.com/fanghuiz/ps0700/docs/customization/</guid>
       <description>
 
 &lt;p&gt;It is possible to carry out many customizations &lt;em&gt;without&lt;/em&gt; editing any code in the &lt;code&gt;themes/academic/&lt;/code&gt; folder, making it easier to update the framework in the future.&lt;/p&gt;
@@ -1079,10 +1079,10 @@ title: My first blog post
     
     <item>
       <title>Feedback &amp; Contributing</title>
-      <link>https://fanghuiz.github.io/docs/contribute/</link>
+      <link>https://github.com/fanghuiz/ps0700/docs/contribute/</link>
       <pubDate>Wed, 20 Apr 2016 00:00:00 -0400</pubDate>
       
-      <guid>https://fanghuiz.github.io/docs/contribute/</guid>
+      <guid>https://github.com/fanghuiz/ps0700/docs/contribute/</guid>
       <description>&lt;p&gt;Please use the &lt;a href=&#34;https://github.com/gcushen/hugo-academic/issues&#34; target=&#34;_blank&#34;&gt;issue tracker&lt;/a&gt; to report bugs or submit feature requests. Alternatively, feel free to modify the code and submit a pull request on Github.&lt;/p&gt;
 
 &lt;p&gt;For general questions about Hugo, there is a &lt;a href=&#34;http://discuss.gohugo.io&#34; target=&#34;_blank&#34;&gt;Hugo discussion forum&lt;/a&gt;.&lt;/p&gt;
@@ -1091,17 +1091,17 @@ title: My first blog post
     
     <item>
       <title>Getting started</title>
-      <link>https://fanghuiz.github.io/docs/get-started/</link>
+      <link>https://github.com/fanghuiz/ps0700/docs/get-started/</link>
       <pubDate>Wed, 20 Apr 2016 00:00:00 -0400</pubDate>
       
-      <guid>https://fanghuiz.github.io/docs/get-started/</guid>
+      <guid>https://github.com/fanghuiz/ps0700/docs/get-started/</guid>
       <description>
 
 &lt;p&gt;This quick tutorial will show you how to setup and use Academic.&lt;/p&gt;
 
 &lt;h2 id=&#34;choose-the-right-theme-for-you&#34;&gt;Choose the right theme for you&lt;/h2&gt;
 
-&lt;p&gt;Check out the &lt;a href=&#34;https://fanghuiz.github.io/themes/&#34; target=&#34;_blank&#34;&gt;available color themes&lt;/a&gt; and have fun choosing a design you love.&lt;/p&gt;
+&lt;p&gt;Check out the &lt;a href=&#34;https://github.com/fanghuiz/ps0700/fanghuiz/ps0700/themes/&#34; target=&#34;_blank&#34;&gt;available color themes&lt;/a&gt; and have fun choosing a design you love.&lt;/p&gt;
 
 &lt;p&gt;Once you have settled on a theme, edit your &lt;code&gt;config.toml&lt;/code&gt; file in a text editor and set the &lt;code&gt;color_theme&lt;/code&gt; option to the name of the chosen theme.&lt;/p&gt;
 
@@ -1133,14 +1133,14 @@ title: My first blog post
 &lt;li&gt;&lt;strong&gt;Publications&lt;/strong&gt;: import your research publications from BibTeX&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;Once you have decided on the type of content that you would like to publish, take a look at the &lt;a href=&#34;https://fanghuiz.github.io/docs/widgets/&#34; target=&#34;_blank&#34;&gt;available homepage widgets&lt;/a&gt; and consider which ones would be most relevant to you.&lt;/p&gt;
+&lt;p&gt;Once you have decided on the type of content that you would like to publish, take a look at the &lt;a href=&#34;https://github.com/fanghuiz/ps0700/fanghuiz/ps0700/docs/widgets/&#34; target=&#34;_blank&#34;&gt;available homepage widgets&lt;/a&gt; and consider which ones would be most relevant to you.&lt;/p&gt;
 
 &lt;p&gt;Then, open your &lt;code&gt;content/home/&lt;/code&gt; folder and set the &lt;code&gt;active&lt;/code&gt; parameter to either &lt;code&gt;true&lt;/code&gt; or &lt;code&gt;false&lt;/code&gt; for each widget depending on if you wish to display it or not. Widgets that you don&amp;rsquo;t need can alternatively be deleted rather than setting &lt;code&gt;active&lt;/code&gt; to &lt;code&gt;false&lt;/code&gt;.&lt;/p&gt;
 
 &lt;p&gt;Next, let&amp;rsquo;s &lt;strong&gt;order the widgets&lt;/strong&gt; according to your preference. To move a widget up or down, increase or decrease the value of the &lt;code&gt;weight&lt;/code&gt; parameter in each widget which you activated. The widgets will be ordered in ascending order of these weights and there is no need for the weights to be consecutive numbers.&lt;/p&gt;
 
 &lt;div class=&#34;alert alert-note&#34;&gt;
-  &lt;p&gt;If your &lt;code&gt;content/home/&lt;/code&gt; folder is empty, populate it from the &lt;a href=&#34;https://fanghuiz.github.io/docs/install/#demo-content&#34;&gt;example&lt;/a&gt;.&lt;/p&gt;
+  &lt;p&gt;If your &lt;code&gt;content/home/&lt;/code&gt; folder is empty, populate it from the &lt;a href=&#34;https://github.com/fanghuiz/ps0700/fanghuiz/ps0700/docs/install/#demo-content&#34;&gt;example&lt;/a&gt;.&lt;/p&gt;
 
 &lt;/div&gt;
 
@@ -1154,7 +1154,7 @@ title: My first blog post
 &lt;p&gt;The core parameters for the website can be edited in the &lt;code&gt;config.toml&lt;/code&gt; configuration file:&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;Set &lt;code&gt;baseurl&lt;/code&gt; to your website URL (this will be provided by your host such as &lt;a href=&#34;https://fanghuiz.github.io/docs/deployment/&#34; target=&#34;_blank&#34;&gt;Netlify&lt;/a&gt;)
+&lt;li&gt;Set &lt;code&gt;baseurl&lt;/code&gt; to your website URL (this will be provided by your host such as &lt;a href=&#34;https://github.com/fanghuiz/ps0700/fanghuiz/ps0700/docs/deployment/&#34; target=&#34;_blank&#34;&gt;Netlify&lt;/a&gt;)
 
 &lt;ul&gt;
 &lt;li&gt;Come back to this option later if you are unsure&lt;/li&gt;
@@ -1184,11 +1184,11 @@ title: My first blog post
 
 &lt;h3 id=&#34;add-your-content&#34;&gt;Add your content&lt;/h3&gt;
 
-&lt;p&gt;Refer to our guide on &lt;a href=&#34;https://fanghuiz.github.io/docs/managing-content/&#34; target=&#34;_blank&#34;&gt;managing content&lt;/a&gt; to create your own content such as blog posts, publications, talks, and projects.&lt;/p&gt;
+&lt;p&gt;Refer to our guide on &lt;a href=&#34;https://github.com/fanghuiz/ps0700/fanghuiz/ps0700/docs/managing-content/&#34; target=&#34;_blank&#34;&gt;managing content&lt;/a&gt; to create your own content such as blog posts, publications, talks, and projects.&lt;/p&gt;
 
 &lt;h3 id=&#34;remove-any-unused-example-pages&#34;&gt;Remove any unused example pages&lt;/h3&gt;
 
-&lt;p&gt;&lt;a href=&#34;https://fanghuiz.github.io/docs/managing-content/#removing-content&#34; target=&#34;_blank&#34;&gt;Delete any unused example pages&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/fanghuiz/ps0700/fanghuiz/ps0700/docs/managing-content/#removing-content&#34; target=&#34;_blank&#34;&gt;Delete any unused example pages&lt;/a&gt;.&lt;/p&gt;
 
 &lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;p&gt;You will likely want to keep the &lt;code&gt;_index.md&lt;/code&gt; files (notice the underscore prefix) as they configure your archive page for each content type (e.g. an index of all your blog posts).&lt;/p&gt;
@@ -1206,7 +1206,7 @@ title: My first blog post
 
 &lt;h2 id=&#34;deploy-your-site&#34;&gt;Deploy your site&lt;/h2&gt;
 
-&lt;p&gt;Publish your site to the world by following the &lt;a href=&#34;https://fanghuiz.github.io/docs/deployment/&#34; target=&#34;_blank&#34;&gt;deployment steps&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Publish your site to the world by following the &lt;a href=&#34;https://github.com/fanghuiz/ps0700/fanghuiz/ps0700/docs/deployment/&#34; target=&#34;_blank&#34;&gt;deployment steps&lt;/a&gt;.&lt;/p&gt;
 </description>
     </item>
     
