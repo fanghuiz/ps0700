@@ -1,0 +1,1214 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Political Science Research Methods on Political Science Research Methods</title>
+    <link>https://fanghuiz.github.io/</link>
+    <description>Recent content in Political Science Research Methods on Political Science Research Methods</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; Fanghui Zhao 2019 &lt;i class=&#34;fas fa-tree&#34; style=&#34;color: #40a990;&#34;&gt;&lt;/i&gt;</copyright>
+    <lastBuildDate>Sun, 15 Oct 2017 00:00:00 -0400</lastBuildDate>
+    <atom:link href="/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Q&amp;A Week 3: Experiments and Ethics</title>
+      <link>https://fanghuiz.github.io/post/2019-01-25-experiment/</link>
+      <pubDate>Fri, 25 Jan 2019 00:00:00 -0500</pubDate>
+      
+      <guid>https://fanghuiz.github.io/post/2019-01-25-experiment/</guid>
+      <description>
+
+&lt;h2&gt;Table of Contents&lt;/h2&gt;
+&lt;nav id=&#34;TableOfContents&#34;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#about-informed-consent&#34;&gt;About Informed Consent&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#is-informed-consent-always-necessary-when-considering-the-ethics-of-social-science-experiments-for-some-experiments-obtaining-informed-consent-could-affect-the-results-if-people-are-aware-of-what-the-researchers-are-trying-to-do-exactly-how-much-are-the-researchers-required-to-inform-the-participants-about-the-experiment&#34;&gt;Is informed consent always necessary when considering the ethics of social science experiments? For some experiments, obtaining informed consent could affect the results (if people are aware of what the researchers are trying to do). Exactly how much are the researchers required to inform the participants about the experiment?&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#does-knowing-you-are-part-of-an-experiment-affect-how-they-respond-is-there-a-way-to-minimize-the-effects-of-this-on-the-outcome&#34;&gt;Does knowing you are part of an experiment affect how they respond? Is there a way to minimize the effects of this on the outcome?&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#about-the-montana-gotv-experiment&#34;&gt;About the Montana GOTV Experiment&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#the-montana-experiment-https-thewpsa-wordpress-com-2014-10-25-messing-with-montana-get-out-the-vote-experiment-raises-ethics-questions-misled-the-people-by-using-official-seal-how-did-they-get-the-project-approved-in-the-first-place&#34;&gt;The &lt;a href=&#34;https://thewpsa.wordpress.com/2014/10/25/messing-with-montana-get-out-the-vote-experiment-raises-ethics-questions/&#34; target=&#34;_blank&#34;&gt;Montana experiment&lt;/a&gt; misled the people by using official seal. How did they get the project approved in the first place?&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#how-did-the-montana-experiment-affected-people-s-decision-i-don-t-see-a-discussion-on-how-it-actually-influenced-the-turnout-or-election-outcome&#34;&gt;How did the Montana experiment affected people’s decision? I don’t see a discussion on how it actually influenced the turnout or election outcome.&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#about-experiments-on-development-programs&#34;&gt;About Experiments on Development Programs&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#are-there-examples-of-ethical-and-effective-anti-poverty-experiments&#34;&gt;Are there examples of ethical and effective anti-poverty experiments?&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#not-a-question-just-an-interesting-observation-in-the-us-during-the-1960s-70s-there-was-a-similar-program-to-universal-basic-income-it-was-ended-after-there-was-an-increase-in-divorce-rate&#34;&gt;Not a question, just an interesting observation &amp;ndash; in the US during the 1960s-70s, there was a similar program to Universal Basic Income. It was ended after there was an increase in divorce rate.&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/nav&gt;
+
+
+&lt;h2 id=&#34;about-informed-consent&#34;&gt;About Informed Consent&lt;/h2&gt;
+
+&lt;h4 id=&#34;is-informed-consent-always-necessary-when-considering-the-ethics-of-social-science-experiments-for-some-experiments-obtaining-informed-consent-could-affect-the-results-if-people-are-aware-of-what-the-researchers-are-trying-to-do-exactly-how-much-are-the-researchers-required-to-inform-the-participants-about-the-experiment&#34;&gt;Is informed consent always necessary when considering the ethics of social science experiments? For some experiments, obtaining informed consent could affect the results (if people are aware of what the researchers are trying to do). Exactly how much are the researchers required to inform the participants about the experiment?&lt;/h4&gt;
+
+&lt;p&gt;Yes, informed consent is an essential element of research ethics.&lt;/p&gt;
+
+&lt;p&gt;Generally speaking, we have to inform the participants the purpose of our research (e.g. &lt;em&gt;“This is a study about attitudes towards political candidates&lt;/em&gt;), though we do not have to tell them the exact hypothesis of the study.&lt;/p&gt;
+
+&lt;p&gt;It is also important that the informed consent form has to let the participants know if there is any potential benefits or harms by taking part in the study, any compensations or incentives, confidentiality or privacy of the data, their rights to decline and to withdraw, so they can make an informed decision about participating. In most cases, political science experiments only involve &amp;ldquo;minimal risks&amp;rdquo;, i.e. about the same probability and magnitude of harm we would experience in daily life.&lt;/p&gt;
+
+&lt;p&gt;For more details on the important elements to include when obtaining informed consent, see &lt;a href=&#34;https://www.irb.pitt.edu/content/chapter-13-informed-consent-and-documentation&#34; target=&#34;_blank&#34;&gt;this guide&lt;/a&gt; from Pitt IRB, or American Psychological Association (APA) &lt;a href=&#34;https://www.apa.org/ethics/code/&#34; target=&#34;_blank&#34;&gt;ethics code&lt;/a&gt; (Section 8.02). It is possible to request waivers with adequate justification (see &lt;a href=&#34;http://www.irb.pitt.edu/sites/default/files/waivers%20presentation%204.10.18.pdf&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt; for an overview of the requirements).&lt;/p&gt;
+
+&lt;h4 id=&#34;does-knowing-you-are-part-of-an-experiment-affect-how-they-respond-is-there-a-way-to-minimize-the-effects-of-this-on-the-outcome&#34;&gt;Does knowing you are part of an experiment affect how they respond? Is there a way to minimize the effects of this on the outcome?&lt;/h4&gt;
+
+&lt;p&gt;Quite likely! One possibility is &lt;a href=&#34;https://en.wikipedia.org/wiki/Hawthorne_effect&#34; target=&#34;_blank&#34;&gt;Hawthorne effect&lt;/a&gt;: simply being part of the experiment and knowing that you are being observed might change your behavior or how you respond, compare to everyday life scenario.&lt;/p&gt;
+
+&lt;p&gt;A more general phenomenon (some argue subsumes the Hawthorne effect) is called &lt;a href=&#34;https://en.wikipedia.org/wiki/Demand_characteristics&#34; target=&#34;_blank&#34;&gt;demand characteristics&lt;/a&gt; (also see textbook p.178), referring to how participants&amp;rsquo; interpretation of the experiment&amp;rsquo;s purpose could potentially change their behaviors (e.g. behave in ways &lt;em&gt;conforming&lt;/em&gt; to what they &lt;em&gt;think&lt;/em&gt; the researchers want to observe, or they might behave in ways &lt;em&gt;contradicting&lt;/em&gt; to what they perceived as the researchers&amp;rsquo; hypothesis).&lt;/p&gt;
+
+&lt;p&gt;It is worth noting however, that not all experiments are equally affected by this potential problem. We might expect that experiments looking at behaviors that are more susceptible to social desirability bias are more vulnerable to bias introduced by demand characteristics, than those looking at more benign phenomenons.&lt;/p&gt;
+
+&lt;p&gt;While it is difficult to eliminate this effect completely in most experiments, some strategies exist. For example, researchers can devise a design that uses covert or unobtrusive treatments, so the participants are unaware that they are part of an experiment (e.g. &lt;a href=&#34;https://scholar.harvard.edu/files/renos/files/enostrains.pdf&#34; target=&#34;_blank&#34;&gt;Enos 2014&lt;/a&gt;, &lt;a href=&#34;https://www.pnas.org/content/114/4/663.full&#34; target=&#34;_blank&#34;&gt;Sands 2017&lt;/a&gt;).&lt;/p&gt;
+
+&lt;p&gt;Deception is another common, though &lt;a href=&#34;https://www.tandfonline.com/doi/full/10.1080/10508420701712990&#34; target=&#34;_blank&#34;&gt;deeply&lt;/a&gt; &lt;a href=&#34;https://thepsychologist.bps.org.uk/volume-24/edition-8/deception-psychological-research-necessary-evil&#34; target=&#34;_blank&#34;&gt;controversial&lt;/a&gt; strategy. For example &lt;a href=&#34;https://en.wikipedia.org/wiki/Audit_study&#34; target=&#34;_blank&#34;&gt;audit experiments&lt;/a&gt; often rely on deception to examine socially undesirable behaviors such as discrimination (e.g. &lt;a href=&#34;https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1540-5907.2011.00515.x&#34; target=&#34;_blank&#34;&gt;Butler and Broockman 2011&lt;/a&gt;), norms or rules violation (e.g. &lt;a href=&#34;http://www.michael-findley.com/uploads/2/0/4/5/20455799/findley_et_al.causes_of_non-compliance.ajps.10sep14.earlyview.pdf&#34; target=&#34;_blank&#34;&gt;Findley, Neilson and Sharman 2014&lt;/a&gt;).&lt;/p&gt;
+
+&lt;p&gt;Of course, the use of deception always has to be justified in the ethics review process. See this &lt;a href=&#34;http://scholar.harvard.edu/files/dtingley/files/spring2012.pdf&#34; target=&#34;_blank&#34;&gt;newsletter&lt;/a&gt; (p.13-19) for further discussion on the ethics of using deception in field experiment involving public officials as subjects.&lt;/p&gt;
+
+&lt;h2 id=&#34;about-the-montana-gotv-experiment&#34;&gt;About the Montana GOTV Experiment&lt;/h2&gt;
+
+&lt;h4 id=&#34;the-montana-experiment-https-thewpsa-wordpress-com-2014-10-25-messing-with-montana-get-out-the-vote-experiment-raises-ethics-questions-misled-the-people-by-using-official-seal-how-did-they-get-the-project-approved-in-the-first-place&#34;&gt;The &lt;a href=&#34;https://thewpsa.wordpress.com/2014/10/25/messing-with-montana-get-out-the-vote-experiment-raises-ethics-questions/&#34; target=&#34;_blank&#34;&gt;Montana experiment&lt;/a&gt; misled the people by using official seal. How did they get the project approved in the first place?&lt;/h4&gt;
+
+&lt;p&gt;Only the people involved in the process would ever know! If I were to hazard a guess (take it with many many grains of salt), it is possible that the review process did not see the mailer as being intentionally misleading. Among the commotion in the follow-up to this controversy, one detail about the mailer did not get much attention — there was in fact a disclaimer line disclosing that the mailer is part of a academic study (below the boxes indicating candidate ideology).&lt;/p&gt;
+
+
+
+
+&lt;figure&gt;
+
+&lt;img src=&#34;montana_mailer.png&#34; alt=&#34;Mailer from the experiment. Squint a little to see the disclaimer. Retrieved from&#34; /&gt;
+
+
+
+&lt;figcaption data-pre=&#34;Figure &#34; data-post=&#34;:&#34; &gt;
+  
+  &lt;p&gt;
+    Mailer from the experiment. Squint a little to see the disclaimer. Retrieved from
+    &lt;a href=&#34;https://web.archive.org/web/20170701171915/http://politicalpractices.mt.gov/content/2recentdecisions/McCullochvStanfordandDartmouthComplaint&#34;&gt; 
+    Internet Archive
+    &lt;/a&gt; 
+  &lt;/p&gt; 
+&lt;/figcaption&gt;
+
+&lt;/figure&gt;
+
+&lt;p&gt;Maybe it’s too much of a fine print, but it’s there. So you could make the argument that they are not actively trying to deceive the recipient about who is sending the mailer out, and this might be part of reason why the proposal was approved. Again, I have to emphasize that this is all speculations on my part.&lt;/p&gt;
+
+&lt;h4 id=&#34;how-did-the-montana-experiment-affected-people-s-decision-i-don-t-see-a-discussion-on-how-it-actually-influenced-the-turnout-or-election-outcome&#34;&gt;How did the Montana experiment affected people’s decision? I don’t see a discussion on how it actually influenced the turnout or election outcome.&lt;/h4&gt;
+
+&lt;p&gt;We might never know! After the whole debacle, the study is unpublishable. Partly due to the ethical issue, partly because the data is likely unusable, given the spillover/contamination effect caused by the news coverage. After the news outlets reported about the story, those in the treatment group who have received the mailer would have known about where this mailer comes from and why they are receiving it (treatment is contaminated by extraneous factors that the researchers did not intend to provide), and those in the control group would also have known about the information in the mailer despite not receiving one (treatment spillover).&lt;/p&gt;
+
+&lt;h2 id=&#34;about-experiments-on-development-programs&#34;&gt;About Experiments on Development Programs&lt;/h2&gt;
+
+&lt;h4 id=&#34;are-there-examples-of-ethical-and-effective-anti-poverty-experiments&#34;&gt;Are there examples of ethical and effective anti-poverty experiments?&lt;/h4&gt;
+
+&lt;p&gt;There are many examples of using randomized experiments to evaluate the impacts of anti-poverty programs. Some good places to look for them: &lt;a href=&#34;https://www.povertyactionlab.org/&#34; target=&#34;_blank&#34;&gt;Poverty Action Lab (J-PAL)&lt;/a&gt; (research center at MIT), &lt;a href=&#34;https://www.givewell.org/&#34; target=&#34;_blank&#34;&gt;GiveWell&lt;/a&gt; (nonprofit focused on effective charities).&lt;/p&gt;
+
+&lt;h4 id=&#34;not-a-question-just-an-interesting-observation-in-the-us-during-the-1960s-70s-there-was-a-similar-program-to-universal-basic-income-it-was-ended-after-there-was-an-increase-in-divorce-rate&#34;&gt;Not a question, just an interesting observation &amp;ndash; in the US during the 1960s-70s, there was a similar program to Universal Basic Income. It was ended after there was an increase in divorce rate.&lt;/h4&gt;
+
+&lt;p&gt;Hmm, this is really interesting to know. So if the experiment shows that UBI improves some aspects of life quality (e.g. household income, children&amp;rsquo;s education), but also has other &amp;ldquo;side-effects&amp;rdquo; such as increases divorce rate, from the policy-makers&amp;rsquo; position, what should they make of this? What kind of &amp;ldquo;side-effects&amp;rdquo;, or how much, would be considered as a &amp;ldquo;reasonable&amp;rdquo; level of trade-off? Back to what we discussed in the beginning of the course, empirical evidence does not always lead to a neat solution to normative questions.&lt;/p&gt;
+
+&lt;!-- ## About Ethics and Experiments in General
+
+#### If the studies were called out for being unethical, do researchers try fix the ethical concerns then re-do the experiment?
+
+
+#### Facebook is a private corporation, people choose to use its service and agreed to the terms of services. Why do they get so much bad press for it? --&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Example: Testing for measurement validity and reliability</title>
+      <link>https://fanghuiz.github.io/post/2019-01-19-example-measurement-stata/</link>
+      <pubDate>Sat, 19 Jan 2019 00:00:00 -0500</pubDate>
+      
+      <guid>https://fanghuiz.github.io/post/2019-01-19-example-measurement-stata/</guid>
+      <description>
+
+&lt;h2 id=&#34;example-racial-resentment-scale&#34;&gt;Example: Racial Resentment Scale&lt;/h2&gt;
+
+&lt;p&gt;Racial resentment scale is commonly used to measure &lt;a href=&#34;https://en.wikipedia.org/wiki/Symbolic_racism&#34; target=&#34;_blank&#34;&gt;symbolic racism&lt;/a&gt;. The scale contains four items, for each question, respondents indicate whether they agree or disagree with the statement on a five-point scale. The question wording and the respective variable number as appeared in American National Election Studies (ANES) 2016 are given below:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;code&gt;V162211&lt;/code&gt;: &amp;lsquo;Irish, Italians, Jewish and many other minorities overcame prejudice and worked their way up. Blacks should do the same without any special favors.&amp;rsquo;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;V162212&lt;/code&gt;: &amp;lsquo;Generations of slavery and discrimination have created conditions that make it difficult for blacks to work their way out of the lower class.&amp;rsquo;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;V162213&lt;/code&gt;: &amp;lsquo;Over the past few years, blacks have gotten less than they deserve.&amp;rsquo;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;V162214&lt;/code&gt;: &amp;lsquo;It’s really a matter of some people not trying hard enough, if blacks would only try harder they could be just as well off as whites.&amp;rsquo;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;The assumption is that agreeing with statement 1 and 4 (or disagreeing with statement 2 and 3) are indications of resentment towards African Americans.&lt;/p&gt;
+
+&lt;h2 id=&#34;validity-test&#34;&gt;Validity Test&lt;/h2&gt;
+
+&lt;h3 id=&#34;construct-validity&#34;&gt;Construct validity&lt;/h3&gt;
+
+&lt;p&gt;To test for construct validity, we need to demonstrate that the indicator predicts what it is supposed to predict.&lt;/p&gt;
+
+&lt;p&gt;One aspect of construct validity is &lt;strong&gt;convergent validity&lt;/strong&gt;: if theoretically we expect X and Y to be positively related, do we see a positive correlation between the indicator for X and Y?&lt;/p&gt;
+
+&lt;p&gt;In this case, theoretically we might expect that feelings of resentment towards African Americans would correlate with negative affective attitudes towards the group.&lt;/p&gt;
+
+&lt;p&gt;For illustration purposes, let&amp;rsquo;s just use a single statement from the resentment scale, statement 2 (&lt;code&gt;V162212&lt;/code&gt;) about the effects of slavery and see if people&amp;rsquo;s answer to this questions correlates with their feeling thermometer score towards Blacks (&lt;code&gt;V162312&lt;/code&gt;).&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;. twoway (scatter V162312 V162212) (lfit V162312 V162212)
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://fanghuiz.github.io/img/stata/validity_1.svg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;We see that higher disagreement with the statement (&lt;code&gt;1 = Strongly Agree&lt;/code&gt;, &lt;code&gt;5 = Strongly Disagree&lt;/code&gt;) correlates with lower scores on the feeling thermometer (higher value means warmer feeling towards the group, lower value means colder feeling). Resentment towards African Americans (as indicated by denying the effects of slavery on their current day hardship) indeed predicts a more negative attitudes towards them (as indicated by expressing less warm feelings).&lt;/p&gt;
+
+&lt;p&gt;Another way to demonstrate construct validity is to show &lt;strong&gt;divergent/discriminant validity&lt;/strong&gt;: if theoretically we &lt;em&gt;do not&lt;/em&gt; expect X and Y to be related, do we then see a low or weak correlation between them?&lt;/p&gt;
+
+&lt;p&gt;For instance, perhaps we do not expect feelings of racial resentment to be correlated with feelings towards the Supreme Court (&lt;code&gt;V162102&lt;/code&gt;).&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;. graph twoway (scatter V162102 V162212) (lfit V162102 V162212)
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://fanghuiz.github.io/img/stata/validity_2.svg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;We see that there is no discernible correlation between responses to statement 2 and feelings towards the Supreme Court.&lt;/p&gt;
+
+&lt;h2 id=&#34;reliability-test&#34;&gt;Reliability Test&lt;/h2&gt;
+
+&lt;p&gt;One common way to quantify the reliability of a multiple indicator scale is to calculate the &lt;a href=&#34;https://en.wikipedia.org/wiki/Cronbach%27s_alpha&#34; target=&#34;_blank&#34;&gt;Cronbach&amp;rsquo;s alpha $\alpha$&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;This can be done in Stata using a simple command &lt;code&gt;alpha&lt;/code&gt;, followed by the list of variables used in the scale.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;. alpha V162211 V162212 V162213 V162214
+
+Test scale = mean(unstandardized items)
+Reversed items:  V162211 V162214
+
+Average interitem covariance:     1.090995
+Number of items in the scale:            4
+Scale reliability coefficient:      0.8451
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;In the output, we can see a &amp;ldquo;Scale reliability coefficient&amp;rdquo;, which is ~0.8 in this case. A general rule of thumb is that &amp;gt; 0.8 indicates rather high reliability, and anything below 0.7 is a sign of unreliable scale. So in this case, the four-item Racial Resentment Scale has rather high reliability.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Q&amp;A Week 2: Measurement</title>
+      <link>https://fanghuiz.github.io/post/2019-01-18-measurement/</link>
+      <pubDate>Fri, 18 Jan 2019 00:00:00 -0500</pubDate>
+      
+      <guid>https://fanghuiz.github.io/post/2019-01-18-measurement/</guid>
+      <description>
+
+&lt;h2&gt;Table of Contents&lt;/h2&gt;
+&lt;nav id=&#34;TableOfContents&#34;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#types-of-measurement-errors&#34;&gt;Types of measurement Errors&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#how-to-differentiate-between-systematic-vs-random-error-do-you-have-any-examples-of-systematic-errors-in-measurement&#34;&gt;How to differentiate between systematic vs random error? Do you have any examples of systematic errors in measurement?&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#which-error-systematic-vs-random-is-worse-which-one-should-we-try-to-avoid-more&#34;&gt;Which error (systematic vs random) is worse? Which one should we try to avoid more?&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#about-the-true-score-theory-t-x-epsilon-how-do-we-know-how-close-our-measured-value-x-is-close-to-the-true-score-t-if-we-cannot-truly-know-t&#34;&gt;About the True Score Theory $T = X + \epsilon$, how do we know how close our measured value $X$ is close to the true score $T$, if we cannot truly know $T$?&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#if-all-indicators-are-measured-with-some-degrees-of-random-errors-can-too-many-indicators-introduce-more-random-errors&#34;&gt;If all indicators are measured with some degrees of random errors, can too many indicators introduce more random errors?&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#measurement-reliability-and-validity&#34;&gt;Measurement Reliability and Validity&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#is-there-a-good-analogy-to-help-remembering-the-difference-between-validity-and-reliability&#34;&gt;Is there a good analogy to help remembering the difference between validity and reliability?&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#what-are-some-examples-of-face-validity&#34;&gt;What are some examples of face validity?&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#when-do-we-test-for-construct-vs-face-validity&#34;&gt;When do we test for construct vs face validity?&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#about-the-article-https-www-nytimes-com-2014-08-28-opinion-nicholas-kristof-is-everyone-a-little-bit-racist-html-we-read-on-using-iat-video-games-to-measure-implicit-racial-bias-how-is-the-reliability-of-the-measure-determined-if-the-same-respondent-takes-the-test-twice-and-gets-different-scores-but-in-the-same-direction-e-g-at-first-longer-then-shorter-time-is-the-measure-considered-reliable&#34;&gt;About the &lt;a href=&#34;https://www.nytimes.com/2014/08/28/opinion/nicholas-kristof-is-everyone-a-little-bit-racist.html&#34; target=&#34;_blank&#34;&gt;article&lt;/a&gt; we read on using IAT/video games to measure implicit racial bias, how is the reliability of the measure determined? If the same respondent takes the test twice and gets different scores but in the same direction (e.g at first longer, then shorter time), is the measure considered reliable?&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#levels-of-measurement&#34;&gt;Levels of Measurement&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#can-you-elaborate-more-on-meaningful-vs-relative-arbitrary-zero-point-and-how-that-relates-to-interval-and-ratio-measures&#34;&gt;Can you elaborate more on meaningful vs relative/arbitrary zero point, and how that relates to interval and ratio measures?&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#can-a-measure-be-both-interval-and-ratio&#34;&gt;Can a measure be both interval and ratio?&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/nav&gt;
+
+
+&lt;h2 id=&#34;types-of-measurement-errors&#34;&gt;Types of measurement Errors&lt;/h2&gt;
+
+&lt;h4 id=&#34;how-to-differentiate-between-systematic-vs-random-error-do-you-have-any-examples-of-systematic-errors-in-measurement&#34;&gt;How to differentiate between systematic vs random error? Do you have any examples of systematic errors in measurement?&lt;/h4&gt;
+
+&lt;p&gt;Systematic errors affects all units in the sample in the same direction (all measured values are consistently more positive or more negative than true value). For example, self-reported measure of turnout is likely to have positive systematic error &amp;ndash; (most) people tend to over-report, saying that they have voted even though they have not.&lt;/p&gt;
+
+&lt;p&gt;Random errors do not affect all units in the sample in a consistent way &amp;ndash; some units will be more positive than true value, some units will be more negative than true value. Let&amp;rsquo;s use the self-reported turnout as an example again. Perhaps people&amp;rsquo;s transient feelings about the current election affect whether they are likely to say they have voted or not &amp;ndash; those who happened to read a positive news story about the election are more likely to over-report having voted, and others who happened to read a negative news story are more likely to under-report.&lt;/p&gt;
+
+&lt;p&gt;Very often both types of errors could be present, so we need to think carefully about the sources of potential errors. For example, crime statistics can be very noisy, with a lot of random errors introduced at various stages of collecting such data. Furthermore, statistics on certain &lt;em&gt;types&lt;/em&gt; of crimes might additionally have systematic errors: for example, domestic abuse might be systematically biased downwards if victims under-report due to fear of retaliation.&lt;/p&gt;
+
+&lt;!-- As the sample size increases, we are likely to see that there are as many positive errors as negative ones, and all the random errors would sum to 0. This means that random errors add *variability/noise* to the data, but will not affect the average value at the *group* level. --&gt;
+
+&lt;h4 id=&#34;which-error-systematic-vs-random-is-worse-which-one-should-we-try-to-avoid-more&#34;&gt;Which error (systematic vs random) is worse? Which one should we try to avoid more?&lt;/h4&gt;
+
+&lt;p&gt;Both types of errors are bad news! But they affect our analysis in different ways.&lt;/p&gt;
+
+&lt;p&gt;High random errors will add more &lt;em&gt;noise/variability&lt;/em&gt; to our data, which will make it harder to detect the presence of a significant correlation between X and Y. In another word, noisy measures are bad because it increases the likelihood of &lt;em&gt;false negative&lt;/em&gt; &amp;ndash; we are likely to mistakenly infer there is no relationship between X and Y, when in fact there is.&lt;/p&gt;
+
+&lt;p&gt;For systematic errors, recall that indicators with high systematic errors are &lt;em&gt;invalid&lt;/em&gt;, i.e. they are not capturing the concept of interest accurately. In such case, an invalid indicator will &lt;em&gt;never&lt;/em&gt; lead us to the right conclusion (think of a road sign that points to the wrong direction), even if the indicator is measured with zero random error.&lt;/p&gt;
+
+
+
+
+&lt;figure&gt;
+
+&lt;img src=&#34;https://vignette.wikia.nocookie.net/thebige/images/d/da/Funny_road_signs_5.jpg/revision/latest/scale-to-width-down/180?cb=20130807005626&#34; alt=&#34;One of them has got to be invalid..&#34; /&gt;
+
+
+
+&lt;figcaption data-pre=&#34;Figure &#34; data-post=&#34;:&#34; &gt;
+  
+  &lt;p&gt;
+    One of them has got to be invalid..
+    
+    
+    
+  &lt;/p&gt; 
+&lt;/figcaption&gt;
+
+&lt;/figure&gt;
+
+&lt;p&gt;In terms of which type of error is &lt;em&gt;worse&lt;/em&gt;, one way I think about this is that invalid indicator is more like a fatal disease, and unreliable indicator is more like a non-fatal but chronic disease that requires lots of care. So if a study is using invalid indicators, we cannot draw any meaningful inferences about the phenomenon we are investigating (the study is &amp;ldquo;dead&amp;rdquo;), while unreliable indicators make it harder to detect a &lt;em&gt;true positive&lt;/em&gt; (increases uncertainty, but does not spell doom).&lt;/p&gt;
+
+&lt;p&gt;The textbook also has a good discussion on the different problems associated with measurement reliability and validity in political science (p.143-145).&lt;/p&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;th&gt;Systematic error = High&lt;/th&gt;
+&lt;th&gt;Systematic error = Low&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;Random error = High&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;Very very bad &lt;br&gt;&amp;bull; Invalid and unreliable measure &lt;br&gt;&amp;bull; Lots of noise, and signal is pointing at the wrong direction&lt;/td&gt;
+&lt;td&gt;Problematic, but can live with &lt;br&gt;&amp;bull; Valid, but unreliable measure &lt;br&gt;&amp;bull; Lots of noise, harder to detect the signal; More likely to get false negative&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;Random error = Low&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;Problematic &lt;br&gt;&amp;bull; Invalid, but reliable measure &lt;br&gt;&amp;bull; Measure does not capture the concept of interests; Conclusion does not bear on the actual phenomenon of interest&lt;/td&gt;
+&lt;td&gt;Awesome! &lt;br&gt;&amp;bull; Valid and reliable measure &lt;br&gt;&amp;bull; Move along&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;Ideally, we should try to minimize both types of measurement errors. Degree of random error can be empirically assessed (e.g. using Cronbach&amp;rsquo;s alpha, see example &lt;a href=&#34;https://fanghuiz.github.io/post/2019-01-19-example-measurement-stata/&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt;), and can be reduced (e.g. using multiple indicators). Systematic error however, is harder to detect, harder to quantify, and harder to correct for.&lt;/p&gt;
+
+&lt;h4 id=&#34;about-the-true-score-theory-t-x-epsilon-how-do-we-know-how-close-our-measured-value-x-is-close-to-the-true-score-t-if-we-cannot-truly-know-t&#34;&gt;About the True Score Theory $T = X + \epsilon$, how do we know how close our measured value $X$ is close to the true score $T$, if we cannot truly know $T$?&lt;/h4&gt;
+
+&lt;p&gt;Unfortunately, we can never be 100% sure what the value of $T$ is. As mentioned above, while we can detect and correct for random errors, systematic errors cannot be corrected using statistical procedures. After we’ve done our best to minimize random error, it is up to the strength of our theory, clarity of conceptualization, and a small leap of faith to convince others (and ourselves), that our measures are indeed valid ones. This is also part of the reason why social science research can only establish a probabilistic relationship (confident within a certain range) and never a deterministic relationship. Embrace the uncertainty!&lt;/p&gt;
+
+
+
+
+&lt;figure&gt;
+
+&lt;img src=&#34;https://ih1.redbubble.net/image.184209277.1539/flat,1000x1000,075,f.jpg&#34; width=&#34;400&#34; /&gt;
+
+
+&lt;/figure&gt;
+
+&lt;h4 id=&#34;if-all-indicators-are-measured-with-some-degrees-of-random-errors-can-too-many-indicators-introduce-more-random-errors&#34;&gt;If all indicators are measured with some degrees of random errors, can too many indicators introduce more random errors?&lt;/h4&gt;
+
+&lt;p&gt;Although every single indicator would be measured with some random errors, if we combine the multiple indicators as an index, or take the average value, we should have lower random errors compared to using a single indicator.&lt;/p&gt;
+
+&lt;h2 id=&#34;measurement-reliability-and-validity&#34;&gt;Measurement Reliability and Validity&lt;/h2&gt;
+
+&lt;h4 id=&#34;is-there-a-good-analogy-to-help-remembering-the-difference-between-validity-and-reliability&#34;&gt;Is there a good analogy to help remembering the difference between validity and reliability?&lt;/h4&gt;
+
+&lt;p&gt;In class, I&amp;rsquo;ve made the analogy comparing a valid indicator as a correct label (indicator) matching the content of a box (concept) that you wanted to buy but cannot see what is inside.&lt;/p&gt;
+
+
+
+
+&lt;figure&gt;
+
+&lt;img src=&#34;label_box.png&#34; alt=&#34;Houston, we have a invalid indicator problem.&#34; /&gt;
+
+
+
+&lt;figcaption data-pre=&#34;Figure &#34; data-post=&#34;:&#34; &gt;
+  
+  &lt;p&gt;
+    Houston, we have a invalid indicator problem.
+    
+    
+    
+  &lt;/p&gt; 
+&lt;/figcaption&gt;
+
+&lt;/figure&gt;
+
+&lt;p&gt;I don&amp;rsquo;t really have a good one for reliability, so let&amp;rsquo;s stretch the same label-on-a-box analogy a bit further. Suppose we have a machine printing the label for the box, although the label correctly matches the box content (valid indicator), the machine sometimes misprints a letter or two, so not all labels look the same (unreliable). And if we have Machine A that produces 5% misprinted labels, and Machine B that produces 15% misprinted labels, then we can say that B is &lt;em&gt;less reliable&lt;/em&gt; (produces less consistent outcomes).&lt;/p&gt;
+
+&lt;h4 id=&#34;what-are-some-examples-of-face-validity&#34;&gt;What are some examples of face validity?&lt;/h4&gt;
+
+&lt;p&gt;Whenever you see a indicator used to measure a particular concept, simply ask yourself: does the measure appear to capture the concept you care about? If yes, then the measure has high face validity; if not, then it has low face validity.&lt;/p&gt;
+
+&lt;p&gt;Say I want to measure whether a country&amp;rsquo;s level of human rights protection, which of the following indicators has a higher face validity?&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Gini coefficient&lt;/li&gt;
+&lt;li&gt;Number of political imprisonment&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;You probably have an answer in your mind. Let&amp;rsquo;s try another one: now I want to measure a country&amp;rsquo;s income inequality, which indicator has a higher face validity?&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Gini coefficient&lt;/li&gt;
+&lt;li&gt;Number of political imprisonment&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Again, you have an answer, and you are probably right.&lt;/p&gt;
+
+&lt;p&gt;A few things I&amp;rsquo;d like to highlight from this example:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Assessing face validity relies on domain knowledge. We need to first know what &amp;ldquo;human rights protection&amp;rdquo; means, only then we can see that more political imprisonment is an indicator for low levels of human rights protection.&lt;/li&gt;
+&lt;li&gt;Assessing face validity is largely based on judgment based on domain knowledge, rather than empirical demonstration.&lt;/li&gt;
+&lt;li&gt;Indicator validity is always assessed &lt;em&gt;relative&lt;/em&gt; to the concept we are trying to capture, rather than something inherent to the indicator itself. Gini coefficient is a valid indicator for income inequality, but not human rights protection.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&#34;when-do-we-test-for-construct-vs-face-validity&#34;&gt;When do we test for construct vs face validity?&lt;/h4&gt;
+
+&lt;p&gt;Ideally both, and more if possible. Since having invalid measures are really bad news, assessing the validity of a measure in multiple ways would increase the confidence&lt;/p&gt;
+
+&lt;p&gt;Face validity is rarely explicitly tested for &amp;ndash; we already &lt;em&gt;implicitly&lt;/em&gt; test for face validity when we are making the choice of which indicators to use to measure the concept. Although having face validity is important, high face validity alone is a rather weak evidence.&lt;/p&gt;
+
+&lt;p&gt;Construct validity can be empirically assessed in two ways: &lt;em&gt;convergent validity&lt;/em&gt; and &lt;em&gt;divergent validity&lt;/em&gt;. See &lt;a href=&#34;https://fanghuiz.github.io/post/2019-01-19-example-measurement-stata/&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt; for an example.&lt;/p&gt;
+
+&lt;p&gt;Generally, if we are using the measures that have been used in published literature, we do not have to conduct separate validity test. The assumption is that they have already been previously validated (though we should still remain critical). If we are using new measures in our study, instead of established ones used in published literature, then it is recommended to first conduct a pilot study to test the measure&amp;rsquo;s validity and reliability. Use the measures as part of the actual study only after we know it&amp;rsquo;s valid and reliable.&lt;/p&gt;
+
+&lt;h4 id=&#34;about-the-article-https-www-nytimes-com-2014-08-28-opinion-nicholas-kristof-is-everyone-a-little-bit-racist-html-we-read-on-using-iat-video-games-to-measure-implicit-racial-bias-how-is-the-reliability-of-the-measure-determined-if-the-same-respondent-takes-the-test-twice-and-gets-different-scores-but-in-the-same-direction-e-g-at-first-longer-then-shorter-time-is-the-measure-considered-reliable&#34;&gt;About the &lt;a href=&#34;https://www.nytimes.com/2014/08/28/opinion/nicholas-kristof-is-everyone-a-little-bit-racist.html&#34; target=&#34;_blank&#34;&gt;article&lt;/a&gt; we read on using IAT/video games to measure implicit racial bias, how is the reliability of the measure determined? If the same respondent takes the test twice and gets different scores but in the same direction (e.g at first longer, then shorter time), is the measure considered reliable?&lt;/h4&gt;
+
+&lt;p&gt;For IAT, the actual computation of the score takes quite a few steps, but to simplify it a bit, it is the &lt;em&gt;reaction time differential&lt;/em&gt; that is used as a measure of implicit racial bias (see the test procedure &lt;a href=&#34;https://en.wikipedia.org/wiki/Implicit-association_test#Procedure&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt;). So in this case, the test can be considered as reliable if respondent has the same directional preference (e.g. consistently faster at White-Pleasant association, than Black-Pleasant association) when taking the test multiple times.&lt;/p&gt;
+
+&lt;p&gt;For other tests however, it could be the case that time difference itself, rather than directional difference is used as the measure.&lt;/p&gt;
+
+&lt;p&gt;In general, &lt;a href=&#34;https://en.wikipedia.org/wiki/Repeatability&#34; target=&#34;_blank&#34;&gt;test-retest reliability&lt;/a&gt; is measured as degree of correlation between the different test scores, rather than absolute difference. In psychology, rule of thumb is that test-retest reliability &amp;gt; 0.7 is an acceptable level, though this is no more than a convention used by researchers. IAT has a test-retest reliability of about &lt;a href=&#34;https://en.wikipedia.org/wiki/Implicit-association_test#Reliability&#34; target=&#34;_blank&#34;&gt;0.6&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;This &lt;a href=&#34;https://fourbeers.fireside.fm/13&#34; target=&#34;_blank&#34;&gt;Podcast&lt;/a&gt; has a pretty interesting discussion on the use and critique of IAT.&lt;/p&gt;
+
+&lt;h2 id=&#34;levels-of-measurement&#34;&gt;Levels of Measurement&lt;/h2&gt;
+
+&lt;h4 id=&#34;can-you-elaborate-more-on-meaningful-vs-relative-arbitrary-zero-point-and-how-that-relates-to-interval-and-ratio-measures&#34;&gt;Can you elaborate more on meaningful vs relative/arbitrary zero point, and how that relates to interval and ratio measures?&lt;/h4&gt;
+
+&lt;p&gt;A variable with meaningful zero point means that we can interpret the zero value as the &lt;em&gt;absence&lt;/em&gt; of that variable. For example, income measured in dollars has a meaningful zero — we can interpret &lt;code&gt;income = 0&lt;/code&gt; to mean an absence of income. So if someone reported zero on this measure, we know this person has no income.&lt;/p&gt;
+
+&lt;p&gt;On the other hand, if the variable has a relative, or arbitrary zero points, we cannot interpret the zero value on that variable as the &lt;em&gt;absence&lt;/em&gt; of that variable. Say we have a set of 5 questions to measure people’s political knowledge. Every correct answer gets you 1 point, and every wrong answer gets you 0 point, which gives us a range of possible score from 0 to 5. If Ann gets &lt;code&gt;score = 0&lt;/code&gt; on this scale, we cannot say that Ann has no political knowledge at all. The zero here is simply an arbitrary point to signal a very low level of political knowledge.&lt;/p&gt;
+
+&lt;p&gt;So how does this relate to interval vs ratio measures? Interval measures have relative/arbitrary zero points, and ratio measures have absolute/meaningful zero points. For the most part, the difference is only apparent (or we only need to pay attention to the difference) when we analyze and interpret the data.&lt;/p&gt;
+
+&lt;p&gt;For interval measures, since the zero point is arbitrary and lacks any meaningful interpretation, we cannot compare any differences in terms of proportion. It only make sense to compare the difference in magnitude. Going back to the political knowledge example, if Beth gets &lt;code&gt;score = 2&lt;/code&gt; on the political scale, and Cathy gets &lt;code&gt;score = 4&lt;/code&gt; on the same scale, we know that: 1) Cathy is more knowledgeable than Beth, and 2) the magnitude of difference is 2 more correct answers. However, since the zero point is arbitrary in this case, we &lt;em&gt;cannot&lt;/em&gt; say Cathy is two times more knowledgeable than Beth. Or if we observe that Beth&amp;rsquo;s score increased from 2 to 3 after attending a civics education workshop, we &lt;em&gt;cannot&lt;/em&gt; cay that Beth&amp;rsquo;s political knowledge increased by 50%.&lt;/p&gt;
+
+&lt;p&gt;Let&amp;rsquo;s compare to a ratio scale, income, which has a meaningful zero point. If Abe reported &lt;code&gt;income = 20k&lt;/code&gt;, and Ben reported &lt;code&gt;income = 40k&lt;/code&gt;, we know that 1) Ben has higher income than Abe, 2) Ben&amp;rsquo;s income is 20k higher than Abe, and 3) that Ben has an income twice as much as Abe.&lt;/p&gt;
+
+&lt;!-- In fact, for most latent constructs / concepts, the indicators only have relative/arbitrary zero points, although we can construct a measure with a meaningful zero. For example, we can measure legislator ideology on left-right dimension using their voting record. Some legislators might be voting 100% left or 100% right. This indicator itself is a ratio measure — A who voted 80% left has twice as much liberal voting record as B who voted 40% left, and 0% liberal votes means someone has never voted for a liberal position on any bills (absence of liberal vote). Can we then interpret that A is twice as liberal as B? --&gt;
+
+&lt;h4 id=&#34;can-a-measure-be-both-interval-and-ratio&#34;&gt;Can a measure be both interval and ratio?&lt;/h4&gt;
+
+&lt;p&gt;The four levels of measurement are &lt;em&gt;mutually exclusive&lt;/em&gt; categories. The flow chart below should help you to distinguish the four categories.&lt;/p&gt;
+
+
+
+
+&lt;figure&gt;
+
+&lt;img src=&#34;measure_levels.png&#34; /&gt;
+
+
+&lt;/figure&gt;
+
+&lt;!--
+```mermaid
+graph TB
+  A[Are the numbers just placeholders for categories &lt;br&gt; or do they have meaningful numerical values?] -- categories ---
+  A1[Are the categories ordered&lt;br&gt; or unordered?]
+
+  A1 -- unordered --- B1[Nominal]
+  A1 -- ordered --- B2[Ordinal]
+
+  A -- numerical --- A2[Is the zero value arbitrary&lt;br&gt; or meaningful?]
+
+  A2 -- arbitrary --- C1[Interval]
+  A2 -- meaningful --- C2[Ratio]
+``` --&gt;
+
+&lt;!-- ```mermaid
+graph TB
+  A[Are the researchers directly &lt;br&gt; manipulating the treatment?] -- yes --- A1
+  A -- no --- A2[Is there an active change in the &lt;br&gt; treatment due to &#39;nature&#39;?]
+
+  A1[Is the treatment &lt;br&gt; randomly assigned?] -- yes --- B1[Randomized experiment]
+  A1 -- no --- B2[Quasi-experiment]
+
+  A2 -- yes --- C1[Natural experiment]
+  A2 -- no --- C2[Observational design: Do we have single &lt;br&gt; or repeated measures for the same unit?]
+
+  C2 -- single --- D1[Cross-sectional]
+  C2 -- repeated --- D2[Longitudinal: &lt;br&gt; Panel / Time-series]
+``` --&gt;
+
+&lt;!-- ```mermaid
+graph TB
+  A[Is the treatment assignment &lt;br&gt; random or as-if random?] -- yes --- A1
+  A -- no --- A2[Are the researchers directly &lt;br&gt; manipulating the treatment?]
+
+  A1[Are the researchers directly &lt;br&gt; manipulating the treatment?] -- yes --- B1[Randomized experiment]
+  A1 -- no --- B2[Natural experiment]
+
+  A2 -- yes --- C1[Quasi-experiment]
+  A2 -- no --- C2[Observational design: Do we have single &lt;br&gt; or repeated measures for the same unit?]
+
+  C2 -- single --- D1[Cross-sectional]
+  C2 -- repeated --- D2[Longitudinal: &lt;br&gt; Panel / Time-series]
+``` --&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Search</title>
+      <link>https://fanghuiz.github.io/docs/search/</link>
+      <pubDate>Mon, 23 Jul 2018 00:00:00 -0400</pubDate>
+      
+      <guid>https://fanghuiz.github.io/docs/search/</guid>
+      <description>
+
+&lt;p&gt;&lt;strong&gt;Empower your users&lt;/strong&gt; to search your website content for keywords so that they can quickly discover relevant content.&lt;/p&gt;
+
+&lt;p&gt;If search is enabled, a &lt;strong&gt;search icon&lt;/strong&gt; will automatically appear in the navigation bar and a &lt;strong&gt;search box&lt;/strong&gt; will appear in the sidebar of any content using the docs/tutorial layout (as can be seen on this site). Clicking the search icon will toggle the search dialog.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Keyboard shortcuts&lt;/strong&gt; are available to facilitate searching. Pressing &lt;code&gt;/&lt;/code&gt; will toggle the search dialog and pressing &lt;code&gt;ESC&lt;/code&gt; will close the dialog.&lt;/p&gt;
+
+
+
+
+  
+
+&lt;figure&gt;
+
+&lt;img src=&#34;https://fanghuiz.github.io/img/docs/search.png&#34; /&gt;
+
+
+
+&lt;figcaption data-pre=&#34;Figure &#34; data-post=&#34;:&#34; &gt;
+  &lt;h4&gt;Enable users to quickly discover relevant content by searching from the navigation bar.&lt;/h4&gt;
+  
+&lt;/figcaption&gt;
+
+&lt;/figure&gt;
+
+&lt;p&gt;It&amp;rsquo;s possible to &lt;strong&gt;customize the search system&lt;/strong&gt; to your needs. The search feature may either be powered by the &lt;strong&gt;built-in&lt;/strong&gt; algorithm (default) or powered by &lt;a href=&#34;#algolia&#34;&gt;Algolia&lt;/a&gt;. Alternatively, you can &lt;a href=&#34;#disable&#34;&gt;disable&lt;/a&gt; the integrated search engine and instead create your own third party (e.g. Google) search widget by following the guide in the &lt;a href=&#34;#alternatives&#34;&gt;Alternatives&lt;/a&gt; section below.&lt;/p&gt;
+
+&lt;h3 id=&#34;built-in&#34;&gt;Built-in&lt;/h3&gt;
+
+&lt;p&gt;Academic comes with its own integrated search engine. If it&amp;rsquo;s not already enabled, it can be enabled by setting &lt;code&gt;engine = 1&lt;/code&gt; under &lt;code&gt;[params.search]&lt;/code&gt; in &lt;code&gt;config.toml&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Note that this search engine runs entirely in the web browser on the visitor&amp;rsquo;s device. Thus, it is not scalable to an extremely large number of pages. If you have a very large amount of content and find the search running slowly, we recommend opting for a server side search engine such as Algolia or Google (see below).&lt;/p&gt;
+
+&lt;h3 id=&#34;algolia&#34;&gt;Algolia&lt;/h3&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Under &lt;code&gt;[params.search]&lt;/code&gt; in &lt;code&gt;config.toml&lt;/code&gt; set &lt;code&gt;engine = 2&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Register a &lt;strong&gt;free&lt;/strong&gt; &lt;a href=&#34;https://www.algolia.com&#34; target=&#34;_blank&#34;&gt;Algolia&lt;/a&gt; account and follow their wizard to create a new search app&lt;/li&gt;
+&lt;li&gt;Build your site by running the &lt;code&gt;hugo&lt;/code&gt; command in Terminal or Command Prompt&lt;/li&gt;
+&lt;li&gt;Upload the generated &lt;code&gt;public/index.json&lt;/code&gt; file to the &lt;em&gt;Indicies&lt;/em&gt; page in your Algolia dashboard&lt;/li&gt;
+&lt;li&gt;Paste the Algolia &lt;em&gt;App ID&lt;/em&gt;, &lt;em&gt;API Key&lt;/em&gt;, and &lt;em&gt;Index Name&lt;/em&gt; from the &lt;em&gt;Indicies&lt;/em&gt; and &lt;em&gt;API Keys&lt;/em&gt; pages of your Algolia Dashboard into the &lt;code&gt;[params.search.algolia]&lt;/code&gt; section in &lt;code&gt;config.toml&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Under &lt;code&gt;[params.search]&lt;/code&gt; in &lt;code&gt;config.toml&lt;/code&gt;, set &lt;code&gt;engine = 1&lt;/code&gt; to activate the Algolia search engine&lt;/li&gt;
+&lt;li&gt;Serve (or build and upload) your site and test out the shiny new search widget on your home page 😄&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Note that whenever your content changes (e.g. you add a new page), you will need to re-build and re-upload the search index to Algolia.&lt;/p&gt;
+
+&lt;h2 id=&#34;disable&#34;&gt;Disable&lt;/h2&gt;
+
+&lt;p&gt;To disable searching, open &lt;code&gt;config.toml&lt;/code&gt; and set &lt;code&gt;engine = 0&lt;/code&gt; in the &lt;code&gt;[params.search]&lt;/code&gt; section.&lt;/p&gt;
+
+&lt;h2 id=&#34;alternatives&#34;&gt;Alternatives&lt;/h2&gt;
+
+&lt;p&gt;Alternative search providers, such as Google search, are not integrated with Academic, but can be implemented by creating your own custom widget. For example,&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Create a &lt;a href=&#34;https://fanghuiz.github.io/docs/widgets/&#34; target=&#34;_blank&#34;&gt;custom widget&lt;/a&gt; in your &lt;code&gt;/content/home/&lt;/code&gt; folder&lt;/li&gt;
+&lt;li&gt;Signup for &lt;a href=&#34;https://cse.google.com/cse/&#34; target=&#34;_blank&#34;&gt;Google Custom Search Engine&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Paste the HTML which Google provide into the body of your custom widget&lt;/li&gt;
+&lt;/ol&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Domain Name</title>
+      <link>https://fanghuiz.github.io/docs/domain/</link>
+      <pubDate>Sun, 24 Dec 2017 00:00:00 -0500</pubDate>
+      
+      <guid>https://fanghuiz.github.io/docs/domain/</guid>
+      <description>&lt;p&gt;If you choose a deployment option such as Netlify or Github pages, you will be automatically assigned a free URL for your website. You can further personalize your website with your own domain name.&lt;/p&gt;
+
+&lt;p&gt;We can highly recommend &lt;a href=&#34;https://www.namecheap.com/?aff=105828&#34; target=&#34;_blank&#34;&gt;Namecheap&lt;/a&gt; for &lt;strong&gt;registering a domain&lt;/strong&gt;, as they provide great value for money whilst providing fast support. To find a good domain that is available, try a mix of your first and last names or initials, with either a &lt;code&gt;.com&lt;/code&gt; or &lt;code&gt;.me&lt;/code&gt; ending.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;For Netlify deployments&lt;/strong&gt;, once your domain is registered, navigate to the &lt;em&gt;Custom domains&lt;/em&gt; section of the Netlify admin panel and then follow &lt;a href=&#34;https://www.netlify.com/docs/custom-domains/#assigning-a-custom-domain&#34; target=&#34;_blank&#34;&gt;their wizard&lt;/a&gt; to assign your domain to your site.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;For Github deployments&lt;/strong&gt;, you&amp;rsquo;ll need to login to your domain registrar to point your domain to Github, and create a &lt;code&gt;CNAME&lt;/code&gt; file in the &lt;code&gt;static&lt;/code&gt; folder of your website, so that Github knows your intentions. For more information, check out the &lt;a href=&#34;https://help.github.com/articles/setting-up-a-custom-domain-with-github-pages/&#34; target=&#34;_blank&#34;&gt;domains guide by Github&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Remember that after you have setup a custom domain, you will need to wait approximately 24-48 hours for the DNS to propagate and then you&amp;rsquo;ll need to update &lt;code&gt;baseurl&lt;/code&gt; in your &lt;code&gt;config.toml&lt;/code&gt; to your new URL, regenerate your site (see above section), and redeploy.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Overview</title>
+      <link>https://fanghuiz.github.io/docs/deployment/</link>
+      <pubDate>Sun, 24 Dec 2017 00:00:00 -0500</pubDate>
+      
+      <guid>https://fanghuiz.github.io/docs/deployment/</guid>
+      <description>
+
+&lt;p&gt;Sites built using Academic can be deployed in a large variety of ways due to the static nature of the generated website. The recommended deployment method alongside a few of the other most popular techniques are described below.&lt;/p&gt;
+
+&lt;p&gt;If using Netlify, your site will be built automatically, otherwise run the &lt;code&gt;hugo&lt;/code&gt; command in your terminal to generate your site in the &lt;code&gt;public/&lt;/code&gt; folder - now it is ready to copy across to your host.&lt;/p&gt;
+
+&lt;p&gt;With Academic, you can make a great impression on your visitors with your own &lt;a href=&#34;https://fanghuiz.github.io/docs/domain/&#34; target=&#34;_blank&#34;&gt;custom domain name&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&#34;netlify&#34;&gt;Netlify&lt;/h2&gt;
+
+&lt;p&gt;We recommend deploying your site with Netlify. Netlify is free and provides fast global access, automated deployment when you add or modify content, and one-click HTTPS security. &lt;a href=&#34;https://fanghuiz.github.io/docs/install/#install-with-web-browser&#34; target=&#34;_blank&#34;&gt;Check out our guide to deploy with Netlify&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&#34;github-pages&#34;&gt;GitHub Pages&lt;/h2&gt;
+
+&lt;p&gt;Go to &lt;a href=&#34;http://www.github.com/&#34; target=&#34;_blank&#34;&gt;Github&lt;/a&gt; and register for an account if you have not done so already. Github encourage using your real name as your username, and this can help your Github URL (which you will be assigned later) to have a professional appearance.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://help.github.com/articles/set-up-git/&#34; target=&#34;_blank&#34;&gt;Install Git&lt;/a&gt; if it&amp;rsquo;s not already present on your system. You can check by running &lt;code&gt;git --version&lt;/code&gt; in your Command Prompt/Terminal app.&lt;/p&gt;
+
+&lt;p&gt;Once you have created your Github account and setup Git on your computer, we will create two new repositories (often abbreviated as &lt;em&gt;repos&lt;/em&gt;) on Github with the following names:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;academic-kickstart&lt;/code&gt; or any other name you like - we will save your &lt;strong&gt;content&lt;/strong&gt; to this repo&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;&amp;lt;USERNAME&amp;gt;.github.io&lt;/code&gt; where &lt;code&gt;&amp;lt;USERNAME&amp;gt;&lt;/code&gt; is your Github username - we will save the &lt;strong&gt;generated website&lt;/strong&gt; to this repo&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;To create the &lt;code&gt;&amp;lt;USERNAME&amp;gt;.github.io&lt;/code&gt; repository, click the &amp;ldquo;+&amp;rdquo; icon in the top right corner and then choose “New Repository”.&lt;/p&gt;
+
+&lt;p&gt;To create the &lt;code&gt;academic-kickstart&lt;/code&gt; repository, &lt;a href=&#34;https://github.com/sourcethemes/academic-kickstart#fork-destination-box&#34; target=&#34;_blank&#34;&gt;&lt;strong&gt;fork&lt;/strong&gt;&lt;/a&gt; the &lt;em&gt;Academic Kickstart&lt;/em&gt; repository and clone your fork with Git (download it to your computer) by replacing &lt;code&gt;&amp;lt;USERNAME&amp;gt;&lt;/code&gt; in the following command with your Github username:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;git clone https://github.com/&amp;lt;USERNAME&amp;gt;/academic-kickstart.git My_Website
+cd My_Website
+git submodule update --init --recursive
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;In your &lt;code&gt;config.toml&lt;/code&gt; file, set &lt;code&gt;baseurl = &amp;quot;https://&amp;lt;USERNAME&amp;gt;.github.io/&amp;quot;&lt;/code&gt;, where &lt;code&gt;&amp;lt;USERNAME&amp;gt;&lt;/code&gt; is your Github username. Stop Hugo if it&amp;rsquo;s running and delete the &lt;code&gt;public&lt;/code&gt; directory if it exists (by typing &lt;code&gt;rm -r public/&lt;/code&gt;).&lt;/p&gt;
+
+&lt;p&gt;Add your &lt;em&gt;&lt;USERNAME&gt;.github.io&lt;/em&gt; repository into a submodule in a folder named &lt;em&gt;public&lt;/em&gt;, replacing &lt;em&gt;&lt;USERNAME&gt;&lt;/em&gt; with your Github username:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;git submodule add -f -b master https://github.com/&amp;lt;USERNAME&amp;gt;/&amp;lt;USERNAME&amp;gt;.github.io.git public
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Add everything to your local git repository and push it up to your remote repository on GitHub:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;git add .
+git commit -m &amp;quot;Initial commit&amp;quot;
+git push -u origin master
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Whilst running the above commands you may be prompted for your Github username and password.&lt;/p&gt;
+
+&lt;p&gt;Next, &lt;strong&gt;regenerate&lt;/strong&gt; your website&amp;rsquo;s HTML code by running Hugo and uploading the &lt;em&gt;public&lt;/em&gt; submodule to GitHub:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;hugo
+cd public
+git add .
+git commit -m &amp;quot;Build website&amp;quot;
+git push origin master
+cd ..
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Once Git has finished uploading your site to Github, you can open your new &lt;code&gt;https://&amp;lt;USERNAME&amp;gt;.github.io&lt;/code&gt; website in your browser, substituting &lt;em&gt;&lt;USERNAME&gt;&lt;/em&gt; with your Github username.&lt;/p&gt;
+
+&lt;h3 id=&#34;automating-deployment&#34;&gt;Automating deployment&lt;/h3&gt;
+
+&lt;p&gt;If you are feeling more adventurous, you can consider automating deployment so that when a change, such as a new blog post, is pushed to your &lt;code&gt;academic-kickstart&lt;/code&gt; repository, your website (&lt;code&gt;&amp;lt;USERNAME&amp;gt;.github.io&lt;/code&gt; repository) is automatically re-built. Check out the &lt;a href=&#34;http://discourse.gohugo.io/&#34; target=&#34;_blank&#34;&gt;discussion forum&lt;/a&gt; for inspiration!&lt;/p&gt;
+
+&lt;p&gt;If you prefer easy automated deployments whenever you make a change to your site, we recommend deploying with Netlify (see above) rather than Github Pages.&lt;/p&gt;
+
+&lt;h2 id=&#34;amazon-s3&#34;&gt;Amazon S3&lt;/h2&gt;
+
+&lt;p&gt;By uploading the contents of your &lt;code&gt;public&lt;/code&gt; folder to &lt;a href=&#34;https://aws.amazon.com/s3/&#34; target=&#34;_blank&#34;&gt;Amazon S3&lt;/a&gt;, your site can be served with dynamic scaling to almost unlimited traffic. This approach has the benefit of being one of the cheapest and most reliable hosting options available as you only pay for what you use.&lt;/p&gt;
+
+&lt;h2 id=&#34;web-host-via-ftp&#34;&gt;Web host via FTP&lt;/h2&gt;
+
+&lt;p&gt;Use an FTP client to upload the contents of your &lt;code&gt;public&lt;/code&gt; folder to a web host. This may be especially convenient for academic students and staff who are provided with university web space.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Migrate from Wordpress</title>
+      <link>https://fanghuiz.github.io/docs/migrate-from-wordpress/</link>
+      <pubDate>Sun, 03 Dec 2017 00:00:00 -0500</pubDate>
+      
+      <guid>https://fanghuiz.github.io/docs/migrate-from-wordpress/</guid>
+      <description>
+
+&lt;p&gt;To migrate your website from Wordpress to Academic is a two phase process:&lt;/p&gt;
+
+&lt;h2 id=&#34;phase-one&#34;&gt;Phase One&lt;/h2&gt;
+
+&lt;p&gt;First, install the &lt;a href=&#34;https://wordpress.org/plugins/jekyll-exporter/&#34; target=&#34;_blank&#34;&gt;WordPress to Jekyll Exporter&lt;/a&gt; plugin into your Wordpress installation by following these steps:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Place the &lt;a href=&#34;https://wordpress.org/plugins/jekyll-exporter/&#34; target=&#34;_blank&#34;&gt;WordPress to Jekyll Exporter&lt;/a&gt; plugin in &lt;code&gt;/wp-content/plugins/&lt;/code&gt; folder&lt;/li&gt;
+&lt;li&gt;Activate plugin in WordPress dashboard&lt;/li&gt;
+&lt;li&gt;Select &lt;code&gt;Export to Jekyll&lt;/code&gt; from the &lt;code&gt;Tools&lt;/code&gt; menu&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;The WordPress plugin converts all posts, pages, taxonomies, metadata, and settings to Markdown and YAML with just a single click. A zip file will be generated, containing &lt;code&gt;_config.yml&lt;/code&gt;, pages, and &lt;code&gt;_posts&lt;/code&gt; folder containing &lt;code&gt;.md&lt;/code&gt; Markdown files for each post.&lt;/p&gt;
+
+&lt;h2 id=&#34;phase-two&#34;&gt;Phase Two&lt;/h2&gt;
+
+&lt;p&gt;Given the Jekyll formatted contents of your generated zip file in the step above, proceed to follow the guide on &lt;a href=&#34;https://fanghuiz.github.io/docs/migrate-from-jekyll/&#34; target=&#34;_blank&#34;&gt;importing a Jekyll site into Academic&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Front Matter</title>
+      <link>https://fanghuiz.github.io/docs/front-matter/</link>
+      <pubDate>Sun, 03 Dec 2017 00:00:00 -0500</pubDate>
+      
+      <guid>https://fanghuiz.github.io/docs/front-matter/</guid>
+      <description>
+
+&lt;p&gt;Front matter allows page-specific variables to be included at the top of a Markdown file using &lt;a href=&#34;https://learnxinyminutes.com/docs/toml/&#34; target=&#34;_blank&#34;&gt;TOML format&lt;/a&gt;, set between triple-plus &lt;code&gt;+++&lt;/code&gt; lines. The variables may include metadata such as page title, date published, author, categories, tags, and so on. Here is a simple example:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-toml&#34;&gt;+++
+date = 2017-12-01
+title = &amp;quot;My first blog post&amp;quot;
++++
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Each configuration section (referred to as a &lt;em&gt;table&lt;/em&gt; in TOML) is defined by a name in square brackets (e.g. &lt;code&gt;[image]&lt;/code&gt;). If you are adding new parameters to a file, consider which configuration section they should belong to. Often the first configuration section in front matter will not be explicitly defined, but can be thought of as the &lt;em&gt;root&lt;/em&gt; or &lt;em&gt;main&lt;/em&gt; section.&lt;/p&gt;
+
+&lt;p&gt;TOML aims to be simpler and more human friendly than other popular configuration formats that are designed more for machines, such as YAML. Thus, managing your site configuration is designed to be as easy as possible.&lt;/p&gt;
+
+&lt;h2 id=&#34;rstudio&#34;&gt;RStudio&lt;/h2&gt;
+
+&lt;p&gt;Alternatively, if you are using RStudio to edit your site and wish to include an RMarkdown file, you&amp;rsquo;ll need to utilise &lt;a href=&#34;https://learnxinyminutes.com/docs/yaml/&#34; target=&#34;_blank&#34;&gt;YAML&lt;/a&gt; in your RMarkdown file as RMarkdown does not yet support the TOML format. Thus, your RMarkdown front matter will appear similar to below, set between triple-minus &lt;code&gt;---&lt;/code&gt; lines&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-yaml&#34;&gt;---
+date: 2017-12-01
+title: My first blog post
+---
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;p&gt;&lt;strong&gt;RMarkdown should be saved with the &lt;code&gt;.Rmarkdown&lt;/code&gt; file extension&lt;/strong&gt; rather than the &lt;code&gt;.Rmd&lt;/code&gt; extension.&lt;/p&gt;
+
+&lt;/div&gt;
+
+</description>
+    </item>
+    
+    <item>
+      <title>Themes</title>
+      <link>https://fanghuiz.github.io/themes/</link>
+      <pubDate>Thu, 16 Nov 2017 00:00:00 -0500</pubDate>
+      
+      <guid>https://fanghuiz.github.io/themes/</guid>
+      <description>
+
+&lt;p&gt;The following color themes are available and can be set by the &lt;code&gt;color_theme&lt;/code&gt; option in &lt;code&gt;config.toml&lt;/code&gt;:&lt;/p&gt;
+
+
+
+&lt;div class=&#34;gallery&#34;&gt;
+
+  
+  
+  
+  
+
+  
+  
+  
+  
+    
+  
+  &lt;a data-fancybox=&#34;gallery-1&#34; data-caption=&#34;Default&#34; href=&#34;https://raw.githubusercontent.com/gcushen/hugo-academic/master/images/theme-default.png&#34;&gt;
+    &lt;img src=&#34;https://raw.githubusercontent.com/gcushen/hugo-academic/master/images/theme-default.png&#34; alt=&#34;&#34;&gt;
+  &lt;/a&gt;
+  
+  
+  
+  
+    
+  
+  &lt;a data-fancybox=&#34;gallery-1&#34; data-caption=&#34;Ocean&#34; href=&#34;https://raw.githubusercontent.com/gcushen/hugo-academic/master/images/theme-ocean.png&#34;&gt;
+    &lt;img src=&#34;https://raw.githubusercontent.com/gcushen/hugo-academic/master/images/theme-ocean.png&#34; alt=&#34;&#34;&gt;
+  &lt;/a&gt;
+  
+  
+  
+  
+    
+  
+  &lt;a data-fancybox=&#34;gallery-1&#34; data-caption=&#34;Forest&#34; href=&#34;https://raw.githubusercontent.com/gcushen/hugo-academic/master/images/theme-forest.png&#34;&gt;
+    &lt;img src=&#34;https://raw.githubusercontent.com/gcushen/hugo-academic/master/images/theme-forest.png&#34; alt=&#34;&#34;&gt;
+  &lt;/a&gt;
+  
+  
+  
+  
+    
+  
+  &lt;a data-fancybox=&#34;gallery-1&#34; data-caption=&#34;Dark&#34; href=&#34;https://raw.githubusercontent.com/gcushen/hugo-academic/master/images/theme-dark.png&#34;&gt;
+    &lt;img src=&#34;https://raw.githubusercontent.com/gcushen/hugo-academic/master/images/theme-dark.png&#34; alt=&#34;&#34;&gt;
+  &lt;/a&gt;
+  
+  
+  
+  
+    
+  
+  &lt;a data-fancybox=&#34;gallery-1&#34; data-caption=&#34;Apogee&#34; href=&#34;https://raw.githubusercontent.com/gcushen/hugo-academic/master/images/theme-apogee.png&#34;&gt;
+    &lt;img src=&#34;https://raw.githubusercontent.com/gcushen/hugo-academic/master/images/theme-apogee.png&#34; alt=&#34;&#34;&gt;
+  &lt;/a&gt;
+  
+  
+  
+  
+    
+  
+  &lt;a data-fancybox=&#34;gallery-1&#34; data-caption=&#34;1950s&#34; href=&#34;https://raw.githubusercontent.com/gcushen/hugo-academic/master/images/theme-1950s.png&#34;&gt;
+    &lt;img src=&#34;https://raw.githubusercontent.com/gcushen/hugo-academic/master/images/theme-1950s.png&#34; alt=&#34;&#34;&gt;
+  &lt;/a&gt;
+  
+  
+  
+  
+    
+  
+  &lt;a data-fancybox=&#34;gallery-1&#34; data-caption=&#34;Coffee theme with Playfair font&#34; href=&#34;https://raw.githubusercontent.com/gcushen/hugo-academic/master/images/theme-coffee-playfair.png&#34;&gt;
+    &lt;img src=&#34;https://raw.githubusercontent.com/gcushen/hugo-academic/master/images/theme-coffee-playfair.png&#34; alt=&#34;&#34;&gt;
+  &lt;/a&gt;
+  
+  
+  
+  
+    
+  
+  &lt;a data-fancybox=&#34;gallery-1&#34; data-caption=&#34;Cupcake&#34; href=&#34;https://raw.githubusercontent.com/gcushen/hugo-academic/master/images/theme-cupcake.png&#34;&gt;
+    &lt;img src=&#34;https://raw.githubusercontent.com/gcushen/hugo-academic/master/images/theme-cupcake.png&#34; alt=&#34;&#34;&gt;
+  &lt;/a&gt;
+  
+  
+&lt;/div&gt;
+
+&lt;h2 id=&#34;user-themes&#34;&gt;User Themes&lt;/h2&gt;
+
+&lt;p&gt;In this section, we will curate themes submitted by users. To create your own theme and request it to be added to this section, follow these steps:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Follow the &lt;a href=&#34;https://fanghuiz.github.io/docs/get-started/#themes&#34; target=&#34;_blank&#34;&gt;guide to create a new theme&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Upload your theme file to a new Github repository&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/sourcethemes/academic-www/issues&#34; target=&#34;_blank&#34;&gt;Open a ticket&lt;/a&gt; with a link to your theme&amp;rsquo;s Github repository and a screenshot&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Example Talk</title>
+      <link>https://fanghuiz.github.io/talk/example/</link>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 -0500</pubDate>
+      
+      <guid>https://fanghuiz.github.io/talk/example/</guid>
+      <description>&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;p&gt;Click on the &lt;strong&gt;Slides&lt;/strong&gt; button above to view the built-in slides feature.&lt;/p&gt;
+
+&lt;/div&gt;
+
+
+&lt;p&gt;Slides can be added in a few ways:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Create&lt;/strong&gt; slides using Academic&amp;rsquo;s &lt;em&gt;Slides&lt;/em&gt; feature and link using &lt;code&gt;url_slides&lt;/code&gt; parameter in the front matter of the talk file&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Upload&lt;/strong&gt; an existing slide deck to &lt;code&gt;static/&lt;/code&gt; and link using &lt;code&gt;url_slides&lt;/code&gt; parameter in the front matter of the talk file&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Embed&lt;/strong&gt; your slides (e.g. Google Slides) or presentation video on this page using &lt;a href=&#34;https://sourcethemes.com/academic/docs/writing-markdown-latex/&#34; target=&#34;_blank&#34;&gt;shortcodes&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Further talk details can easily be added to this page using &lt;em&gt;Markdown&lt;/em&gt; and $\rm \LaTeX$ math code.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>External Project</title>
+      <link>https://fanghuiz.github.io/project/external-project/</link>
+      <pubDate>Wed, 27 Apr 2016 00:00:00 -0400</pubDate>
+      
+      <guid>https://fanghuiz.github.io/project/external-project/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Internal Project</title>
+      <link>https://fanghuiz.github.io/project/internal-project/</link>
+      <pubDate>Wed, 27 Apr 2016 00:00:00 -0400</pubDate>
+      
+      <guid>https://fanghuiz.github.io/project/internal-project/</guid>
+      <description>&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum. Sed ac faucibus dolor, scelerisque sollicitudin nisi. Cras purus urna, suscipit quis sapien eu, pulvinar tempor diam. Quisque risus orci, mollis id ante sit amet, gravida egestas nisl. Sed ac tempus magna. Proin in dui enim. Donec condimentum, sem id dapibus fringilla, tellus enim condimentum arcu, nec volutpat est felis vel metus. Vestibulum sit amet erat at nulla eleifend gravida.&lt;/p&gt;
+
+&lt;p&gt;Nullam vel molestie justo. Curabitur vitae efficitur leo. In hac habitasse platea dictumst. Sed pulvinar mauris dui, eget varius purus congue ac. Nulla euismod, lorem vel elementum dapibus, nunc justo porta mi, sed tempus est est vel tellus. Nam et enim eleifend, laoreet sem sit amet, elementum sem. Morbi ut leo congue, maximus velit ut, finibus arcu. In et libero cursus, rutrum risus non, molestie leo. Nullam congue quam et volutpat malesuada. Sed risus tortor, pulvinar et dictum nec, sodales non mi. Phasellus lacinia commodo laoreet. Nam mollis, erat in feugiat consectetur, purus eros egestas tellus, in auctor urna odio at nibh. Mauris imperdiet nisi ac magna convallis, at rhoncus ligula cursus.&lt;/p&gt;
+
+&lt;p&gt;Cras aliquam rhoncus ipsum, in hendrerit nunc mattis vitae. Duis vitae efficitur metus, ac tempus leo. Cras nec fringilla lacus. Quisque sit amet risus at ipsum pharetra commodo. Sed aliquam mauris at consequat eleifend. Praesent porta, augue sed viverra bibendum, neque ante euismod ante, in vehicula justo lorem ac eros. Suspendisse augue libero, venenatis eget tincidunt ut, malesuada at lorem. Donec vitae bibendum arcu. Aenean maximus nulla non pretium iaculis. Quisque imperdiet, nulla in pulvinar aliquet, velit quam ultrices quam, sit amet fringilla leo sem vel nunc. Mauris in lacinia lacus.&lt;/p&gt;
+
+&lt;p&gt;Suspendisse a tincidunt lacus. Curabitur at urna sagittis, dictum ante sit amet, euismod magna. Sed rutrum massa id tortor commodo, vitae elementum turpis tempus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean purus turpis, venenatis a ullamcorper nec, tincidunt et massa. Integer posuere quam rutrum arcu vehicula imperdiet. Mauris ullamcorper quam vitae purus congue, quis euismod magna eleifend. Vestibulum semper vel augue eget tincidunt. Fusce eget justo sodales, dapibus odio eu, ultrices lorem. Duis condimentum lorem id eros commodo, in facilisis mauris scelerisque. Morbi sed auctor leo. Nullam volutpat a lacus quis pharetra. Nulla congue rutrum magna a ornare.&lt;/p&gt;
+
+&lt;p&gt;Aliquam in turpis accumsan, malesuada nibh ut, hendrerit justo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Quisque sed erat nec justo posuere suscipit. Donec ut efficitur arcu, in malesuada neque. Nunc dignissim nisl massa, id vulputate nunc pretium nec. Quisque eget urna in risus suscipit ultricies. Pellentesque odio odio, tincidunt in eleifend sed, posuere a diam. Nam gravida nisl convallis semper elementum. Morbi vitae felis faucibus, vulputate orci placerat, aliquet nisi. Aliquam erat volutpat. Maecenas sagittis pulvinar purus, sed porta quam laoreet at.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Customization</title>
+      <link>https://fanghuiz.github.io/docs/customization/</link>
+      <pubDate>Wed, 20 Apr 2016 00:00:00 -0400</pubDate>
+      
+      <guid>https://fanghuiz.github.io/docs/customization/</guid>
+      <description>
+
+&lt;p&gt;It is possible to carry out many customizations &lt;em&gt;without&lt;/em&gt; editing any code in the &lt;code&gt;themes/academic/&lt;/code&gt; folder, making it easier to update the framework in the future.&lt;/p&gt;
+
+&lt;h2 id=&#34;custom-theme&#34;&gt;Custom theme&lt;/h2&gt;
+
+&lt;p&gt;To &lt;strong&gt;customize the color theme&lt;/strong&gt;, you can copy a theme such as &lt;code&gt;themes/academic/data/themes/default.toml&lt;/code&gt; to &lt;code&gt;data/themes/default.toml&lt;/code&gt; (at the root of your site, &lt;strong&gt;not&lt;/strong&gt; in &lt;code&gt;themes/academic/&lt;/code&gt;), creating the &lt;code&gt;data/themes/&lt;/code&gt; folders if they do not already exist. Now you can adjust the colors within your theme file.&lt;/p&gt;
+
+&lt;p&gt;To &lt;strong&gt;customize the font theme&lt;/strong&gt;, you can copy a theme such as &lt;code&gt;themes/academic/data/fonts/default.toml&lt;/code&gt; to &lt;code&gt;data/fonts/default.toml&lt;/code&gt; (at the root of your site, &lt;strong&gt;not&lt;/strong&gt; in &lt;code&gt;themes/academic/&lt;/code&gt;), creating the &lt;code&gt;data/fonts/&lt;/code&gt; folders if they do not already exist. Now you can adjust the font size and family, choosing from the library of &lt;a href=&#34;https://fonts.google.com/&#34; target=&#34;_blank&#34;&gt;Google Fonts&lt;/a&gt; if you wish.&lt;/p&gt;
+
+&lt;p&gt;If you create your own theme, consider giving it a unique name and &lt;em&gt;sharing&lt;/em&gt; your new color or font theme with the &lt;a href=&#34;http://discuss.gohugo.io/&#34; target=&#34;_blank&#34;&gt;community&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&#34;website-icon&#34;&gt;Website icon&lt;/h2&gt;
+
+&lt;p&gt;Save your main icon and mobile icon as square PNG images named &lt;code&gt;icon.png&lt;/code&gt; (32x32 pixels) and &lt;code&gt;icon-192.png&lt;/code&gt; (192x192 pixels), respectively. Place them in your root &lt;code&gt;static/img/&lt;/code&gt; folder.&lt;/p&gt;
+
+&lt;h2 id=&#34;analytics&#34;&gt;Analytics&lt;/h2&gt;
+
+&lt;p&gt;To enable &lt;a href=&#34;http://www.google.com/analytics&#34; target=&#34;_blank&#34;&gt;Google Analytics&lt;/a&gt;, add your tracking code in &lt;code&gt;config.toml&lt;/code&gt; similarly to &lt;code&gt;googleAnalytics = &amp;quot;UA-12345678-9&amp;quot;&lt;/code&gt;.&lt;/p&gt;
+
+&lt;h2 id=&#34;comments&#34;&gt;Comments&lt;/h2&gt;
+
+&lt;p&gt;The Disqus commenting variable (&lt;code&gt;disqusShortname&lt;/code&gt;) in &lt;code&gt;config.toml&lt;/code&gt; can be set to your own &lt;a href=&#34;https://disqus.com/&#34; target=&#34;_blank&#34;&gt;Disqus&lt;/a&gt; shortname to enable visitors to comment on your posts.&lt;/p&gt;
+
+&lt;h2 id=&#34;add-scripts-js&#34;&gt;Add scripts (JS)&lt;/h2&gt;
+
+&lt;p&gt;To add a &lt;strong&gt;third party script&lt;/strong&gt;, create a file named &lt;code&gt;head_custom.html&lt;/code&gt; in a &lt;code&gt;layouts/partials/&lt;/code&gt; folder at the root of your website (not in the &lt;code&gt;themes&lt;/code&gt; folder). Any HTML code added to this file will be included within your website&amp;rsquo;s &lt;code&gt;&amp;lt;head&amp;gt;&lt;/code&gt;. Therefore, it&amp;rsquo;s suitable for adding custom metadata or third party scripts specified with the &lt;em&gt;async&lt;/em&gt; attribute.&lt;/p&gt;
+
+&lt;p&gt;Whereas for your own &lt;strong&gt;local scripts&lt;/strong&gt;, you can link your local JS assets (relative to your root &lt;code&gt;static/js&lt;/code&gt;) from your &lt;code&gt;config.toml&lt;/code&gt; using &lt;code&gt;custom_js  = [&amp;quot;custom.js&amp;quot;]&lt;/code&gt;.&lt;/p&gt;
+
+&lt;h2 id=&#34;permalinks&#34;&gt;Permalinks&lt;/h2&gt;
+
+&lt;p&gt;&lt;em&gt;Permalinks&lt;/em&gt;, or &lt;em&gt;permanent links&lt;/em&gt;, are URLs to individual pages and posts on your website. They are permanent web addresses which can be used to link to your content. Using Hugo&amp;rsquo;s &lt;em&gt;permalinks&lt;/em&gt; option these can be easily customized. For example, the blog post URL can be changed to the form &lt;em&gt;yourURL/2016/05/01/my-post-slug&lt;/em&gt; by adding the following near the top of your &lt;code&gt;config.toml&lt;/code&gt; (before &lt;code&gt;[params]&lt;/code&gt; settings):&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;[permalinks]
+    post = &amp;quot;/:year/:month/:day/:slug&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Where &lt;code&gt;:slug&lt;/code&gt; defaults to the filename of the post, excluding the file extension. However, slug may be overridden on a per post basis if desired, simply by setting &lt;code&gt;slug = &amp;quot;my-short-post-title&amp;quot;&lt;/code&gt; in your post preamble.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Example 2:&lt;/strong&gt; let&amp;rsquo;s consider changing the URL path of posts from &lt;code&gt;post/&lt;/code&gt; to &lt;code&gt;blog/&lt;/code&gt;. First, add the following parameters right above the &lt;code&gt;[params]&lt;/code&gt; section of your &lt;code&gt;config.toml&lt;/code&gt;:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;[permalinks]
+    post = &amp;quot;/blog/:slug&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Then add &lt;code&gt;aliases = [&amp;quot;/blog/&amp;quot;]&lt;/code&gt; to your post archive page &lt;code&gt;post/_index.md&lt;/code&gt; so that it can be accessed from the &lt;em&gt;/blog/&lt;/em&gt; URL.&lt;/p&gt;
+
+&lt;h2 id=&#34;customize-style-css&#34;&gt;Customize style (CSS)&lt;/h2&gt;
+
+&lt;p&gt;For advanced customization of the style, you can link custom CSS assets (relative to your root &lt;code&gt;static/css&lt;/code&gt;) from your &lt;code&gt;config.toml&lt;/code&gt; using &lt;code&gt;custom_css = [&amp;quot;custom.css&amp;quot;]&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;For example, let&amp;rsquo;s override some of Academic&amp;rsquo;s default styles. First, define &lt;code&gt;custom_css = [&amp;quot;override.css&amp;quot;]&lt;/code&gt; in &lt;code&gt;config.toml&lt;/code&gt;. Then we can create the file &lt;code&gt;static/css/override.css&lt;/code&gt;, relative to your website root (i.e. &lt;strong&gt;not&lt;/strong&gt; in the &lt;code&gt;themes&lt;/code&gt; directory). Add your custom CSS to this file.&lt;/p&gt;
+
+&lt;h2 id=&#34;override-a-template&#34;&gt;Override a template&lt;/h2&gt;
+
+&lt;p&gt;Hugo uses a &lt;a href=&#34;https://gohugo.io/templates/lookup-order/&#34; target=&#34;_blank&#34;&gt;template lookup&lt;/a&gt; which enables you to override any of Academic&amp;rsquo;s files without directly changing them. This can make it easier to update Academic in the future since you do not modify any of Academic&amp;rsquo;s files directly.&lt;/p&gt;
+
+&lt;p&gt;To override a template in the theme, you simply copy the file you are interested in from &lt;code&gt;themes/academic/&lt;/code&gt; and paste it in your site folder using a similar path. To understand how this works, you should familiarize yourself with template lookup. Finally, when you update Academic, remember to compare your version of the file against Academic&amp;rsquo;s one, in case you need to propagate any changes across.&lt;/p&gt;
+
+&lt;p&gt;For example, say we wish to add some HTML code to the navigation bar. Let&amp;rsquo;s copy the relevant file &lt;code&gt;themes/academic/layout/partials/navbar.html&lt;/code&gt; to &lt;code&gt;layout/partials/navbar.html&lt;/code&gt; (at the root of your site, &lt;strong&gt;not&lt;/strong&gt; in &lt;code&gt;themes/academic/&lt;/code&gt;), creating the &lt;code&gt;layout/partials/&lt;/code&gt; folders if they do not already exist. Now you can add the HTML code you want to your copy of the file, which will override Academic&amp;rsquo;s version.&lt;/p&gt;
+
+&lt;h2 id=&#34;date-format&#34;&gt;Date Format&lt;/h2&gt;
+
+&lt;p&gt;Academic uses the following constants to format dates and times:&lt;/p&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Type&lt;/th&gt;
+&lt;th&gt;Options&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Year&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;06&lt;/code&gt;   &lt;code&gt;2006&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;Month&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;01&lt;/code&gt;   &lt;code&gt;1&lt;/code&gt;   &lt;code&gt;Jan&lt;/code&gt;   &lt;code&gt;January&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;Day&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;02&lt;/code&gt;   &lt;code&gt;2&lt;/code&gt;   &lt;code&gt;_2&lt;/code&gt; &lt;span style=&#34;font-size:90%;&#34;&gt;(width two, right justified)&lt;/span&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;Weekday&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;Mon&lt;/code&gt;   &lt;code&gt;Monday&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;Hours&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;03&lt;/code&gt;   &lt;code&gt;3&lt;/code&gt;   &lt;code&gt;15&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;Minutes&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;04&lt;/code&gt;   &lt;code&gt;4&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;Seconds&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;05&lt;/code&gt;   &lt;code&gt;5&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;AM/PM&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;PM&lt;/code&gt;   &lt;code&gt;pm&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;Timezone&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;MST&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;Offset&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;-0700&lt;/code&gt;   &lt;code&gt;-07&lt;/code&gt;   &lt;code&gt;-07:00&lt;/code&gt;   &lt;code&gt;Z0700&lt;/code&gt;   &lt;code&gt;Z07:00&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;To modify the format, edit &lt;code&gt;date_format&lt;/code&gt; and &lt;code&gt;time_format&lt;/code&gt; in &lt;code&gt;config.toml&lt;/code&gt; using the above constants. For example, some common formats are:&lt;/p&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Format&lt;/th&gt;
+&lt;th&gt;Type&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;January 2, 2006&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Date&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;01/02/06&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;Jan-02-06&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;Mon, 02 Jan 2006&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;Monday, 02 Jan 2006&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;15:04&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Time&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;3:04 PM&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;15:04 MST&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Feedback &amp; Contributing</title>
+      <link>https://fanghuiz.github.io/docs/contribute/</link>
+      <pubDate>Wed, 20 Apr 2016 00:00:00 -0400</pubDate>
+      
+      <guid>https://fanghuiz.github.io/docs/contribute/</guid>
+      <description>&lt;p&gt;Please use the &lt;a href=&#34;https://github.com/gcushen/hugo-academic/issues&#34; target=&#34;_blank&#34;&gt;issue tracker&lt;/a&gt; to report bugs or submit feature requests. Alternatively, feel free to modify the code and submit a pull request on Github.&lt;/p&gt;
+
+&lt;p&gt;For general questions about Hugo, there is a &lt;a href=&#34;http://discuss.gohugo.io&#34; target=&#34;_blank&#34;&gt;Hugo discussion forum&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Getting started</title>
+      <link>https://fanghuiz.github.io/docs/get-started/</link>
+      <pubDate>Wed, 20 Apr 2016 00:00:00 -0400</pubDate>
+      
+      <guid>https://fanghuiz.github.io/docs/get-started/</guid>
+      <description>
+
+&lt;p&gt;This quick tutorial will show you how to setup and use Academic.&lt;/p&gt;
+
+&lt;h2 id=&#34;choose-the-right-theme-for-you&#34;&gt;Choose the right theme for you&lt;/h2&gt;
+
+&lt;p&gt;Check out the &lt;a href=&#34;https://fanghuiz.github.io/themes/&#34; target=&#34;_blank&#34;&gt;available color themes&lt;/a&gt; and have fun choosing a design you love.&lt;/p&gt;
+
+&lt;p&gt;Once you have settled on a theme, edit your &lt;code&gt;config.toml&lt;/code&gt; file in a text editor and set the &lt;code&gt;color_theme&lt;/code&gt; option to the name of the chosen theme.&lt;/p&gt;
+
+&lt;p&gt;The following font styles are also available and can be set by the &lt;code&gt;font&lt;/code&gt; option in &lt;code&gt;config.toml&lt;/code&gt;:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;default (modern)&lt;/li&gt;
+&lt;li&gt;classic (original Academic v1 style)&lt;/li&gt;
+&lt;li&gt;playfair (traditional serif)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Don&amp;rsquo;t worry if you are not 100% happy with the colors or font yet, as these can be fully customized later on.&lt;/p&gt;
+
+&lt;h2 id=&#34;choose-the-right-layout-for-you&#34;&gt;Choose the right layout for you&lt;/h2&gt;
+
+&lt;p&gt;Academic has a template for you whether you are you creating a website for your CV, academic research, blog, course, lab, business, photography, portfolio, or restaurant!&lt;/p&gt;
+
+&lt;p&gt;What kind of content would you like to publish? Academic supports:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Pages&lt;/strong&gt;: any general content&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Widget Pages&lt;/strong&gt;: pages that can consist of numerous widgets, such as the &lt;strong&gt;homepage&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Posts&lt;/strong&gt;: blog posts or news&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Projects&lt;/strong&gt;: publish your portfolio or projects&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Online Courses&lt;/strong&gt;: share knowledge online&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Software Documentation&lt;/strong&gt;: document your software projects&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Talks&lt;/strong&gt;: publish any talks which you are presenting&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Slides&lt;/strong&gt;: write slides very efficiently with Markdown, present them at your talk, and share them online&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Publications&lt;/strong&gt;: import your research publications from BibTeX&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Once you have decided on the type of content that you would like to publish, take a look at the &lt;a href=&#34;https://fanghuiz.github.io/docs/widgets/&#34; target=&#34;_blank&#34;&gt;available homepage widgets&lt;/a&gt; and consider which ones would be most relevant to you.&lt;/p&gt;
+
+&lt;p&gt;Then, open your &lt;code&gt;content/home/&lt;/code&gt; folder and set the &lt;code&gt;active&lt;/code&gt; parameter to either &lt;code&gt;true&lt;/code&gt; or &lt;code&gt;false&lt;/code&gt; for each widget depending on if you wish to display it or not. Widgets that you don&amp;rsquo;t need can alternatively be deleted rather than setting &lt;code&gt;active&lt;/code&gt; to &lt;code&gt;false&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Next, let&amp;rsquo;s &lt;strong&gt;order the widgets&lt;/strong&gt; according to your preference. To move a widget up or down, increase or decrease the value of the &lt;code&gt;weight&lt;/code&gt; parameter in each widget which you activated. The widgets will be ordered in ascending order of these weights and there is no need for the weights to be consecutive numbers.&lt;/p&gt;
+
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;p&gt;If your &lt;code&gt;content/home/&lt;/code&gt; folder is empty, populate it from the &lt;a href=&#34;https://fanghuiz.github.io/docs/install/#demo-content&#34;&gt;example&lt;/a&gt;.&lt;/p&gt;
+
+&lt;/div&gt;
+
+
+&lt;h2 id=&#34;customize-it&#34;&gt;Customize it&lt;/h2&gt;
+
+&lt;p&gt;After selecting a theme and a layout, make it your own.&lt;/p&gt;
+
+&lt;h3 id=&#34;core-parameters&#34;&gt;Core parameters&lt;/h3&gt;
+
+&lt;p&gt;The core parameters for the website can be edited in the &lt;code&gt;config.toml&lt;/code&gt; configuration file:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Set &lt;code&gt;baseurl&lt;/code&gt; to your website URL (this will be provided by your host such as &lt;a href=&#34;https://fanghuiz.github.io/docs/deployment/&#34; target=&#34;_blank&#34;&gt;Netlify&lt;/a&gt;)
+
+&lt;ul&gt;
+&lt;li&gt;Come back to this option later if you are unsure&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Set &lt;code&gt;title&lt;/code&gt; to your desired website title, such as your name&lt;/li&gt;
+&lt;li&gt;Edit your personal/business details under &lt;code&gt;[params]&lt;/code&gt;; these will be displayed mainly in the homepage &lt;em&gt;about&lt;/em&gt; and &lt;em&gt;contact&lt;/em&gt; widgets (if used). To disable a contact field, simply clear the value to &lt;code&gt;&amp;quot;&amp;quot;&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Place a square cropped portrait photo named &lt;code&gt;portrait.jpg&lt;/code&gt; into the &lt;code&gt;static/img/&lt;/code&gt; folder, overwriting any defaults. Note that you can edit the &lt;code&gt;avatar&lt;/code&gt; filepath to point to a different image name or clear the value to disable the avatar feature. Alternatively, set &lt;code&gt;gravatar&lt;/code&gt; to &lt;code&gt;true&lt;/code&gt; to use the Gravatar/Wordpress avatar associated with your &lt;code&gt;email&lt;/code&gt; address.&lt;/li&gt;
+&lt;li&gt;If you write mathematical content, set &lt;code&gt;math = true&lt;/code&gt;, otherwise leave it as &lt;code&gt;false&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Social/academic networking links are defined as multiples of &lt;code&gt;[[params.social]]&lt;/code&gt;. They can be created or deleted as necessary.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;menu&#34;&gt;Menu&lt;/h3&gt;
+
+&lt;p&gt;The &lt;code&gt;[[menu.main]]&lt;/code&gt; entries towards the bottom of &lt;code&gt;config.toml&lt;/code&gt; define the navigation links at the top of the website. They can be added or removed as desired, based on the layout which you chose above.&lt;/p&gt;
+
+&lt;p&gt;To link to a section of the homepage, use the form &lt;code&gt;#&amp;lt;section-filename&amp;gt;&lt;/code&gt; where &lt;code&gt;&amp;lt;section-filename&amp;gt;&lt;/code&gt; is the filename (without .md extension). For example, &lt;code&gt;#posts&lt;/code&gt; references a section with filename &lt;code&gt;posts.md&lt;/code&gt;. You can rename your section files in &lt;code&gt;content/home/&lt;/code&gt;, just remember to use a dash (&lt;code&gt;-&lt;/code&gt;) instead of spaces in the filename.&lt;/p&gt;
+
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;p&gt;To create a dropdown sub-menu, add &lt;code&gt;identifier = &amp;quot;something&amp;quot;&lt;/code&gt; to the parent item and &lt;code&gt;parent = &amp;quot;something&amp;quot;&lt;/code&gt; to the child item.&lt;/p&gt;
+
+&lt;/div&gt;
+
+
+&lt;h3 id=&#34;introduce-yourself&#34;&gt;Introduce yourself&lt;/h3&gt;
+
+&lt;p&gt;Edit your biography in the &lt;em&gt;about&lt;/em&gt; widget &lt;code&gt;content/home/about.md&lt;/code&gt; that you copied across from the &lt;code&gt;themes/academic/exampleSite/&lt;/code&gt; folder. The research interests and qualifications are stored as &lt;code&gt;interests&lt;/code&gt; and &lt;code&gt;education&lt;/code&gt; variables. The academic qualifications are defined as multiples of &lt;code&gt;[[education.courses]]&lt;/code&gt; and can be created or deleted as necessary. It&amp;rsquo;s possible to completely hide the interests and education lists by deleting their respective variables.&lt;/p&gt;
+
+&lt;h3 id=&#34;add-your-content&#34;&gt;Add your content&lt;/h3&gt;
+
+&lt;p&gt;Refer to our guide on &lt;a href=&#34;https://fanghuiz.github.io/docs/managing-content/&#34; target=&#34;_blank&#34;&gt;managing content&lt;/a&gt; to create your own content such as blog posts, publications, talks, and projects.&lt;/p&gt;
+
+&lt;h3 id=&#34;remove-any-unused-example-pages&#34;&gt;Remove any unused example pages&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://fanghuiz.github.io/docs/managing-content/#removing-content&#34; target=&#34;_blank&#34;&gt;Delete any unused example pages&lt;/a&gt;.&lt;/p&gt;
+
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;p&gt;You will likely want to keep the &lt;code&gt;_index.md&lt;/code&gt; files (notice the underscore prefix) as they configure your archive page for each content type (e.g. an index of all your blog posts).&lt;/p&gt;
+
+&lt;/div&gt;
+
+
+&lt;h2 id=&#34;view-your-site&#34;&gt;View your site&lt;/h2&gt;
+
+&lt;p&gt;If you installed on your computer with &lt;strong&gt;Git&lt;/strong&gt; or &lt;strong&gt;ZIP&lt;/strong&gt;, view your new website by running the &lt;code&gt;hugo server&lt;/code&gt; command.&lt;/p&gt;
+
+&lt;p&gt;If you installed using &lt;strong&gt;RStudio&lt;/strong&gt;, run &lt;code&gt;blogdown::serve_site()&lt;/code&gt; to preview your site in your web browser. We recommend previewing your site in your normal web browser as the in-built RStudio web browser is very outdated and buggy.&lt;/p&gt;
+
+&lt;p&gt;Now visit &lt;a href=&#34;http://localhost:1313&#34; target=&#34;_blank&#34;&gt;localhost:1313&lt;/a&gt; and your new Academic powered website will appear. Otherwise, if using &lt;strong&gt;Netlify&lt;/strong&gt;, they will provide you with your URL.&lt;/p&gt;
+
+&lt;h2 id=&#34;deploy-your-site&#34;&gt;Deploy your site&lt;/h2&gt;
+
+&lt;p&gt;Publish your site to the world by following the &lt;a href=&#34;https://fanghuiz.github.io/docs/deployment/&#34; target=&#34;_blank&#34;&gt;deployment steps&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

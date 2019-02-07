@@ -1,0 +1,78 @@
+---
+title: "Measurement Validity"
+toc: true
+type: docs
+
+date: "2019-01-20"
+draft: true
+
+menu:
+  tutorial_stata:
+    name: Validity
+    parent: measurement
+    weight: 10
+
+---
+
+## Data
+
+```
+use anes_timeseries_2016.dta, clear
+```
+
+<<dd_do: quietly>>
+use static/data/stata/anes_timeseries_2016.dta, clear
+<</dd_do>>
+
+
+```
+<<dd_do>>
+recode V162211 -9/-6 = .
+recode V162212 -9/-6 = .
+recode V162213 -9/-6 = .
+recode V162214 -9/-6 = .
+<</dd_do>>
+```
+
+
+## Convergent Validity
+
+```
+<<dd_do>>
+// FT, blacks V162312
+recode V162312 -9/-5 = .
+
+twoway (scatter V162312 V162211) (lfit V162312 V162211)
+<</dd_do>>
+```
+
+
+<<dd_do: quietly>>
+graph export static/img/stata/validity_1.svg, replace
+<</dd_do>>
+
+
+![](/img/stata/validity_1.svg)
+
+
+
+## Divergent Validity
+
+
+```
+<<dd_do>>
+// FT SCOTUS V162102
+recode V162102 -9/-5 = .
+recode V162102 998 999 =.
+
+graph twoway (scatter V162102 V162211) (lfit V162102 V162211)
+<</dd_do>>
+```
+
+
+<<dd_do: quietly>>
+graph export static/img/stata/validity_2.svg, replace
+<</dd_do>>
+
+
+![](/img/stata/validity_2.svg)

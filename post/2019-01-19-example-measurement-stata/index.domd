@@ -1,0 +1,112 @@
++++
+title = "Example: Testing for measurement validity and reliability"
+# subtitle = ""
+
+date = 2019-01-19T00:00:00
+lastmod = 2019-01-29T00:00:00
+draft = false
+
+# Authors. Comma separated list, e.g. `["Bob Smith", "David Jones"]`.
+authors = []
+
+tags = ["Measurement", "Stata"]
+summary = "Simple demonstration of reliability and validity tests in Stata using racial resentment scale as an example"
++++
+
+## Example: Racial Resentment Scale
+
+Racial resentment scale is commonly used to measure [symbolic racism](https://en.wikipedia.org/wiki/Symbolic_racism). The scale contains four items, for each question, respondents indicate whether they agree or disagree with the statement on a five-point scale. The question wording and the respective variable number as appeared in American National Election Studies (ANES) 2016 are given below:
+
+1. `V162211`: 'Irish, Italians, Jewish and many other minorities overcame prejudice and worked their way up. Blacks should do the same without any special favors.'
+2. `V162212`: 'Generations of slavery and discrimination have created conditions that make it difficult for blacks to work their way out of the lower class.'
+3. `V162213`: 'Over the past few years, blacks have gotten less than they deserve.'
+4. `V162214`: 'It’s really a matter of some people not trying hard enough, if blacks would only try harder they could be just as well off as whites.'
+
+The assumption is that agreeing with statement 1 and 4 (or disagreeing with statement 2 and 3) are indications of resentment towards African Americans.
+
+<<dd_do: quietly>>
+set scheme uncluttered_publication
+
+use static/data/stata/anes_timeseries_2016.dta, clear
+<</dd_do>>
+
+
+<<dd_do: quietly>>
+recode V162211 -9/-6 = .
+recode V162212 -9/-6 = .
+recode V162213 -9/-6 = .
+recode V162214 -9/-6 = .
+
+// FT, blacks V162312
+recode V162312 -9/-5 = .
+<</dd_do>>
+
+## Validity Test
+
+### Construct validity
+
+To test for construct validity, we need to demonstrate that the indicator predicts what it is supposed to predict.
+
+One aspect of construct validity is **convergent validity**: if theoretically we expect X and Y to be positively related, do we see a positive correlation between the indicator for X and Y?
+
+In this case, theoretically we might expect that feelings of resentment towards African Americans would correlate with negative affective attitudes towards the group.
+
+For illustration purposes, let's just use a single statement from the resentment scale, statement 2 (`V162212`) about the effects of slavery and see if people's answer to this questions correlates with their feeling thermometer score towards Blacks (`V162312`).
+
+```
+<<dd_do>>
+twoway (scatter V162312 V162212) (lfit V162312 V162212)
+<</dd_do>>
+```
+
+<<dd_do: quietly>>
+graph export static/img/stata/validity_1.svg, replace
+<</dd_do>>
+
+
+![](/img/stata/validity_1.svg)
+
+
+We see that higher disagreement with the statement (`1 = Strongly Agree`, `5 = Strongly Disagree`) correlates with lower scores on the feeling thermometer (higher value means warmer feeling towards the group, lower value means colder feeling). Resentment towards African Americans (as indicated by denying the effects of slavery on their current day hardship) indeed predicts a more negative attitudes towards them (as indicated by expressing less warm feelings).
+
+
+Another way to demonstrate construct validity is to show **divergent/discriminant validity**: if theoretically we *do not* expect X and Y to be related, do we then see a low or weak correlation between them?
+
+For instance, perhaps we do not expect feelings of racial resentment to be correlated with feelings towards the Supreme Court (`V162102`).
+
+<<dd_do: quietly>>
+// FT SCOTUS V162102
+recode V162102 -9/-5 = .
+recode V162102 998 999 =.
+<</dd_do>>
+
+```
+<<dd_do>>
+graph twoway (scatter V162102 V162212) (lfit V162102 V162212)
+<</dd_do>>
+```
+
+
+<<dd_do: quietly>>
+graph export static/img/stata/validity_2.svg, replace
+<</dd_do>>
+
+
+![](/img/stata/validity_2.svg)
+
+We see that there is no discernible correlation between responses to statement 2 and feelings towards the Supreme Court.
+
+
+## Reliability Test
+
+One common way to quantify the reliability of a multiple indicator scale is to calculate the [Cronbach's alpha $\alpha$](https://en.wikipedia.org/wiki/Cronbach%27s_alpha).
+
+This can be done in Stata using a simple command `alpha`, followed by the list of variables used in the scale.
+
+```
+<<dd_do>>
+alpha V162211 V162212 V162213 V162214
+<</dd_do>>
+```
+
+In the output, we can see a "Scale reliability coefficient", which is ~0.8 in this case. A general rule of thumb is that > 0.8 indicates rather high reliability, and anything below 0.7 is a sign of unreliable scale. So in this case, the four-item Racial Resentment Scale has rather high reliability.

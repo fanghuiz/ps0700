@@ -1,0 +1,45 @@
+---
+title: "Measurement Reliablity"
+toc: true
+type: docs
+
+date: "2019-01-20"
+draft: true
+
+menu:
+  tutorial_stata:
+    name: Reliability
+    parent: measurement
+    weight: 20
+
+---
+
+## Data
+
+```
+use anes_timeseries_2016.dta, clear
+```
+
+<<dd_do: quietly>>
+use static/data/stata/anes_timeseries_2016.dta, clear
+<</dd_do>>
+
+
+```
+<<dd_do>>
+recode V162211 -9/-6 = .
+recode V162212 -9/-6 = .
+recode V162213 -9/-6 = .
+recode V162214 -9/-6 = .
+<</dd_do>>
+```
+
+## Internal consistency
+
+Cronbach's $\alpha$
+
+```
+<<dd_do>>
+alpha V162211 V162212 V162213 V162214
+<</dd_do>>
+```
