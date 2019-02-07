@@ -2,32 +2,32 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Measurement on Political Science Research Methods</title>
-    <link>https://github.com/fanghuiz/ps0700/tags/measurement/</link>
+    <link>https://fanghuiz.github.io/ps0700/tags/measurement/</link>
     <description>Recent content in Measurement on Political Science Research Methods</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; Fanghui Zhao 2019 &lt;i class=&#34;fas fa-tree&#34; style=&#34;color: #40a990;&#34;&gt;&lt;/i&gt;</copyright>
     <lastBuildDate>Sat, 19 Jan 2019 00:00:00 -0500</lastBuildDate>
     
-	<atom:link href="https://github.com/fanghuiz/ps0700/tags/measurement/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://fanghuiz.github.io/ps0700/tags/measurement/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Example: Testing for measurement validity and reliability</title>
-      <link>https://github.com/fanghuiz/ps0700/post/2019-01-19-example-measurement-stata/</link>
+      <link>https://fanghuiz.github.io/ps0700/post/2019-01-19-example-measurement-stata/</link>
       <pubDate>Sat, 19 Jan 2019 00:00:00 -0500</pubDate>
       
-      <guid>https://github.com/fanghuiz/ps0700/post/2019-01-19-example-measurement-stata/</guid>
+      <guid>https://fanghuiz.github.io/ps0700/post/2019-01-19-example-measurement-stata/</guid>
       <description>Example: Racial Resentment Scale Racial resentment scale is commonly used to measure symbolic racism. The scale contains four items, for each question, respondents indicate whether they agree or disagree with the statement on a five-point scale. The question wording and the respective variable number as appeared in American National Election Studies (ANES) 2016 are given below:
  V162211: &amp;lsquo;Irish, Italians, Jewish and many other minorities overcame prejudice and worked their way up.</description>
     </item>
     
     <item>
       <title>Q&amp;A Week 2: Measurement</title>
-      <link>https://github.com/fanghuiz/ps0700/post/2019-01-18-measurement/</link>
+      <link>https://fanghuiz.github.io/ps0700/post/2019-01-18-measurement/</link>
       <pubDate>Fri, 18 Jan 2019 00:00:00 -0500</pubDate>
       
-      <guid>https://github.com/fanghuiz/ps0700/post/2019-01-18-measurement/</guid>
+      <guid>https://fanghuiz.github.io/ps0700/post/2019-01-18-measurement/</guid>
       <description>Table of Contents    Types of measurement Errors    How to differentiate between systematic vs random error? Do you have any examples of systematic errors in measurement? Which error (systematic vs random) is worse? Which one should we try to avoid more? About the True Score Theory $T = X + \epsilon$, how do we know how close our measured value $X$ is close to the true score $T$, if we cannot truly know $T$?</description>
     </item>
     
