@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Political Science Research Methods on Political Science Research Methods</title>
-    <link>https://fanghuiz.github.io/</link>
+    <link>https://fanghuiz.github.io/ps0700/</link>
     <description>Recent content in Political Science Research Methods on Political Science Research Methods</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; Fanghui Zhao 2019 &lt;i class=&#34;fas fa-tree&#34; style=&#34;color: #40a990;&#34;&gt;&lt;/i&gt;</copyright>
     <lastBuildDate>Sun, 15 Oct 2017 00:00:00 -0400</lastBuildDate>
-    <atom:link href="/" rel="self" type="application/rss+xml" />
+    <atom:link href="/ps0700/" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Q&amp;A Week 3: Experiments and Ethics</title>
-      <link>https://fanghuiz.github.io/post/2019-01-25-experiment/</link>
+      <link>https://fanghuiz.github.io/ps0700/post/2019-01-25-experiment/</link>
       <pubDate>Fri, 25 Jan 2019 00:00:00 -0500</pubDate>
       
-      <guid>https://fanghuiz.github.io/post/2019-01-25-experiment/</guid>
+      <guid>https://fanghuiz.github.io/ps0700/post/2019-01-25-experiment/</guid>
       <description>
 
 &lt;h2&gt;Table of Contents&lt;/h2&gt;
@@ -132,10 +132,10 @@
     
     <item>
       <title>Example: Testing for measurement validity and reliability</title>
-      <link>https://fanghuiz.github.io/post/2019-01-19-example-measurement-stata/</link>
+      <link>https://fanghuiz.github.io/ps0700/post/2019-01-19-example-measurement-stata/</link>
       <pubDate>Sat, 19 Jan 2019 00:00:00 -0500</pubDate>
       
-      <guid>https://fanghuiz.github.io/post/2019-01-19-example-measurement-stata/</guid>
+      <guid>https://fanghuiz.github.io/ps0700/post/2019-01-19-example-measurement-stata/</guid>
       <description>
 
 &lt;h2 id=&#34;example-racial-resentment-scale&#34;&gt;Example: Racial Resentment Scale&lt;/h2&gt;
@@ -172,7 +172,7 @@
 
 &lt;figure&gt;
 
-&lt;img src=&#34;https://fanghuiz.github.io/img/stata/validity_1.svg&#34; /&gt;
+&lt;img src=&#34;https://fanghuiz.github.io/ps0700/img/stata/validity_1.svg&#34; /&gt;
 
 
 &lt;/figure&gt; --&gt;
@@ -202,7 +202,7 @@
 
 &lt;figure&gt;
 
-&lt;img src=&#34;https://fanghuiz.github.io/img/stata/validity_2.svg&#34; /&gt;
+&lt;img src=&#34;https://fanghuiz.github.io/ps0700/img/stata/validity_2.svg&#34; /&gt;
 
 
 &lt;/figure&gt; --&gt;
@@ -242,10 +242,10 @@ Scale reliability coefficient:      0.8451
     
     <item>
       <title>Q&amp;A Week 2: Measurement</title>
-      <link>https://fanghuiz.github.io/post/2019-01-18-measurement/</link>
+      <link>https://fanghuiz.github.io/ps0700/post/2019-01-18-measurement/</link>
       <pubDate>Fri, 18 Jan 2019 00:00:00 -0500</pubDate>
       
-      <guid>https://fanghuiz.github.io/post/2019-01-18-measurement/</guid>
+      <guid>https://fanghuiz.github.io/ps0700/post/2019-01-18-measurement/</guid>
       <description>
 
 &lt;h2&gt;Table of Contents&lt;/h2&gt;
@@ -355,7 +355,7 @@ Scale reliability coefficient:      0.8451
 &lt;/tbody&gt;
 &lt;/table&gt;
 
-&lt;p&gt;Ideally, we should try to minimize both types of measurement errors. Degree of random error can be empirically assessed (e.g. using Cronbach&amp;rsquo;s alpha, see example &lt;a href=&#34;https://fanghuiz.github.io/post/2019-01-19-example-measurement-stata/&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt;), and can be reduced (e.g. using multiple indicators). Systematic error however, is harder to detect, harder to quantify, and harder to correct for.&lt;/p&gt;
+&lt;p&gt;Ideally, we should try to minimize both types of measurement errors. Degree of random error can be empirically assessed (e.g. using Cronbach&amp;rsquo;s alpha, see example &lt;a href=&#34;https://fanghuiz.github.io/ps0700/post/2019-01-19-example-measurement-stata/&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt;), and can be reduced (e.g. using multiple indicators). Systematic error however, is harder to detect, harder to quantify, and harder to correct for.&lt;/p&gt;
 
 &lt;h4 id=&#34;about-the-true-score-theory-t-x-epsilon-how-do-we-know-how-close-our-measured-value-x-is-close-to-the-true-score-t-if-we-cannot-truly-know-t&#34;&gt;About the True Score Theory $T = X + \epsilon$, how do we know how close our measured value $X$ is close to the true score $T$, if we cannot truly know $T$?&lt;/h4&gt;
 
@@ -438,7 +438,7 @@ Scale reliability coefficient:      0.8451
 
 &lt;p&gt;Face validity is rarely explicitly tested for &amp;ndash; we already &lt;em&gt;implicitly&lt;/em&gt; test for face validity when we are making the choice of which indicators to use to measure the concept. Although having face validity is important, high face validity alone is a rather weak evidence.&lt;/p&gt;
 
-&lt;p&gt;Construct validity can be empirically assessed in two ways: &lt;em&gt;convergent validity&lt;/em&gt; and &lt;em&gt;divergent validity&lt;/em&gt;. See &lt;a href=&#34;https://fanghuiz.github.io/post/2019-01-19-example-measurement-stata/&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt; for an example.&lt;/p&gt;
+&lt;p&gt;Construct validity can be empirically assessed in two ways: &lt;em&gt;convergent validity&lt;/em&gt; and &lt;em&gt;divergent validity&lt;/em&gt;. See &lt;a href=&#34;https://fanghuiz.github.io/ps0700/post/2019-01-19-example-measurement-stata/&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt; for an example.&lt;/p&gt;
 
 &lt;p&gt;Generally, if we are using the measures that have been used in published literature, we do not have to conduct separate validity test. The assumption is that they have already been previously validated (though we should still remain critical). If we are using new measures in our study, instead of established ones used in published literature, then it is recommended to first conduct a pilot study to test the measure&amp;rsquo;s validity and reliability. Use the measures as part of the actual study only after we know it&amp;rsquo;s valid and reliable.&lt;/p&gt;
 
