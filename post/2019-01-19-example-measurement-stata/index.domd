@@ -64,8 +64,8 @@ graph export static/img/stata/validity_1.svg, replace
 <</dd_do>>
 
 
-{{< figure src="/img/stata/validity_1.svg" title="" >}}
-
+<!-- {{< figure src="/img/stata/validity_1.svg" title="" >}} -->
+{{< figure src="https://fanghuiz.github.io/ps0700/img/stata/validity_1.svg" title="" >}}
 
 We see that higher disagreement with the statement (`1 = Strongly Agree`, `5 = Strongly Disagree`) correlates with lower scores on the feeling thermometer (higher value means warmer feeling towards the group, lower value means colder feeling). Resentment towards African Americans (as indicated by denying the effects of slavery on their current day hardship) indeed predicts a more negative attitudes towards them (as indicated by expressing less warm feelings).
 
@@ -91,8 +91,9 @@ graph twoway (scatter V162102 V162212) (lfit V162102 V162212)
 graph export static/img/stata/validity_2.svg, replace
 <</dd_do>>
 
+<!-- {{< figure src="/img/stata/validity_2.svg" title="" >}} -->
 
-{{< figure src="/img/stata/validity_2.svg" title="" >}}
+{{< figure src="https://fanghuiz.github.io/ps0700/img/stata/validity_2.svg" title="" >}}
 
 We see that there is no discernible correlation between responses to statement 2 and feelings towards the Supreme Court.
 

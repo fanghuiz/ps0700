@@ -2,14 +2,14 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Overview on Political Science Research Methods</title>
-    <link>https://fanghuiz.github.io/ps0700/tutorial_stata/</link>
+    <link>https://fanghuiz.github.io/tutorial_stata/</link>
     <description>Recent content in Overview on Political Science Research Methods</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; Fanghui Zhao 2019 &lt;i class=&#34;fas fa-tree&#34; style=&#34;color: #40a990;&#34;&gt;&lt;/i&gt;</copyright>
     <lastBuildDate>Tue, 29 Jan 2019 00:00:00 -0500</lastBuildDate>
     
-	<atom:link href="https://fanghuiz.github.io/ps0700/tutorial_stata/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://fanghuiz.github.io/tutorial_stata/index.xml" rel="self" type="application/rss+xml" />
     
     
   </channel>
