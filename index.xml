@@ -167,16 +167,6 @@
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;!-- 
-
-
-&lt;figure&gt;
-
-&lt;img src=&#34;https://fanghuiz.github.io/ps0700/img/stata/validity_1.svg&#34; /&gt;
-
-
-&lt;/figure&gt; --&gt;
-
 
 
 
@@ -196,16 +186,6 @@
 &lt;pre&gt;&lt;code&gt;. graph twoway (scatter V162102 V162212) (lfit V162102 V162212)
 
 &lt;/code&gt;&lt;/pre&gt;
-
-&lt;!-- 
-
-
-&lt;figure&gt;
-
-&lt;img src=&#34;https://fanghuiz.github.io/ps0700/img/stata/validity_2.svg&#34; /&gt;
-
-
-&lt;/figure&gt; --&gt;
 
 
 
