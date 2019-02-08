@@ -7,28 +7,9 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; Fanghui Zhao 2019 &lt;i class=&#34;fas fa-tree&#34; style=&#34;color: #40a990;&#34;&gt;&lt;/i&gt;</copyright>
-    <lastBuildDate>Mon, 01 Jul 2013 00:00:00 -0400</lastBuildDate>
     
 	<atom:link href="https://fanghuiz.github.io/ps0700/publication_types/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>1</title>
-      <link>https://fanghuiz.github.io/ps0700/publication_types/1/</link>
-      <pubDate>Mon, 01 Jul 2013 00:00:00 -0400</pubDate>
-      
-      <guid>https://fanghuiz.github.io/ps0700/publication_types/1/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>2</title>
-      <link>https://fanghuiz.github.io/ps0700/publication_types/2/</link>
-      <pubDate>Tue, 01 Sep 2015 00:00:00 -0400</pubDate>
-      
-      <guid>https://fanghuiz.github.io/ps0700/publication_types/2/</guid>
-      <description></description>
-    </item>
     
   </channel>
 </rss>
