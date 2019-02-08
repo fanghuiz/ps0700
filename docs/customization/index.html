@@ -1,0 +1,754 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Source Themes Academic 3.3.0">
+  <meta name="generator" content="Hugo 0.53" />
+  <meta name="author" content="Research Methods in Political Science">
+
+  
+  
+  
+  
+    
+  
+  <meta name="description" content="It is possible to carry out many customizations without editing any code in the themes/academic/ folder, making it easier to update the framework in the future.
+Custom theme To customize the color theme, you can copy a theme such as themes/academic/data/themes/default.toml to data/themes/default.toml (at the root of your site, not in themes/academic/), creating the data/themes/ folders if they do not already exist. Now you can adjust the colors within your theme file.">
+
+  
+  <link rel="alternate" hreflang="en-us" href="https://fanghuiz.github.io/ps0700/docs/customization/">
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+  
+  <meta name="theme-color" content="#40a990">
+  
+
+  
+  
+  
+  
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha256-eSi1q2PG6J7g7ib17yAaWMcrr5GrtohYChqibrV7PBE=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.0/css/all.css" integrity="sha384-aOkxzJ5uQz7WBObEZcHvV5JvRW3TUc2rNPA7pe3AwnsUohiw1Vj2Rgx2KSOkF5+h" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" integrity="sha256-ygkqlh3CYSUri3LhQxzdcm0n1EQvH2Y+U5S2idbLtxs=" crossorigin="anonymous">
+
+    
+    
+    
+      
+    
+    
+      
+      
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/zenburn.min.css" crossorigin="anonymous">
+      
+    
+
+    
+
+    
+
+  
+
+  
+  
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Montserrat:400,700|Roboto:400,400italic,700|Roboto+Mono">
+  
+
+  <link rel="stylesheet" href="/ps0700/styles.css">
+  
+  <link rel="stylesheet" href="/ps0700/css/custom.css">
+  
+
+  
+  
+  
+
+  
+  <link rel="alternate" href="https://fanghuiz.github.io/ps0700/index.xml" type="application/rss+xml" title="Political Science Research Methods">
+  <link rel="feed" href="https://fanghuiz.github.io/ps0700/index.xml" type="application/rss+xml" title="Political Science Research Methods">
+  
+
+  <link rel="manifest" href="/ps0700/site.webmanifest">
+  <link rel="icon" type="image/png" href="/ps0700/img/icon.png">
+  <link rel="apple-touch-icon" type="image/png" href="/ps0700/img/icon-192.png">
+
+  <link rel="canonical" href="https://fanghuiz.github.io/ps0700/docs/customization/">
+
+  
+  
+  
+  
+    
+    
+  
+  <meta property="twitter:card" content="summary">
+  
+  <meta property="og:site_name" content="Political Science Research Methods">
+  <meta property="og:url" content="https://fanghuiz.github.io/ps0700/docs/customization/">
+  <meta property="og:title" content="Customization | Political Science Research Methods">
+  <meta property="og:description" content="It is possible to carry out many customizations without editing any code in the themes/academic/ folder, making it easier to update the framework in the future.
+Custom theme To customize the color theme, you can copy a theme such as themes/academic/data/themes/default.toml to data/themes/default.toml (at the root of your site, not in themes/academic/), creating the data/themes/ folders if they do not already exist. Now you can adjust the colors within your theme file."><meta property="og:image" content="https://fanghuiz.github.io/ps0700/img/icon-192.png">
+  <meta property="og:locale" content="en-us">
+  
+  <meta property="article:published_time" content="2016-04-20T00:00:00-04:00">
+  
+  <meta property="article:modified_time" content="2016-04-20T00:00:00-04:00">
+  
+
+  
+
+  
+
+  <title>Customization | Political Science Research Methods</title>
+
+</head>
+<body id="top" data-spy="scroll" data-target="#TableOfContents" data-offset="71" >
+  <aside class="search-results" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" role="textbox" spellcheck="false" type="search">
+        
+      </div>
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+<nav class="navbar navbar-light fixed-top navbar-expand-lg py-0" id="navbar-main">
+  <div class="container">
+
+    
+      <a class="navbar-brand" href="/ps0700/">Political Science Research Methods</a>
+      
+      <button type="button" class="navbar-toggler" data-toggle="collapse"
+              data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span><i class="fas fa-bars"></i></span>
+      </button>
+      
+
+    
+    <div class="collapse navbar-collapse" id="navbar">
+
+      
+      
+      <ul class="navbar-nav ml-auto">
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link" href="/ps0700/post/">
+            
+            <span>Posts</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link" href="/ps0700/tutorial_stata/">
+            
+            <span>Stata Tutorials</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link" href="/ps0700/tutorial_r/">
+            
+            <span>R Tutorials</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+      
+
+        
+
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link" href="/ps0700/">
+          
+          <span><i class="fab fa-github" style="font-size: 1rem; line-height: 1.25"></i></span>
+          
+          </a>
+        </li>
+
+        
+
+        
+        <li class="nav-item">
+          <a class="nav-link js-search" href="#"><i class="fas fa-search" aria-hidden="true"></i></a>
+        </li>
+        
+
+        
+
+        
+        <li class="nav-item">
+          <a class="nav-link js-dark-toggle" href="#"><i class="fas fa-moon" aria-hidden="true"></i></a>
+        </li>
+        
+
+      </ul>
+
+    </div>
+  </div>
+</nav>
+
+
+
+<div class="container-fluid docs">
+  <div class="row flex-xl-nowrap">
+    <div class="col-12 col-md-3 col-xl-2 docs-sidebar">
+      
+
+
+
+
+<form class="docs-search d-flex align-items-center">
+  <button class="btn docs-toggle d-md-none p-0 mr-3" type="button" data-toggle="collapse" data-target="#docs-nav" aria-controls="docs-nav" aria-expanded="false" aria-label="Toggle section navigation">
+    <span><i class="fas fa-bars"></i></span>
+  </button>
+
+  
+  <input name="q" type="search" class="form-control" id="search-query" placeholder="Search..." autocomplete="off">
+  
+</form>
+
+<nav class="collapse docs-links" id="docs-nav">
+  
+  
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/ps0700/docs/front-matter/">content</a>
+    <ul class="nav docs-sidenav">
+      
+      <li >
+        <a href="/ps0700/docs/front-matter/">Front Matter</a>
+      </li>
+      
+      <li >
+        <a href="/ps0700/docs/managing-content/">Managing content</a>
+      </li>
+      
+      <li >
+        <a href="/ps0700/docs/writing-markdown-latex/">Writing content</a>
+      </li>
+      
+    </ul>
+    
+
+  </div>
+  
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/ps0700/docs/deployment/">deploy</a>
+    <ul class="nav docs-sidenav">
+      
+      <li >
+        <a href="/ps0700/docs/deployment/">Overview</a>
+      </li>
+      
+      <li >
+        <a href="/ps0700/docs/domain/">Domain Name</a>
+      </li>
+      
+    </ul>
+    
+
+  </div>
+  
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/ps0700/docs/migrate-from-jekyll/">migrate</a>
+    <ul class="nav docs-sidenav">
+      
+      <li >
+        <a href="/ps0700/docs/migrate-from-jekyll/">From Jekyll</a>
+      </li>
+      
+      <li >
+        <a href="/ps0700/docs/migrate-from-wordpress/">From Wordpress</a>
+      </li>
+      
+    </ul>
+    
+
+  </div>
+  
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/ps0700/docs/install/">setup</a>
+    <ul class="nav docs-sidenav">
+      
+      <li >
+        <a href="/ps0700/docs/install/">Install</a>
+      </li>
+      
+      <li >
+        <a href="/ps0700/docs/get-started/">Getting started</a>
+      </li>
+      
+      <li class="active">
+        <a href="/ps0700/docs/customization/">Customization</a>
+      </li>
+      
+      <li >
+        <a href="/ps0700/docs/widgets/">Widgets</a>
+      </li>
+      
+      <li >
+        <a href="/ps0700/docs/language/">Language and translation</a>
+      </li>
+      
+      <li >
+        <a href="/ps0700/docs/search/">Search</a>
+      </li>
+      
+    </ul>
+    
+
+  </div>
+  
+  
+</nav>
+
+    </div>
+
+    
+    <div class="d-none d-xl-block col-xl-2 docs-toc">
+      
+      <p class="docs-toc-title">On this page</p>
+      
+
+      <nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#custom-theme">Custom theme</a></li>
+<li><a href="#website-icon">Website icon</a></li>
+<li><a href="#analytics">Analytics</a></li>
+<li><a href="#comments">Comments</a></li>
+<li><a href="#add-scripts-js">Add scripts (JS)</a></li>
+<li><a href="#permalinks">Permalinks</a></li>
+<li><a href="#customize-style-css">Customize style (CSS)</a></li>
+<li><a href="#override-a-template">Override a template</a></li>
+<li><a href="#date-format">Date Format</a></li>
+</ul></li>
+</ul>
+</nav>
+
+      <ul class="nav toc-top">
+        <li><a href="#">Back to top</a></li>
+      </ul>
+
+      
+    </div>
+    
+
+    <main class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 docs-content" role="main">
+
+      <article class="article" itemscope itemtype="http://schema.org/Article">
+
+        <div class="docs-article-container">
+          <h1 itemprop="name">Customization</h1>
+
+          <div class="article-style" itemprop="articleBody">
+            
+
+<p>It is possible to carry out many customizations <em>without</em> editing any code in the <code>themes/academic/</code> folder, making it easier to update the framework in the future.</p>
+
+<h2 id="custom-theme">Custom theme</h2>
+
+<p>To <strong>customize the color theme</strong>, you can copy a theme such as <code>themes/academic/data/themes/default.toml</code> to <code>data/themes/default.toml</code> (at the root of your site, <strong>not</strong> in <code>themes/academic/</code>), creating the <code>data/themes/</code> folders if they do not already exist. Now you can adjust the colors within your theme file.</p>
+
+<p>To <strong>customize the font theme</strong>, you can copy a theme such as <code>themes/academic/data/fonts/default.toml</code> to <code>data/fonts/default.toml</code> (at the root of your site, <strong>not</strong> in <code>themes/academic/</code>), creating the <code>data/fonts/</code> folders if they do not already exist. Now you can adjust the font size and family, choosing from the library of <a href="https://fonts.google.com/" target="_blank">Google Fonts</a> if you wish.</p>
+
+<p>If you create your own theme, consider giving it a unique name and <em>sharing</em> your new color or font theme with the <a href="http://discuss.gohugo.io/" target="_blank">community</a>.</p>
+
+<h2 id="website-icon">Website icon</h2>
+
+<p>Save your main icon and mobile icon as square PNG images named <code>icon.png</code> (32x32 pixels) and <code>icon-192.png</code> (192x192 pixels), respectively. Place them in your root <code>static/img/</code> folder.</p>
+
+<h2 id="analytics">Analytics</h2>
+
+<p>To enable <a href="http://www.google.com/analytics" target="_blank">Google Analytics</a>, add your tracking code in <code>config.toml</code> similarly to <code>googleAnalytics = &quot;UA-12345678-9&quot;</code>.</p>
+
+<h2 id="comments">Comments</h2>
+
+<p>The Disqus commenting variable (<code>disqusShortname</code>) in <code>config.toml</code> can be set to your own <a href="https://disqus.com/" target="_blank">Disqus</a> shortname to enable visitors to comment on your posts.</p>
+
+<h2 id="add-scripts-js">Add scripts (JS)</h2>
+
+<p>To add a <strong>third party script</strong>, create a file named <code>head_custom.html</code> in a <code>layouts/partials/</code> folder at the root of your website (not in the <code>themes</code> folder). Any HTML code added to this file will be included within your website&rsquo;s <code>&lt;head&gt;</code>. Therefore, it&rsquo;s suitable for adding custom metadata or third party scripts specified with the <em>async</em> attribute.</p>
+
+<p>Whereas for your own <strong>local scripts</strong>, you can link your local JS assets (relative to your root <code>static/js</code>) from your <code>config.toml</code> using <code>custom_js  = [&quot;custom.js&quot;]</code>.</p>
+
+<h2 id="permalinks">Permalinks</h2>
+
+<p><em>Permalinks</em>, or <em>permanent links</em>, are URLs to individual pages and posts on your website. They are permanent web addresses which can be used to link to your content. Using Hugo&rsquo;s <em>permalinks</em> option these can be easily customized. For example, the blog post URL can be changed to the form <em>yourURL/2016/05/01/my-post-slug</em> by adding the following near the top of your <code>config.toml</code> (before <code>[params]</code> settings):</p>
+
+<pre><code>[permalinks]
+    post = &quot;/:year/:month/:day/:slug&quot;
+</code></pre>
+
+<p>Where <code>:slug</code> defaults to the filename of the post, excluding the file extension. However, slug may be overridden on a per post basis if desired, simply by setting <code>slug = &quot;my-short-post-title&quot;</code> in your post preamble.</p>
+
+<p><strong>Example 2:</strong> let&rsquo;s consider changing the URL path of posts from <code>post/</code> to <code>blog/</code>. First, add the following parameters right above the <code>[params]</code> section of your <code>config.toml</code>:</p>
+
+<pre><code>[permalinks]
+    post = &quot;/blog/:slug&quot;
+</code></pre>
+
+<p>Then add <code>aliases = [&quot;/blog/&quot;]</code> to your post archive page <code>post/_index.md</code> so that it can be accessed from the <em>/blog/</em> URL.</p>
+
+<h2 id="customize-style-css">Customize style (CSS)</h2>
+
+<p>For advanced customization of the style, you can link custom CSS assets (relative to your root <code>static/css</code>) from your <code>config.toml</code> using <code>custom_css = [&quot;custom.css&quot;]</code>.</p>
+
+<p>For example, let&rsquo;s override some of Academic&rsquo;s default styles. First, define <code>custom_css = [&quot;override.css&quot;]</code> in <code>config.toml</code>. Then we can create the file <code>static/css/override.css</code>, relative to your website root (i.e. <strong>not</strong> in the <code>themes</code> directory). Add your custom CSS to this file.</p>
+
+<h2 id="override-a-template">Override a template</h2>
+
+<p>Hugo uses a <a href="https://gohugo.io/templates/lookup-order/" target="_blank">template lookup</a> which enables you to override any of Academic&rsquo;s files without directly changing them. This can make it easier to update Academic in the future since you do not modify any of Academic&rsquo;s files directly.</p>
+
+<p>To override a template in the theme, you simply copy the file you are interested in from <code>themes/academic/</code> and paste it in your site folder using a similar path. To understand how this works, you should familiarize yourself with template lookup. Finally, when you update Academic, remember to compare your version of the file against Academic&rsquo;s one, in case you need to propagate any changes across.</p>
+
+<p>For example, say we wish to add some HTML code to the navigation bar. Let&rsquo;s copy the relevant file <code>themes/academic/layout/partials/navbar.html</code> to <code>layout/partials/navbar.html</code> (at the root of your site, <strong>not</strong> in <code>themes/academic/</code>), creating the <code>layout/partials/</code> folders if they do not already exist. Now you can add the HTML code you want to your copy of the file, which will override Academic&rsquo;s version.</p>
+
+<h2 id="date-format">Date Format</h2>
+
+<p>Academic uses the following constants to format dates and times:</p>
+
+<table>
+<thead>
+<tr>
+<th>Type</th>
+<th>Options</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>Year</td>
+<td><code>06</code>   <code>2006</code></td>
+</tr>
+
+<tr>
+<td>Month</td>
+<td><code>01</code>   <code>1</code>   <code>Jan</code>   <code>January</code></td>
+</tr>
+
+<tr>
+<td>Day</td>
+<td><code>02</code>   <code>2</code>   <code>_2</code> <span style="font-size:90%;">(width two, right justified)</span></td>
+</tr>
+
+<tr>
+<td>Weekday</td>
+<td><code>Mon</code>   <code>Monday</code></td>
+</tr>
+
+<tr>
+<td>Hours</td>
+<td><code>03</code>   <code>3</code>   <code>15</code></td>
+</tr>
+
+<tr>
+<td>Minutes</td>
+<td><code>04</code>   <code>4</code></td>
+</tr>
+
+<tr>
+<td>Seconds</td>
+<td><code>05</code>   <code>5</code></td>
+</tr>
+
+<tr>
+<td>AM/PM</td>
+<td><code>PM</code>   <code>pm</code></td>
+</tr>
+
+<tr>
+<td>Timezone</td>
+<td><code>MST</code></td>
+</tr>
+
+<tr>
+<td>Offset</td>
+<td><code>-0700</code>   <code>-07</code>   <code>-07:00</code>   <code>Z0700</code>   <code>Z07:00</code></td>
+</tr>
+</tbody>
+</table>
+
+<p>To modify the format, edit <code>date_format</code> and <code>time_format</code> in <code>config.toml</code> using the above constants. For example, some common formats are:</p>
+
+<table>
+<thead>
+<tr>
+<th>Format</th>
+<th>Type</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><code>January 2, 2006</code></td>
+<td>Date</td>
+</tr>
+
+<tr>
+<td><code>01/02/06</code></td>
+<td></td>
+</tr>
+
+<tr>
+<td><code>Jan-02-06</code></td>
+<td></td>
+</tr>
+
+<tr>
+<td><code>Mon, 02 Jan 2006</code></td>
+<td></td>
+</tr>
+
+<tr>
+<td><code>Monday, 02 Jan 2006</code></td>
+<td></td>
+</tr>
+
+<tr>
+<td><code>15:04</code></td>
+<td>Time</td>
+</tr>
+
+<tr>
+<td><code>3:04 PM</code></td>
+<td></td>
+</tr>
+
+<tr>
+<td><code>15:04 MST</code></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+          </div>
+
+          
+
+        </div>
+
+        <div class="body-footer">
+          Last updated on Apr 20, 2016
+        </div>
+
+      </article>
+
+      <footer class="site-footer">
+  
+
+  <p class="powered-by">
+    &copy; Fanghui Zhao 2019 <i class="fas fa-tree" style="color: #40a990;"></i> &middot; 
+
+    Powered by the
+    <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for
+    <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>.
+
+    
+  </p>
+</footer>
+
+
+    </main>
+  </div>
+</div>
+
+    
+
+    
+    
+    
+    <script src="/ps0700/js/mathjax-config.js"></script>
+    
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha512-+NqPlbbtM1QqiK8ZAo4Yrj2c4lNQoGv8P79DPtKzj++l5jnN39rHA/xsqn8zE9l0uSoxaCdrOgFs6yjyfbBxSg==" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.3/imagesloaded.pkgd.min.js" integrity="sha512-umsR78NN0D23AzgoZ11K7raBD+R6hqKojyBZs1w8WvYlsI+QuKRGBx3LFCwhatzBunCjDuJpDHwxD13sLMbpRA==" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha256-VsEqElsCHSGmnmHXGQzvoWjWwoznFSZc6hs7ARLRacQ=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.4/isotope.pkgd.min.js" integrity="sha512-VDBOIlDbuC4VWxGJNmuFRQ0Li0SKkDpmGyuhAG5LTDLd/dJ/S0WMVxriR2Y+CyPL5gzjpN4f/6iqWVBJlht0tQ==" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js" integrity="sha256-X5PoE3KU5l+JcX+w09p/wHl9AzK333C4hJ2I9S5mD4M=" crossorigin="anonymous"></script>
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js" integrity="sha256-/BfiIkHlHoVihZdc6TFuj7MmJ0TWcWsMXkeDFwhi0zw=" crossorigin="anonymous"></script>
+        
+        <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/r.min.js"></script>
+        
+        <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/markdown.min.js"></script>
+        
+        <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/stata.min.js"></script>
+        
+      
+
+      
+      
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS_CHTML-full" integrity="sha256-GhM+5JHb6QUzOQPXSJLEWP7R73CbkisjzK5Eyij4U9w=" crossorigin="anonymous" async></script>
+      
+    
+
+    
+    
+
+    
+    
+    
+    <script id="dsq-count-scr" src="//fanghuizhao.disqus.com/count.js" async></script>
+    
+
+    
+    
+    <script>hljs.initHighlightingOnLoad();</script>
+    
+
+    
+    
+    <script>
+      const search_index_filename = "/ps0700/index.json";
+      const i18n = {
+        'placeholder': "Search...",
+        'results': "results found",
+        'no_results': "No results found"
+      };
+      const content_type = {
+        'post': "Posts",
+        'project': "Projects",
+        'publication' : "Publications",
+        'talk' : "Talks"
+        };
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.1/anchor.min.js" integrity="sha256-pB/deHc9CGfFpJRjC43imB29Rse8tak+5eXqntO94ck=" crossorigin="anonymous"></script>
+    <script>
+      anchors.add();
+    </script>
+    
+
+    
+    
+    <script id="search-hit-fuse-template" type="text/x-template">
+      <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+      </div>
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    <script src="/ps0700/js/academic.min.70f0041f5a24c6a675ac218c98d7ef71.js"></script>
+
+    
+
+  </body>
+</html>
+
+

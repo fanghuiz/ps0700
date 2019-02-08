@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Projects on Political Science Research Methods</title>
+    <link>https://fanghuiz.github.io/ps0700/project/</link>
+    <description>Recent content in Projects on Political Science Research Methods</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; Fanghui Zhao 2019 &lt;i class=&#34;fas fa-tree&#34; style=&#34;color: #40a990;&#34;&gt;&lt;/i&gt;</copyright>
+    <lastBuildDate>Wed, 27 Apr 2016 00:00:00 -0400</lastBuildDate>
+    
+	<atom:link href="https://fanghuiz.github.io/ps0700/project/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>External Project</title>
+      <link>https://fanghuiz.github.io/ps0700/project/external-project/</link>
+      <pubDate>Wed, 27 Apr 2016 00:00:00 -0400</pubDate>
+      
+      <guid>https://fanghuiz.github.io/ps0700/project/external-project/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Internal Project</title>
+      <link>https://fanghuiz.github.io/ps0700/project/internal-project/</link>
+      <pubDate>Wed, 27 Apr 2016 00:00:00 -0400</pubDate>
+      
+      <guid>https://fanghuiz.github.io/ps0700/project/internal-project/</guid>
+      <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum. Sed ac faucibus dolor, scelerisque sollicitudin nisi. Cras purus urna, suscipit quis sapien eu, pulvinar tempor diam. Quisque risus orci, mollis id ante sit amet, gravida egestas nisl. Sed ac tempus magna. Proin in dui enim. Donec condimentum, sem id dapibus fringilla, tellus enim condimentum arcu, nec volutpat est felis vel metus.</description>
+    </item>
+    
+  </channel>
+</rss>
