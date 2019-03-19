@@ -4,6 +4,38 @@
     
     <url>
     
+      <loc>https://fanghuiz.github.io/ps0700/post/2019-03-01-survey/</loc>
+      <lastmod>2019-03-18T00:00:00-04:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>https://fanghuiz.github.io/ps0700/post/2019-02-22-comparative/</loc>
+      <lastmod>2019-03-18T00:00:00-04:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>https://fanghuiz.github.io/ps0700/post/2019-02-15-rational-choice/</loc>
+      <lastmod>2019-03-06T00:00:00-05:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>https://fanghuiz.github.io/ps0700/post/2019-02-01-natural-experiment/</loc>
+      <lastmod>2019-03-06T00:00:00-05:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
       <loc>https://fanghuiz.github.io/ps0700/tutorial_r/</loc>
       <lastmod>2019-02-07T00:00:00-05:00</lastmod>
     </url>
@@ -60,6 +92,15 @@
     
     <url>
     
+      <loc>https://fanghuiz.github.io/ps0700/tags/comparative-studies/</loc>
+      <lastmod>2019-03-18T00:00:00-04:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
       <loc>https://fanghuiz.github.io/ps0700/tags/ethics/</loc>
       <lastmod>2019-02-06T00:00:00-05:00</lastmod>
       <priority>0</priority>
@@ -70,7 +111,25 @@
     <url>
     
       <loc>https://fanghuiz.github.io/ps0700/tags/experiments/</loc>
-      <lastmod>2019-02-06T00:00:00-05:00</lastmod>
+      <lastmod>2019-03-06T00:00:00-05:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>https://fanghuiz.github.io/ps0700/tags/formal-model/</loc>
+      <lastmod>2019-03-06T00:00:00-05:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>https://fanghuiz.github.io/ps0700/tags/game-theory/</loc>
+      <lastmod>2019-03-06T00:00:00-05:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -87,6 +146,15 @@
     
     <url>
     
+      <loc>https://fanghuiz.github.io/ps0700/tags/natural-experiment/</loc>
+      <lastmod>2019-03-06T00:00:00-05:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
       <loc>https://fanghuiz.github.io/ps0700/</loc>
       <lastmod>2017-10-15T00:00:00-04:00</lastmod>
       <priority>0</priority>
@@ -96,7 +164,34 @@
     
     <url>
     
+      <loc>https://fanghuiz.github.io/ps0700/tags/polling/</loc>
+      <lastmod>2019-03-18T00:00:00-04:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
       <loc>https://fanghuiz.github.io/ps0700/publication_types/</loc>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>https://fanghuiz.github.io/ps0700/tags/rational-choice/</loc>
+      <lastmod>2019-03-06T00:00:00-05:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>https://fanghuiz.github.io/ps0700/tags/sampling/</loc>
+      <lastmod>2019-03-18T00:00:00-04:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -113,8 +208,17 @@
     
     <url>
     
+      <loc>https://fanghuiz.github.io/ps0700/tags/survey/</loc>
+      <lastmod>2019-03-18T00:00:00-04:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
       <loc>https://fanghuiz.github.io/ps0700/tags/</loc>
-      <lastmod>2019-02-06T00:00:00-05:00</lastmod>
+      <lastmod>2019-03-18T00:00:00-04:00</lastmod>
       <priority>0</priority>
     </url>
     

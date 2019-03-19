@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; Fanghui Zhao 2019 &lt;i class=&#34;fas fa-tree&#34; style=&#34;color: #40a990;&#34;&gt;&lt;/i&gt;</copyright>
-    <lastBuildDate>Fri, 25 Jan 2019 00:00:00 -0500</lastBuildDate>
+    <lastBuildDate>Fri, 22 Feb 2019 00:00:00 -0500</lastBuildDate>
     
 	<atom:link href="https://fanghuiz.github.io/ps0700/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Comparative studies</title>
+      <link>https://fanghuiz.github.io/ps0700/tags/comparative-studies/</link>
+      <pubDate>Fri, 22 Feb 2019 00:00:00 -0500</pubDate>
+      
+      <guid>https://fanghuiz.github.io/ps0700/tags/comparative-studies/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Ethics</title>
@@ -24,9 +33,27 @@
     <item>
       <title>Experiments</title>
       <link>https://fanghuiz.github.io/ps0700/tags/experiments/</link>
-      <pubDate>Fri, 25 Jan 2019 00:00:00 -0500</pubDate>
+      <pubDate>Fri, 01 Feb 2019 00:00:00 -0500</pubDate>
       
       <guid>https://fanghuiz.github.io/ps0700/tags/experiments/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Formal model</title>
+      <link>https://fanghuiz.github.io/ps0700/tags/formal-model/</link>
+      <pubDate>Fri, 15 Feb 2019 00:00:00 -0500</pubDate>
+      
+      <guid>https://fanghuiz.github.io/ps0700/tags/formal-model/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Game theory</title>
+      <link>https://fanghuiz.github.io/ps0700/tags/game-theory/</link>
+      <pubDate>Fri, 15 Feb 2019 00:00:00 -0500</pubDate>
+      
+      <guid>https://fanghuiz.github.io/ps0700/tags/game-theory/</guid>
       <description></description>
     </item>
     
@@ -40,11 +67,56 @@
     </item>
     
     <item>
+      <title>Natural experiment</title>
+      <link>https://fanghuiz.github.io/ps0700/tags/natural-experiment/</link>
+      <pubDate>Fri, 01 Feb 2019 00:00:00 -0500</pubDate>
+      
+      <guid>https://fanghuiz.github.io/ps0700/tags/natural-experiment/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Polling</title>
+      <link>https://fanghuiz.github.io/ps0700/tags/polling/</link>
+      <pubDate>Fri, 01 Mar 2019 00:00:00 -0500</pubDate>
+      
+      <guid>https://fanghuiz.github.io/ps0700/tags/polling/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Rational choice</title>
+      <link>https://fanghuiz.github.io/ps0700/tags/rational-choice/</link>
+      <pubDate>Fri, 15 Feb 2019 00:00:00 -0500</pubDate>
+      
+      <guid>https://fanghuiz.github.io/ps0700/tags/rational-choice/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Sampling</title>
+      <link>https://fanghuiz.github.io/ps0700/tags/sampling/</link>
+      <pubDate>Fri, 01 Mar 2019 00:00:00 -0500</pubDate>
+      
+      <guid>https://fanghuiz.github.io/ps0700/tags/sampling/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Stata</title>
       <link>https://fanghuiz.github.io/ps0700/tags/stata/</link>
       <pubDate>Sat, 19 Jan 2019 00:00:00 -0500</pubDate>
       
       <guid>https://fanghuiz.github.io/ps0700/tags/stata/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Survey</title>
+      <link>https://fanghuiz.github.io/ps0700/tags/survey/</link>
+      <pubDate>Fri, 01 Mar 2019 00:00:00 -0500</pubDate>
+      
+      <guid>https://fanghuiz.github.io/ps0700/tags/survey/</guid>
       <description></description>
     </item>
     

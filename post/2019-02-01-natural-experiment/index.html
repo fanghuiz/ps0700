@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Source Themes Academic 3.3.0">
+  <meta name="generator" content="Hugo 0.53" />
+  <meta name="author" content="Research Methods in Political Science">
+
+  
+  
+  
+  
+    
+  
+  <meta name="description" content="Q&amp;A on natural experiments leveraging on geographical boundary, the &#39;as-if&#39; randomization assumption, and dealing with confounding variables in observational studies">
+
+  
+  <link rel="alternate" hreflang="en-us" href="https://fanghuiz.github.io/ps0700/post/2019-02-01-natural-experiment/">
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+  
+  <meta name="theme-color" content="#40a990">
+  
+
+  
+  
+  
+  
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha256-eSi1q2PG6J7g7ib17yAaWMcrr5GrtohYChqibrV7PBE=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.0/css/all.css" integrity="sha384-aOkxzJ5uQz7WBObEZcHvV5JvRW3TUc2rNPA7pe3AwnsUohiw1Vj2Rgx2KSOkF5+h" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" integrity="sha256-ygkqlh3CYSUri3LhQxzdcm0n1EQvH2Y+U5S2idbLtxs=" crossorigin="anonymous">
+
+    
+    
+    
+      
+    
+    
+      
+      
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/zenburn.min.css" crossorigin="anonymous">
+      
+    
+
+    
+
+    
+
+  
+
+  
+  
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Montserrat:400,700|Roboto:400,400italic,700|Roboto+Mono">
+  
+
+  <link rel="stylesheet" href="/ps0700/styles.css">
+  
+  <link rel="stylesheet" href="/ps0700/css/custom.css">
+  
+
+  
+  
+    <script>
+      window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+      ga('create', 'UA-134139235-1', 'auto');
+      
+      ga('require', 'eventTracker');
+      ga('require', 'outboundLinkTracker');
+      ga('require', 'urlChangeTracker');
+      ga('send', 'pageview');
+    </script>
+    <script async src="//www.google-analytics.com/analytics.js"></script>
+    
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/autotrack/2.4.1/autotrack.js" integrity="sha512-HUmooslVKj4m6OBu0OgzjXXr+QuFYy/k7eLI5jdeEy/F4RSgMn6XRWRGkFi5IFaFgy7uFTkegp3Z0XnJf3Jq+g==" crossorigin="anonymous"></script>
+    
+  
+  
+
+  
+  <link rel="alternate" href="https://fanghuiz.github.io/ps0700/index.xml" type="application/rss+xml" title="Political Science Research Methods">
+  <link rel="feed" href="https://fanghuiz.github.io/ps0700/index.xml" type="application/rss+xml" title="Political Science Research Methods">
+  
+
+  <link rel="manifest" href="/ps0700/site.webmanifest">
+  <link rel="icon" type="image/png" href="/ps0700/img/icon.png">
+  <link rel="apple-touch-icon" type="image/png" href="/ps0700/img/icon-192.png">
+
+  <link rel="canonical" href="https://fanghuiz.github.io/ps0700/post/2019-02-01-natural-experiment/">
+
+  
+  
+  
+  
+    
+    
+  
+  <meta property="twitter:card" content="summary">
+  
+  <meta property="og:site_name" content="Political Science Research Methods">
+  <meta property="og:url" content="https://fanghuiz.github.io/ps0700/post/2019-02-01-natural-experiment/">
+  <meta property="og:title" content="Q&amp;A Week 4: Natural Experiments and Observational Studies | Political Science Research Methods">
+  <meta property="og:description" content="Q&amp;A on natural experiments leveraging on geographical boundary, the &#39;as-if&#39; randomization assumption, and dealing with confounding variables in observational studies"><meta property="og:image" content="https://fanghuiz.github.io/ps0700/img/icon-192.png">
+  <meta property="og:locale" content="en-us">
+  
+  <meta property="article:published_time" content="2019-02-01T00:00:00-05:00">
+  
+  <meta property="article:modified_time" content="2019-03-06T00:00:00-05:00">
+  
+
+  
+
+  
+
+  <title>Q&amp;A Week 4: Natural Experiments and Observational Studies | Political Science Research Methods</title>
+
+</head>
+<body id="top" data-spy="scroll" data-target="#TableOfContents" data-offset="71" >
+  <aside class="search-results" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" role="textbox" spellcheck="false" type="search">
+        
+      </div>
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+<nav class="navbar navbar-light fixed-top navbar-expand-lg py-0" id="navbar-main">
+  <div class="container">
+
+    
+      <a class="navbar-brand" href="/ps0700/">Political Science Research Methods</a>
+      
+      <button type="button" class="navbar-toggler" data-toggle="collapse"
+              data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span><i class="fas fa-bars"></i></span>
+      </button>
+      
+
+    
+    <div class="collapse navbar-collapse" id="navbar">
+
+      
+      
+      <ul class="navbar-nav ml-auto">
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link" href="/ps0700/post/">
+            
+            <span>Posts</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link" href="/ps0700/tutorial_stata/">
+            
+            <span>Stata Tutorials</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link" href="/ps0700/tutorial_r/">
+            
+            <span>R Tutorials</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+      
+
+        
+
+        
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link" href="https://github.com/fanghuiz/ps0700" target="_blank" rel="noopener">
+          
+          <span><i class="fab fa-github" style="font-size: 1rem; line-height: 1.25"></i></span>
+          
+          </a>
+        </li>
+
+        
+
+        
+        <li class="nav-item">
+          <a class="nav-link js-search" href="#"><i class="fas fa-search" aria-hidden="true"></i></a>
+        </li>
+        
+
+        
+
+        
+        <li class="nav-item">
+          <a class="nav-link js-dark-toggle" href="#"><i class="fas fa-moon" aria-hidden="true"></i></a>
+        </li>
+        
+
+      </ul>
+
+    </div>
+  </div>
+</nav>
+
+
+<article class="article" itemscope itemtype="http://schema.org/Article">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+  
+  
+<div class="article-container pt-3">
+  <h1 itemprop="name">Q&amp;A Week 4: Natural Experiments and Observational Studies</h1>
+
+  
+
+  
+    
+
+<div class="article-metadata">
+
+  
+  
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+    <meta itemprop="name" content="Research Methods in Political Science">
+  </span>
+  
+
+  <span class="article-date">
+    
+        Last updated on
+    
+    <meta content="2019-02-01 00:00:00 -0500 EST" itemprop="datePublished">
+    <time datetime="2019-03-06 00:00:00 -0500 EST" itemprop="dateModified">
+      Mar 6, 2019
+    </time>
+  </span>
+  <span itemscope itemprop="publisher" itemtype="http://schema.org/Person">
+    <meta itemprop="name" content="Research Methods in Political Science">
+  </span>
+
+  
+  <span class="middot-divider"></span>
+  <span class="article-reading-time">
+    6 min read
+  </span>
+  
+
+  
+  
+  <span class="middot-divider"></span>
+  <a href="/ps0700/post/2019-02-01-natural-experiment/#disqus_thread"></a>
+  
+
+  
+
+  
+  
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
+    <li>
+      <a class="twitter"
+         href="https://twitter.com/intent/tweet?text=Q%26A%20Week%204%3a%20Natural%20Experiments%20and%20Observational%20Studies&amp;url=https%3a%2f%2ffanghuiz.github.io%2fps0700%2fpost%2f2019-02-01-natural-experiment%2f"
+         target="_blank" rel="noopener">
+        <i class="fab fa-twitter"></i>
+      </a>
+    </li>
+    <li>
+      <a class="facebook"
+         href="https://www.facebook.com/sharer.php?u=https%3a%2f%2ffanghuiz.github.io%2fps0700%2fpost%2f2019-02-01-natural-experiment%2f"
+         target="_blank" rel="noopener">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+    </li>
+    <li>
+      <a class="linkedin"
+         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2ffanghuiz.github.io%2fps0700%2fpost%2f2019-02-01-natural-experiment%2f&amp;title=Q%26A%20Week%204%3a%20Natural%20Experiments%20and%20Observational%20Studies"
+         target="_blank" rel="noopener">
+        <i class="fab fa-linkedin-in"></i>
+      </a>
+    </li>
+    <li>
+      <a class="weibo"
+         href="http://service.weibo.com/share/share.php?url=https%3a%2f%2ffanghuiz.github.io%2fps0700%2fpost%2f2019-02-01-natural-experiment%2f&amp;title=Q%26A%20Week%204%3a%20Natural%20Experiments%20and%20Observational%20Studies"
+         target="_blank" rel="noopener">
+        <i class="fab fa-weibo"></i>
+      </a>
+    </li>
+    <li>
+      <a class="email"
+         href="mailto:?subject=Q%26A%20Week%204%3a%20Natural%20Experiments%20and%20Observational%20Studies&amp;body=https%3a%2f%2ffanghuiz.github.io%2fps0700%2fpost%2f2019-02-01-natural-experiment%2f">
+        <i class="fas fa-envelope"></i>
+      </a>
+    </li>
+  </ul>
+</div>
+
+
+  
+
+</div>
+
+    
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+  
+</div>
+
+
+
+  <div class="article-container">
+
+    <div class="article-style" itemprop="articleBody">
+      
+
+<h2>Table of Contents</h2>
+<nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#natural-experiments">Natural Experiments</a>
+<ul>
+<li><a href="#in-class-you-mentioned-natural-experiments-based-on-geographical-boundaries-can-be-complicated-by-human-factors-can-you-explain-a-bit-more-what-this-means">In class you mentioned “Natural experiments based on geographical boundaries can be complicated by human factors”. Can you explain a bit more what this means?</a></li>
+<li><a href="#how-would-we-know-if-the-as-if-randomization-assumption-is-valid">How would we know if the “as-if randomization” assumption is valid?</a></li>
+</ul></li>
+<li><a href="#observational-studies">Observational studies</a>
+<ul>
+<li><a href="#is-there-any-way-to-get-rid-of-confounding-variables-in-observational-studies">Is there any way to get rid of confounding variables in observational studies?</a></li>
+<li><a href="#how-are-longitudinal-studies-and-cross-sectional-studies-different">How are longitudinal studies and cross-sectional studies different?</a></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
+
+
+<h2 id="natural-experiments">Natural Experiments</h2>
+
+<h3 id="in-class-you-mentioned-natural-experiments-based-on-geographical-boundaries-can-be-complicated-by-human-factors-can-you-explain-a-bit-more-what-this-means">In class you mentioned “Natural experiments based on geographical boundaries can be complicated by human factors”. Can you explain a bit more what this means?</h3>
+
+<p>Recall that the key assumption in a natural experiment design that ensures internal validity is that the treatment assignment is random or <em>“as-if”</em> random. In another word, we have to ask, is the treatment assignment correlated with any other factors that could potentially cause the observed difference between treatment and control group? If yes, then the assumption does not hold and the study’s internal validity is weakened. If no, then the assumption of <em>“as-if”</em> randomization holds.</p>
+
+<p>In the <a href="https://www.nytimes.com/2018/08/24/business/money-satisfaction-lottery-study.html" target="_blank">study</a> on whether money from lottery will increase happiness, the assumption is that the treatment (<em>winning money from lottery</em>) is randomly assigned among lottery buyers, hence whether someone is in the treatment group (<em>lottery winners</em>) or the control group (<em>lottery losers</em>) is <strong>not correlated</strong> with other factors that affects their happiness. In another word, treatment assignment (<em>whether someone gets money</em>) is <strong>independent</strong> of other confounding factors that could have affected the outcome (<em>happiness</em>).</p>
+
+<p>In studies that leverage on geographical boundaries for natural experiment opportunities, the generic set-up is to compare Area A (<em>treatment group</em>) on one side of the geographical boundary that have received the treatment, with Area B (<em>control group</em>) on the other side of the boundary that have not received the treatment. This means that we have to ask, is the treatment assignment (<em>being on one side of the boundary vs the other side</em>) correlated with any other factors that could explain the difference in outcomes between Area A and Area B?</p>
+
+<p>So what I meant by “natural experiments based on geographical boundaries can complicated by human factors“ was that, sometimes how the geographical boundaries are drawn, <strong>is not independent</strong> of the characteristics of the humans/political actors that draw these boundaries (i.e. the division introduced by the boundary is not random). If the reasons for how boundaries are drawn correlates with reasons that could explain the outcome, then the <em>“as-if”</em> randomization assumption would not hold.</p>
+
+<p>Think about <a href="http://danielnposner.com/wp-content/uploads/2015/11/Posner-2004b.pdf" target="_blank">Posner (2004)</a> we read for class, where Posner found that the relative size of the two ethnic groups (<em>treatment</em>) within each country explained why the cultural differences between the Chewa and Tumbuka ethnic groups are politically salient in Malawi but not in Zambia (<em>outcome</em>). He argued that the treatment assignment (<em>being in a country where the two ethnic groups is relatively large vs relatively small</em>) is “as-if“ random (<em>assignment is uncorrelated with other factors that could explain the outcome</em>), because “like many African borders, the one that separates Zambia and Malawi was drawn purely for [colonial] administrative purposes, with no attention to the distribution of groups on the ground” (Posner 2004: 530).</p>
+
+<p>If however, the boundary that separates Zambia and Malawi are drawn for reasons that potentially correlate with factors affecting inter-group interaction (say for example, natural resource availability), then the treatment assignment is no long <em>“as-if”</em> random.</p>
+
+<h3 id="how-would-we-know-if-the-as-if-randomization-assumption-is-valid">How would we know if the “as-if randomization” assumption is valid?</h3>
+
+<p>Since we have no control over the treatment assignment process in natural experiments, we cannot really <em>“prove”</em> whether this <em>“as-if”</em> randomization assumption is valid. All we can do is provide evidence to show that this assumption is plausible.</p>
+
+<p>For example, we can rely on theory and background knowledge to make the case: assignment through lottery is plausibly random because we know how the winner are chose.</p>
+
+<p>And for the Posner (2004) study, if there were some qualitative evidence (e.g. written records of how boundaries were decided) showing that the boundary was indeed “drawn purely for [colonial] administrative purposes, with no attention to the distribution of groups on the ground”, then that would be an important piece of evidence to support the “as-if” randomization claim.</p>
+
+<p>We can also provide empirical evidence. Recall that randomly assignment treatment will give us comparable treatment and control groups, i.e. the groups on average, would be similar to each other in terms of any potential confounding variables. So we should expect that “as-if” randomization process should give us such comparable groups as well.</p>
+
+<p>Researchers can measure the potential confounding variables and empirically test if the treatment and control groups are similar in those aspects. If we do not find any significant difference between the two groups in terms of those potential confounders, then that would be a piece of evidence supporting the “as-if” randomization assumption.</p>
+
+<h2 id="observational-studies">Observational studies</h2>
+
+<h3 id="is-there-any-way-to-get-rid-of-confounding-variables-in-observational-studies">Is there any way to get rid of confounding variables in observational studies?</h3>
+
+<p>Confounding <em>variables</em> will always be present (we cannot &ldquo;get rid of them&rdquo; per se), but we can reduce the <em>bias</em> to our inference/conclusion introduced by any confounding variables.</p>
+
+<p>Whenever we want to investigate if $X \rightarrow Y$, there will be confounding variables $Z$ lurking behind the scenes, that’s just the feature of the world we live in. These confounding variables will introduce <strong>bias</strong> to our inference, if we mistakenly conclude that the change in $Y$ is caused by $X$, while in fact the change in $Y$ was caused by $X$ and $Z$ (or $Z$ alone). This bias is often known by the jargon <a href="https://en.wikipedia.org/wiki/Omitted-variable_bias" target="_blank">omitted variable bias</a>.</p>
+
+<p>When designing a study to investigate if $X \rightarrow Y$, one of our goals is to reduce any potential bias introduced by confounding variables, in order to isolate the effects of $X$ on $Y$ (<em>how much of the change in $Y$ can be attributed to $X$, instead of $Z$</em>).</p>
+
+<p>Two common ways to reduce this bias in observational studies:</p>
+
+<ol>
+<li>Statistically adjusting/controlling for observable confounding variables (i.e. include the “omitted” confounding variables in the statistical model, at least for those we have the data for).</li>
+<li>If our data has multiple time points (i.e. panel data or time series data), statistically adjusting/controlling for observable and unobservable confounding variables by leveraging on the temporal nature of the data.</li>
+</ol>
+
+<p>The jargon for these different techniques to isolate the effects of $X$ on $Y$ is “identification strategy” — strategies that help us to <em>identify</em> the effects of $X$ on $Y$. Randomized experiment, natural experiments, statistically adjusting for confounders are different types of identification strategies we can use.</p>
+
+<h3 id="how-are-longitudinal-studies-and-cross-sectional-studies-different">How are longitudinal studies and cross-sectional studies different?</h3>
+
+<p>We have a longitudinal study if we have data for each unit at multiple time points, i.e. every unit is measured more than once. For example, a study on the effects of emergency events boosting presidential approval ratings (i.e. rally-the-flag effects) would be a longitudinal study (or more specifically, time series) — the unit of analysis is presidential approval ratings, and we have measures for this unit at multiple time points, before and after the emergency events.</p>
+
+<p>A cross-sectional study is one where we only have data for each unit at one time points. If we were to examine whether partisanship affects how individuals evaluate the president’s response to a emergency event, say a devastating hurricane, using a survey conducted after the hurricane, then that would be a cross-sectional study — the unit of analysis is individual survey respondents, and we only have measures for the same person at one point in time (the time they responded to the survey).</p>
+
+    </div>
+
+    
+
+
+<div class="article-tags">
+  
+  <a class="badge badge-light" href="/ps0700/tags/experiments/">Experiments</a>
+  
+  <a class="badge badge-light" href="/ps0700/tags/natural-experiment/">Natural experiment</a>
+  
+</div>
+
+
+
+    
+
+
+
+
+
+
+<div class="media author-card" itemscope itemtype="http://schema.org/Person">
+  
+  <div class="media-body">
+    <h5 class="card-title" itemprop="name"><a href="/ps0700/">Research Methods in Political Science</a></h5>
+    <h6 class="card-subtitle">Supplemental course materials for Spring 2019.</h6>
+    
+    <ul class="network-icon" aria-hidden="true">
+      
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      <li>
+        <a itemprop="sameAs" href="mailto:fanghui.z13@gmail.com" >
+          <i class="fas fa-envelope"></i>
+        </a>
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+
+
+
+    
+    
+    <div class="article-widget">
+      <div class="hr-light"></div>
+      <h3>Related</h3>
+      <ul>
+        
+        <li><a href="/ps0700/post/2019-01-25-experiment/">Q&amp;A Week 3: Experiments and Ethics</a></li>
+        
+      </ul>
+    </div>
+    
+
+    
+    <div class="article-widget">
+      <div class="post-nav">
+  
+  <div class="post-nav-item">
+    <div class="meta-nav">Next</div>
+    <a href="https://fanghuiz.github.io/ps0700/post/2019-02-15-rational-choice/" rel="next">Q&amp;A Week 6: Formal Models and Game Theory</a>
+  </div>
+  
+  
+  <div class="post-nav-item">
+    <div class="meta-nav">Previous</div>
+    <a href="https://fanghuiz.github.io/ps0700/post/2019-01-25-experiment/" rel="prev">Q&amp;A Week 3: Experiments and Ethics</a>
+  </div>
+  
+</div>
+
+    </div>
+    
+
+    
+<section id="comments">
+  <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "fanghuiz" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</section>
+
+
+
+  </div>
+</article>
+
+<div class="container">
+  <footer class="site-footer">
+  
+
+  <p class="powered-by">
+    &copy; Fanghui Zhao 2019 <i class="fas fa-tree" style="color: #40a990;"></i> &middot; 
+
+    Powered by the
+    <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for
+    <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>.
+
+    
+    <span class="float-right" aria-hidden="true">
+      <a href="#" id="back_to_top">
+        <span class="button_icon">
+          <i class="fas fa-chevron-up fa-2x"></i>
+        </span>
+      </a>
+    </span>
+    
+  </p>
+</footer>
+
+</div>
+
+
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+    
+    
+    
+    <script src="/ps0700/js/mathjax-config.js"></script>
+    
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha512-+NqPlbbtM1QqiK8ZAo4Yrj2c4lNQoGv8P79DPtKzj++l5jnN39rHA/xsqn8zE9l0uSoxaCdrOgFs6yjyfbBxSg==" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.3/imagesloaded.pkgd.min.js" integrity="sha512-umsR78NN0D23AzgoZ11K7raBD+R6hqKojyBZs1w8WvYlsI+QuKRGBx3LFCwhatzBunCjDuJpDHwxD13sLMbpRA==" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha256-VsEqElsCHSGmnmHXGQzvoWjWwoznFSZc6hs7ARLRacQ=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.4/isotope.pkgd.min.js" integrity="sha512-VDBOIlDbuC4VWxGJNmuFRQ0Li0SKkDpmGyuhAG5LTDLd/dJ/S0WMVxriR2Y+CyPL5gzjpN4f/6iqWVBJlht0tQ==" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js" integrity="sha256-X5PoE3KU5l+JcX+w09p/wHl9AzK333C4hJ2I9S5mD4M=" crossorigin="anonymous"></script>
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js" integrity="sha256-/BfiIkHlHoVihZdc6TFuj7MmJ0TWcWsMXkeDFwhi0zw=" crossorigin="anonymous"></script>
+        
+        <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/r.min.js"></script>
+        
+        <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/markdown.min.js"></script>
+        
+        <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/stata.min.js"></script>
+        
+      
+
+      
+      
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS_CHTML-full" integrity="sha256-GhM+5JHb6QUzOQPXSJLEWP7R73CbkisjzK5Eyij4U9w=" crossorigin="anonymous" async></script>
+      
+    
+
+    
+    
+
+    
+    
+    
+    <script id="dsq-count-scr" src="//fanghuiz.disqus.com/count.js" async></script>
+    
+
+    
+    
+    <script>hljs.initHighlightingOnLoad();</script>
+    
+
+    
+    
+    <script>
+      const search_index_filename = "/ps0700/index.json";
+      const i18n = {
+        'placeholder': "Search...",
+        'results': "results found",
+        'no_results': "No results found"
+      };
+      const content_type = {
+        'post': "Posts",
+        'project': "Projects",
+        'publication' : "Publications",
+        'talk' : "Talks"
+        };
+    </script>
+    
+
+    
+    
+
+    
+    
+    <script id="search-hit-fuse-template" type="text/x-template">
+      <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+      </div>
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    <script src="/ps0700/js/academic.min.70f0041f5a24c6a675ac218c98d7ef71.js"></script>
+
+    
+
+  </body>
+</html>
+

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Sampling on Political Science Research Methods</title>
+    <link>https://fanghuiz.github.io/ps0700/tags/sampling/</link>
+    <description>Recent content in Sampling on Political Science Research Methods</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; Fanghui Zhao 2019 &lt;i class=&#34;fas fa-tree&#34; style=&#34;color: #40a990;&#34;&gt;&lt;/i&gt;</copyright>
+    <lastBuildDate>Fri, 01 Mar 2019 00:00:00 -0500</lastBuildDate>
+    
+	<atom:link href="https://fanghuiz.github.io/ps0700/tags/sampling/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Q&amp;A Week 8: Sampling and Survey Research</title>
+      <link>https://fanghuiz.github.io/ps0700/post/2019-03-01-survey/</link>
+      <pubDate>Fri, 01 Mar 2019 00:00:00 -0500</pubDate>
+      
+      <guid>https://fanghuiz.github.io/ps0700/post/2019-03-01-survey/</guid>
+      <description>Table of Contents    In the class we talked about surveys having high external validity, but weak in internal validity. Does external validity take precedence (over internal validity) in terms of importance, or vice versa? Is random sampling and randomization the same thing? How can we account for coverage error in experimental studies?    In the class we talked about surveys having high external validity, but weak in internal validity.</description>
+    </item>
+    
+  </channel>
+</rss>

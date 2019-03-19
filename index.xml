@@ -11,6 +11,288 @@
     <atom:link href="/ps0700/" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>Q&amp;A Week 8: Sampling and Survey Research</title>
+      <link>https://fanghuiz.github.io/ps0700/post/2019-03-01-survey/</link>
+      <pubDate>Fri, 01 Mar 2019 00:00:00 -0500</pubDate>
+      
+      <guid>https://fanghuiz.github.io/ps0700/post/2019-03-01-survey/</guid>
+      <description>
+
+&lt;h2&gt;Table of Contents&lt;/h2&gt;
+&lt;nav id=&#34;TableOfContents&#34;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#in-the-class-we-talked-about-surveys-having-high-external-validity-but-weak-in-internal-validity-does-external-validity-take-precedence-over-internal-validity-in-terms-of-importance-or-vice-versa&#34;&gt;In the class we talked about surveys having high external validity, but weak in internal validity. Does external validity take precedence (over internal validity) in terms of importance, or vice versa?&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#is-random-sampling-and-randomization-the-same-thing&#34;&gt;Is random sampling and randomization the same thing?&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#how-can-we-account-for-coverage-error-in-experimental-studies&#34;&gt;How can we account for coverage error in experimental studies?&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/nav&gt;
+
+
+&lt;h2 id=&#34;in-the-class-we-talked-about-surveys-having-high-external-validity-but-weak-in-internal-validity-does-external-validity-take-precedence-over-internal-validity-in-terms-of-importance-or-vice-versa&#34;&gt;In the class we talked about surveys having high external validity, but weak in internal validity. Does external validity take precedence (over internal validity) in terms of importance, or vice versa?&lt;/h2&gt;
+
+&lt;p&gt;I would say that in general, it is more important to establish internal validity than external validity. If we can ensure internal validity, at the very least, we can claim to have gained some localized knowledge ($X$ causes $Y$ in the sample we have studied), even if this knowledge might not hold in another context.&lt;/p&gt;
+
+&lt;p&gt;However, if we cannot be sure that the findings in our current study is internally valid (i.e. if we are unable to establish a credible claim that it is indeed $X$ that caused a change in $Y$, rather than other confounding factors), then what’s the point of generalizing this invalid claim?  Only when we have confidence in the internal validity of a study (more localized knowledge), then having external validity will be useful (allow us to expand on this knowledge). Otherwise, generalizing a wrong-headed conclusion only compounds the initial error, like adding more heights to a building with a faulty foundation.&lt;/p&gt;
+
+
+
+
+&lt;figure&gt;
+
+&lt;img src=&#34;https://media.giphy.com/media/gXF3P4m5CMPTy/giphy.gif&#34; /&gt;
+
+
+&lt;/figure&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;is-random-sampling-and-randomization-the-same-thing&#34;&gt;Is random sampling and randomization the same thing?&lt;/h2&gt;
+
+&lt;p&gt;Random sample refers to a sample (i.e. the subset of population that we include in the study) where each unit is chosen randomly. This concerns the cases or subjects in the study.&lt;/p&gt;
+
+&lt;p&gt;Randomization (a.k.a random assignment) refers the process of randomly assigning each unit in our study to receive the treatment or not. This concerns whether the units/subjects (who are already included in the study) is receiving the treatment, or will they in the control group.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;how-can-we-account-for-coverage-error-in-experimental-studies&#34;&gt;How can we account for coverage error in experimental studies?&lt;/h2&gt;
+
+&lt;p&gt;Depending on how the subjects are recruited into the experiment, coverage errors in experimental studies can be difficult to avoid. Recall that many experiments, especially lab experiments, rely on convenience sample, which usually leads to part of the population not being covered in the sampling process. If subjects are recruited among the college undergraduates, then anyone who is not a undergraduate from that university is excluded from the sample.&lt;/p&gt;
+
+&lt;p&gt;This problem can be difficult to “account for” if we are using convenience sample, since it is built-in to the sampling process. However, other types of non-laboratory based experiments (e.g. survey experiments or field experiments) often have better coverage, which mitigates (though does not 100% eliminate) the problems of non-representative sample that comes with coverage errors.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Q&amp;A Week 7: Comparative Studies</title>
+      <link>https://fanghuiz.github.io/ps0700/post/2019-02-22-comparative/</link>
+      <pubDate>Fri, 22 Feb 2019 00:00:00 -0500</pubDate>
+      
+      <guid>https://fanghuiz.github.io/ps0700/post/2019-02-22-comparative/</guid>
+      <description>
+
+&lt;h2&gt;Table of Contents&lt;/h2&gt;
+&lt;nav id=&#34;TableOfContents&#34;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#can-you-explain-more-about-the-connection-between-mill-s-method-of-difference-and-experiments&#34;&gt;Can you explain more about the connection between Mill’s method of difference and experiments?&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#is-the-concern-for-external-validity-problems-only-apply-to-method-of-difference-or-method-of-agreement-as-well&#34;&gt;Is the concern for external validity problems only apply to method of difference, or method of agreement as well?&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#is-selecting-on-dependent-variable-only-a-problem-for-method-of-agreement&#34;&gt;Is selecting on dependent variable only a problem for method of agreement?&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#the-lecture-mentioned-that-method-of-difference-has-trouble-estimating-multiple-causes-what-are-some-examples-of-multiple-causes-cases&#34;&gt;The lecture mentioned that method of difference has trouble estimating “multiple causes”. What are some examples of “multiple causes” cases?&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/nav&gt;
+
+
+&lt;h2 id=&#34;can-you-explain-more-about-the-connection-between-mill-s-method-of-difference-and-experiments&#34;&gt;Can you explain more about the connection between Mill’s method of difference and experiments?&lt;/h2&gt;
+
+&lt;p&gt;The two have very similar causal logic. They both try to establish a causal claim (difference in $Y$ can be attributed to changes in $X$) by leveraging on the fact that the treatment group (&lt;code&gt;X = 1&lt;/code&gt;) and the control group (&lt;code&gt;X = 0&lt;/code&gt;) are similar on other confounding variables ($Z$), except the treatment variable ($Y$) — since the two groups are similar in other aspects except with regard to $X$, any observed difference in $Y$ must be caused by the difference in $X$.&lt;/p&gt;
+
+&lt;p&gt;Method of difference try to approximate a comparable treatment and control group by selecting cases with similar attributes except $X$ (mostly based on theory and domain knowledge about what factors could be potentially confounding variables). Experiments try to achieve this by randomly assigning the treatment.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;is-the-concern-for-external-validity-problems-only-apply-to-method-of-difference-or-method-of-agreement-as-well&#34;&gt;Is the concern for external validity problems only apply to method of difference, or method of agreement as well?&lt;/h2&gt;
+
+&lt;p&gt;It is a problem in both types of designs. External validity issue is present in all studies where we only have a small number of non-randomly selected cases.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;is-selecting-on-dependent-variable-only-a-problem-for-method-of-agreement&#34;&gt;Is selecting on dependent variable only a problem for method of agreement?&lt;/h2&gt;
+
+&lt;p&gt;Yes it is only a problem for comparative designs that select cases using methods of agreement.&lt;/p&gt;
+
+&lt;p&gt;We say a study is “selecting on dependent variable” when the decision criterion to include certain units into (or exclude from) the study sample is correlated with the value of the dependent variable.&lt;/p&gt;
+
+&lt;p&gt;For method of agreement, we are comparing cases with the same outcome but differs in the value of independent variable. In another word, the reason we are including these cases in the comparison is &lt;strong&gt;because&lt;/strong&gt; that they share the same outcome, and other cases are excluded because they have a different outcome — the decision criterion for sample selection is directly related to the status of dependent variable.&lt;/p&gt;
+
+&lt;p&gt;Designs using methods of difference for case selection are not selecting on dependent variable. In this method, the criterion to select cases to be included in the sample is not related to what the outcomes are. Instead, we are selecting cases based on the independent variables — we are comparing the cases that are similar in all the independent variables, except one crucial explanatory factor that we are interested in.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;the-lecture-mentioned-that-method-of-difference-has-trouble-estimating-multiple-causes-what-are-some-examples-of-multiple-causes-cases&#34;&gt;The lecture mentioned that method of difference has trouble estimating “multiple causes”. What are some examples of “multiple causes” cases?&lt;/h2&gt;
+
+&lt;p&gt;An event or outcome has multiple causes when there are more than one factors that could have lead to the outcome. For example, why the U.S has low voter turnout? There could be multiple factors for this: no compulsory voting; low interests in politics; election day is not a national holiday; two party system; winner-take-all system etc.&lt;/p&gt;
+
+&lt;p&gt;Most of the phenomenon we are interested are quite complex, so we should expect there to be multiple-causes most of the time.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Q&amp;A Week 6: Formal Models and Game Theory</title>
+      <link>https://fanghuiz.github.io/ps0700/post/2019-02-15-rational-choice/</link>
+      <pubDate>Fri, 15 Feb 2019 00:00:00 -0500</pubDate>
+      
+      <guid>https://fanghuiz.github.io/ps0700/post/2019-02-15-rational-choice/</guid>
+      <description>
+
+&lt;h2&gt;Table of Contents&lt;/h2&gt;
+&lt;nav id=&#34;TableOfContents&#34;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#costs-of-voting&#34;&gt;Costs of Voting&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#can-you-explain-a-bit-more-about-the-table-for-costs-of-voting&#34;&gt;Can you explain a bit more about the table for costs of voting?&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#game-theory-and-government-shutdown&#34;&gt;Game Theory and Government Shutdown&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#trump-was-prolonging-the-shutdown-in-order-to-get-funding-for-the-wall-is-that-a-game-theory-strategic-interaction-scenario&#34;&gt;Trump was prolonging the shutdown in order to get funding for the wall, is that a game theory/strategic interaction scenario?&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/nav&gt;
+
+
+&lt;h2 id=&#34;costs-of-voting&#34;&gt;Costs of Voting&lt;/h2&gt;
+
+&lt;h3 id=&#34;can-you-explain-a-bit-more-about-the-table-for-costs-of-voting&#34;&gt;Can you explain a bit more about the table for costs of voting?&lt;/h3&gt;
+
+&lt;p&gt;This is the table I have in the recitation slides:
+&lt;!--
+|   | Election outcome = Preferred candidate won    | Election outcome = Preferred candidate Lost   |
+|-------------  |--------------------------------------------   |---------------------------------------------  |
+| **Voted = Yes**   | Benefits - Costs of Voting    | - Costs of Voting     |
+| **Voted = No**    | Benefits  | Zero  | --&gt;&lt;/p&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;th&gt;Voted = Yes&lt;/th&gt;
+&lt;th&gt;Voted = No&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Election outcome = &lt;br&gt; Preferred candidate won&lt;/td&gt;
+&lt;td&gt;Benefits - Costs of Voting&lt;/td&gt;
+&lt;td&gt;Benefits&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;Election outcome = &lt;br&gt; Preferred candidate lost&lt;/td&gt;
+&lt;td&gt;- Costs of Voting&lt;/td&gt;
+&lt;td&gt;Zero&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;First, we have a few assumptions when analyzing the decision to vote from a rational choice framework:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Cost of voting is &lt;em&gt;negative&lt;/em&gt; if we vote; and is &lt;em&gt;zero&lt;/em&gt; if we do not voting&lt;/li&gt;
+&lt;li&gt;Benefit is &lt;em&gt;positive&lt;/em&gt; if our preferred candidate wins; and is &lt;em&gt;zero&lt;/em&gt; if our preferred candidate loses&lt;/li&gt;
+&lt;li&gt;Chance of any individual vote changing the outcome is very low (close to zero)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;The intuition behind the table is that no matter what is the election outcome (&lt;em&gt;preferred candidate win or lose&lt;/em&gt;), for us personally, the net benefit is always &lt;strong&gt;higher&lt;/strong&gt; if we do not vote, than if we vote.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;If our preferred candidate wins (&lt;em&gt;first row&lt;/em&gt;), &lt;code&gt;Benefits &amp;gt; Benefits - Costs of Voting&lt;/code&gt;. Net benefit is higher if we do not vote.&lt;/li&gt;
+&lt;li&gt;If our preferred candidate loses (&lt;em&gt;second row&lt;/em&gt;), &lt;code&gt;Zero &amp;gt; - Costs of Voting&lt;/code&gt;. Net benefit is higher if we do not vote.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;game-theory-and-government-shutdown&#34;&gt;Game Theory and Government Shutdown&lt;/h2&gt;
+
+&lt;h3 id=&#34;trump-was-prolonging-the-shutdown-in-order-to-get-funding-for-the-wall-is-that-a-game-theory-strategic-interaction-scenario&#34;&gt;Trump was prolonging the shutdown in order to get funding for the wall, is that a game theory/strategic interaction scenario?&lt;/h3&gt;
+
+&lt;p&gt;Yes! Threatening or prolonging government shutdown in order to leverage a “better deal”, when viewed from a strategic interaction lens, is quite similar to the &lt;a href=&#34;https://en.wikipedia.org/wiki/Chicken_(game)&#34; target=&#34;_blank&#34;&gt;game of chicken&lt;/a&gt; (a sort of brinksmanship).&lt;/p&gt;
+
+&lt;p&gt;This is a situation where both players will benefit if both sides yield (&lt;em&gt;take a compromise budget deal&lt;/em&gt;), both players will lose if neither side yield (&lt;em&gt;government shutdown&lt;/em&gt;), but if only one player yields and the other doesn’t (&lt;em&gt;Trump gives up, Congressional Democrats do not&lt;/em&gt;), then the player that yields loses and the other player benefits (&lt;em&gt;no funding for wall, government shutdown ends&lt;/em&gt;).&lt;/p&gt;
+
+&lt;p&gt;See this &lt;a href=&#34;https://www.pbs.org/newshour/science/how-the-shutdown-might-end-according-to-game-theory&#34; target=&#34;_blank&#34;&gt;NPR article&lt;/a&gt; for more in depth discussion on the incentives both sides faced that shaped this negotiation into a political brinksmanship, and this &lt;a href=&#34;https://fivethirtyeight.com/features/were-all-to-blame-for-the-shutdown/&#34; target=&#34;_blank&#34;&gt;FiveThirtyEight article&lt;/a&gt; on why we (the voters) are partly to blame for this.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Q&amp;A Week 4: Natural Experiments and Observational Studies</title>
+      <link>https://fanghuiz.github.io/ps0700/post/2019-02-01-natural-experiment/</link>
+      <pubDate>Fri, 01 Feb 2019 00:00:00 -0500</pubDate>
+      
+      <guid>https://fanghuiz.github.io/ps0700/post/2019-02-01-natural-experiment/</guid>
+      <description>
+
+&lt;h2&gt;Table of Contents&lt;/h2&gt;
+&lt;nav id=&#34;TableOfContents&#34;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#natural-experiments&#34;&gt;Natural Experiments&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#in-class-you-mentioned-natural-experiments-based-on-geographical-boundaries-can-be-complicated-by-human-factors-can-you-explain-a-bit-more-what-this-means&#34;&gt;In class you mentioned “Natural experiments based on geographical boundaries can be complicated by human factors”. Can you explain a bit more what this means?&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#how-would-we-know-if-the-as-if-randomization-assumption-is-valid&#34;&gt;How would we know if the “as-if randomization” assumption is valid?&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#observational-studies&#34;&gt;Observational studies&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#is-there-any-way-to-get-rid-of-confounding-variables-in-observational-studies&#34;&gt;Is there any way to get rid of confounding variables in observational studies?&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#how-are-longitudinal-studies-and-cross-sectional-studies-different&#34;&gt;How are longitudinal studies and cross-sectional studies different?&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/nav&gt;
+
+
+&lt;h2 id=&#34;natural-experiments&#34;&gt;Natural Experiments&lt;/h2&gt;
+
+&lt;h3 id=&#34;in-class-you-mentioned-natural-experiments-based-on-geographical-boundaries-can-be-complicated-by-human-factors-can-you-explain-a-bit-more-what-this-means&#34;&gt;In class you mentioned “Natural experiments based on geographical boundaries can be complicated by human factors”. Can you explain a bit more what this means?&lt;/h3&gt;
+
+&lt;p&gt;Recall that the key assumption in a natural experiment design that ensures internal validity is that the treatment assignment is random or &lt;em&gt;“as-if”&lt;/em&gt; random. In another word, we have to ask, is the treatment assignment correlated with any other factors that could potentially cause the observed difference between treatment and control group? If yes, then the assumption does not hold and the study’s internal validity is weakened. If no, then the assumption of &lt;em&gt;“as-if”&lt;/em&gt; randomization holds.&lt;/p&gt;
+
+&lt;p&gt;In the &lt;a href=&#34;https://www.nytimes.com/2018/08/24/business/money-satisfaction-lottery-study.html&#34; target=&#34;_blank&#34;&gt;study&lt;/a&gt; on whether money from lottery will increase happiness, the assumption is that the treatment (&lt;em&gt;winning money from lottery&lt;/em&gt;) is randomly assigned among lottery buyers, hence whether someone is in the treatment group (&lt;em&gt;lottery winners&lt;/em&gt;) or the control group (&lt;em&gt;lottery losers&lt;/em&gt;) is &lt;strong&gt;not correlated&lt;/strong&gt; with other factors that affects their happiness. In another word, treatment assignment (&lt;em&gt;whether someone gets money&lt;/em&gt;) is &lt;strong&gt;independent&lt;/strong&gt; of other confounding factors that could have affected the outcome (&lt;em&gt;happiness&lt;/em&gt;).&lt;/p&gt;
+
+&lt;p&gt;In studies that leverage on geographical boundaries for natural experiment opportunities, the generic set-up is to compare Area A (&lt;em&gt;treatment group&lt;/em&gt;) on one side of the geographical boundary that have received the treatment, with Area B (&lt;em&gt;control group&lt;/em&gt;) on the other side of the boundary that have not received the treatment. This means that we have to ask, is the treatment assignment (&lt;em&gt;being on one side of the boundary vs the other side&lt;/em&gt;) correlated with any other factors that could explain the difference in outcomes between Area A and Area B?&lt;/p&gt;
+
+&lt;p&gt;So what I meant by “natural experiments based on geographical boundaries can complicated by human factors“ was that, sometimes how the geographical boundaries are drawn, &lt;strong&gt;is not independent&lt;/strong&gt; of the characteristics of the humans/political actors that draw these boundaries (i.e. the division introduced by the boundary is not random). If the reasons for how boundaries are drawn correlates with reasons that could explain the outcome, then the &lt;em&gt;“as-if”&lt;/em&gt; randomization assumption would not hold.&lt;/p&gt;
+
+&lt;p&gt;Think about &lt;a href=&#34;http://danielnposner.com/wp-content/uploads/2015/11/Posner-2004b.pdf&#34; target=&#34;_blank&#34;&gt;Posner (2004)&lt;/a&gt; we read for class, where Posner found that the relative size of the two ethnic groups (&lt;em&gt;treatment&lt;/em&gt;) within each country explained why the cultural differences between the Chewa and Tumbuka ethnic groups are politically salient in Malawi but not in Zambia (&lt;em&gt;outcome&lt;/em&gt;). He argued that the treatment assignment (&lt;em&gt;being in a country where the two ethnic groups is relatively large vs relatively small&lt;/em&gt;) is “as-if“ random (&lt;em&gt;assignment is uncorrelated with other factors that could explain the outcome&lt;/em&gt;), because “like many African borders, the one that separates Zambia and Malawi was drawn purely for [colonial] administrative purposes, with no attention to the distribution of groups on the ground” (Posner 2004: 530).&lt;/p&gt;
+
+&lt;p&gt;If however, the boundary that separates Zambia and Malawi are drawn for reasons that potentially correlate with factors affecting inter-group interaction (say for example, natural resource availability), then the treatment assignment is no long &lt;em&gt;“as-if”&lt;/em&gt; random.&lt;/p&gt;
+
+&lt;h3 id=&#34;how-would-we-know-if-the-as-if-randomization-assumption-is-valid&#34;&gt;How would we know if the “as-if randomization” assumption is valid?&lt;/h3&gt;
+
+&lt;p&gt;Since we have no control over the treatment assignment process in natural experiments, we cannot really &lt;em&gt;“prove”&lt;/em&gt; whether this &lt;em&gt;“as-if”&lt;/em&gt; randomization assumption is valid. All we can do is provide evidence to show that this assumption is plausible.&lt;/p&gt;
+
+&lt;p&gt;For example, we can rely on theory and background knowledge to make the case: assignment through lottery is plausibly random because we know how the winner are chose.&lt;/p&gt;
+
+&lt;p&gt;And for the Posner (2004) study, if there were some qualitative evidence (e.g. written records of how boundaries were decided) showing that the boundary was indeed “drawn purely for [colonial] administrative purposes, with no attention to the distribution of groups on the ground”, then that would be an important piece of evidence to support the “as-if” randomization claim.&lt;/p&gt;
+
+&lt;p&gt;We can also provide empirical evidence. Recall that randomly assignment treatment will give us comparable treatment and control groups, i.e. the groups on average, would be similar to each other in terms of any potential confounding variables. So we should expect that “as-if” randomization process should give us such comparable groups as well.&lt;/p&gt;
+
+&lt;p&gt;Researchers can measure the potential confounding variables and empirically test if the treatment and control groups are similar in those aspects. If we do not find any significant difference between the two groups in terms of those potential confounders, then that would be a piece of evidence supporting the “as-if” randomization assumption.&lt;/p&gt;
+
+&lt;h2 id=&#34;observational-studies&#34;&gt;Observational studies&lt;/h2&gt;
+
+&lt;h3 id=&#34;is-there-any-way-to-get-rid-of-confounding-variables-in-observational-studies&#34;&gt;Is there any way to get rid of confounding variables in observational studies?&lt;/h3&gt;
+
+&lt;p&gt;Confounding &lt;em&gt;variables&lt;/em&gt; will always be present (we cannot &amp;ldquo;get rid of them&amp;rdquo; per se), but we can reduce the &lt;em&gt;bias&lt;/em&gt; to our inference/conclusion introduced by any confounding variables.&lt;/p&gt;
+
+&lt;p&gt;Whenever we want to investigate if $X \rightarrow Y$, there will be confounding variables $Z$ lurking behind the scenes, that’s just the feature of the world we live in. These confounding variables will introduce &lt;strong&gt;bias&lt;/strong&gt; to our inference, if we mistakenly conclude that the change in $Y$ is caused by $X$, while in fact the change in $Y$ was caused by $X$ and $Z$ (or $Z$ alone). This bias is often known by the jargon &lt;a href=&#34;https://en.wikipedia.org/wiki/Omitted-variable_bias&#34; target=&#34;_blank&#34;&gt;omitted variable bias&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;When designing a study to investigate if $X \rightarrow Y$, one of our goals is to reduce any potential bias introduced by confounding variables, in order to isolate the effects of $X$ on $Y$ (&lt;em&gt;how much of the change in $Y$ can be attributed to $X$, instead of $Z$&lt;/em&gt;).&lt;/p&gt;
+
+&lt;p&gt;Two common ways to reduce this bias in observational studies:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Statistically adjusting/controlling for observable confounding variables (i.e. include the “omitted” confounding variables in the statistical model, at least for those we have the data for).&lt;/li&gt;
+&lt;li&gt;If our data has multiple time points (i.e. panel data or time series data), statistically adjusting/controlling for observable and unobservable confounding variables by leveraging on the temporal nature of the data.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;The jargon for these different techniques to isolate the effects of $X$ on $Y$ is “identification strategy” — strategies that help us to &lt;em&gt;identify&lt;/em&gt; the effects of $X$ on $Y$. Randomized experiment, natural experiments, statistically adjusting for confounders are different types of identification strategies we can use.&lt;/p&gt;
+
+&lt;h3 id=&#34;how-are-longitudinal-studies-and-cross-sectional-studies-different&#34;&gt;How are longitudinal studies and cross-sectional studies different?&lt;/h3&gt;
+
+&lt;p&gt;We have a longitudinal study if we have data for each unit at multiple time points, i.e. every unit is measured more than once. For example, a study on the effects of emergency events boosting presidential approval ratings (i.e. rally-the-flag effects) would be a longitudinal study (or more specifically, time series) — the unit of analysis is presidential approval ratings, and we have measures for this unit at multiple time points, before and after the emergency events.&lt;/p&gt;
+
+&lt;p&gt;A cross-sectional study is one where we only have data for each unit at one time points. If we were to examine whether partisanship affects how individuals evaluate the president’s response to a emergency event, say a devastating hurricane, using a survey conducted after the hurricane, then that would be a cross-sectional study — the unit of analysis is individual survey respondents, and we only have measures for the same person at one point in time (the time they responded to the survey).&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Q&amp;A Week 3: Experiments and Ethics</title>
       <link>https://fanghuiz.github.io/ps0700/post/2019-01-25-experiment/</link>
       <pubDate>Fri, 25 Jan 2019 00:00:00 -0500</pubDate>
