@@ -1,0 +1,68 @@
+---
+title: "Labeling variables"
+toc: true
+type: docs
+
+date: "2019-03-20"
+draft: false
+
+menu:
+  tutorial_stata:
+    name: Labeling variables
+    parent: data_manipulation
+    weight: 13
+
+---
+
+
+<!-- ```
+use anes_timeseries_2016.dta, clear
+```
+
+<<dd_do: quietly>>
+use static/data/stata/anes_timeseries_2016.dta, clear
+<</dd_do>> -->
+
+<!-- The goal of data manipulation/processing is to get the data ready for analysis. This stage could take up a of time, depending on how "processed" your dataset is when you gained accessed to it.  -->
+
+
+<!-- ```
+<<dd_do>>
+
+
+<</dd_do>>
+``` -->
+
+
+## Variable label
+
+We can create labels to describe what the variable is measuring.
+
+<<dd_do: quietly>>
+use static/data/stata/WV6_Data.dta, clear
+<</dd_do>>
+
+```
+<<dd_do>>
+gen happiness = V10
+label variable happiness "Feelings of happiness"
+tab happiness
+<</dd_do>>
+```
+
+
+## Value label
+
+For categorical variables, we can create labels to show what does each level of the variable represents.
+
+```
+<<dd_do>>
+// first define the label
+label define happiness_label 1 "Very Happy" 2 "Rather Happy" 3 "Not very happy" 4 "Not at all happy"
+
+// then apply the label to the variable
+label values happiness happiness_label
+
+tab happiness
+<</dd_do>>
+```

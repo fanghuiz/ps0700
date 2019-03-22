@@ -1,0 +1,128 @@
+---
+title: "Generating variables"
+toc: true
+type: docs
+
+date: "2019-03-20"
+draft: false
+
+menu:
+  tutorial_stata:
+    name: Generating variables
+    parent: data_manipulation
+    weight: 12
+
+---
+
+
+<!-- ```
+use anes_timeseries_2016.dta, clear
+```
+
+<<dd_do: quietly>>
+use static/data/stata/anes_timeseries_2016.dta, clear
+<</dd_do>> -->
+
+<!-- The goal of data manipulation/processing is to get the data ready for analysis. This stage could take up a of time, depending on how "processed" your dataset is when you gained accessed to it.  -->
+
+
+<!-- ```
+<<dd_do>>
+
+
+<</dd_do>>
+``` -->
+
+
+## Cloning existing variables
+
+I prefer to keep the orignal dataset untouched, so I would usually create a copy of the variables that I'm interested in, and work with the copy. There are two ways to do this:
+
+* `clonevar orignal_varName clone_varName` (preferred)
+  * Exact clone, including data values, labels etc.
+* `gen orignal_varName clone_varName` or `generate`
+  * Only clones the data, not labels
+
+Let's try using the World Value Survey (Wave 6) data. And make a copy of `V10`, a question about subjective happiness.
+
+```
+use WV6_Data.dta, clear
+```
+
+<<dd_do: quietly>>
+use static/data/stata/WV6_Data.dta, clear
+<</dd_do>>
+
+
+```
+<<dd_do>>
+gen happiness = V10
+codebook happiness V10, compact
+<</dd_do>>
+```
+
+We see that the values for `happiness` (our copy) and `V10` are the same, but `happiness` does not have any variable labels. Of course, we can always [manually create labels]({{< ref "tutorial_stata/2_3_data_manipulation.md">}}) for the new variables.
+
+
+Now let's try `clonevar`.
+
+<<dd_do: quietly>>
+drop happiness
+<</dd_do>>
+
+```
+<<dd_do>>
+clonevar happiness = V10
+codebook happiness V10, compact
+<</dd_do>>
+```
+
+Both values and labels are preserved in our cloned copy of `V10`.
+
+
+## Creating categorical variable
+
+Let's create a dichotomous variable for having children (Yes/No) from the original variable that shows how many children someone has.
+
+We can do this by `recode` the original variable
+
+```
+<<dd_do>>
+gen have_children = V58
+recode have_children (-5/-1 = .) (1/8 = 1)
+<</dd_do>>
+```
+Always check to see the recoding was done correctly.
+
+```
+<<dd_do>>
+tab V58 have_children, missing
+<</dd_do>>
+```
+
+Or, we can do the same by using `replace`
+
+<<dd_do: quietly>>
+drop have_children
+<</dd_do>>
+
+```
+<<dd_do>>
+gen have_children = .
+replace have_children = 1 if V58 > 1
+replace have_children = 0 if V58 == 0
+<</dd_do>>
+```
+
+Again, check to see the if new variable was created correctly.
+
+```
+<<dd_do>>
+tab V58 have_children, missing
+<</dd_do>>
+```
+
+
+
+
+<!-- ## Additional resources -->

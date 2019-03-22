@@ -1,0 +1,174 @@
+---
+title: "Univariate Distribution"
+toc: true
+type: docs
+
+date: "2019-03-19"
+draft: true
+
+menu:
+  tutorial_stata:
+    name: Univariate distribution
+    parent: eda
+    weight: 42
+
+---
+
+<!-- ```
+use Norris_Democracy_CrossNational_09092015.dta, clear
+``` -->
+
+<<dd_do: quietly>>
+//set scheme plotplainblind
+//ssc install beamplot
+
+use static/data/stata/Norris_Democracy_CrossNational_09092015.dta, clear
+<</dd_do>>
+
+
+## Bar plot
+
+The default setting for `graph bar` is to set y-axis as percent. The full command behind the scene is in fact `graph bar (percent)`, where the `percent` option is omitted by default.
+
+```
+// Default bar plot, percent
+graph bar, over(Cheibub4Type)
+```
+
+<<dd_do: quietly>>
+graph bar, over(Cheibub4Type) bar(1, color(gs6))
+graph export static/img/stata/eda/eda_barplot1.svg, replace
+<</dd_do>>
+
+{{< figure library="1" src="stata/eda/eda_barplot1.svg" title="" >}}
+
+
+We can change the default setting, and change the y-axis to frequency / count.
+
+```
+// Frequency bar plot
+graph bar (count), over(Cheibub4Type)
+```
+
+
+We can also rotate the graph to display horizontal bars, using `graph hbar`. This is helpful when we want to plot a variable with many categories. If we have too many categories, the category names tends to get crowded in a vertical bar plot, whereas the horizontal display gives us enough space to display the category names properly.
+
+```
+// Horizontal bar plot
+graph hbar, over(Cheibub6Type)
+```
+
+<<dd_do: quietly>>
+graph hbar, over(Cheibub6Type) bar(1, color(gs6))
+graph export static/img/stata/eda/eda_barplot3.svg, replace
+<</dd_do>>
+
+{{< figure library="1" src="stata/eda/eda_barplot3.svg" title="" >}}
+
+
+## Histogram
+
+```
+<<dd_do>>
+// Percentage of women, lower house, 2015 (IPU)
+hist Women2015
+<</dd_do>>
+```
+
+<<dd_do: quietly>>
+graph export static/img/stata/eda/eda_hist1.svg, replace
+<</dd_do>>
+
+{{< figure library="1" src="stata/eda/eda_hist1.svg" title="" >}}
+
+
+The default is density. We can change it to `frequency`, `fraction`, or `percent`.
+
+```
+hist Women2015, freq
+```
+
+Some prefer to draw a frequency histogram with overlaid normal density curve to xxxx.
+
+```
+<<dd_do>>
+hist Women2015, freq normal
+<</dd_do>>
+```
+
+<<dd_do: quietly>>
+// hist Women2015, freq normal normopts(lcolor(red))
+graph export static/img/stata/eda/eda_hist2.svg, replace
+<</dd_do>>
+
+{{< figure library="1" src="stata/eda/eda_hist2.svg" title="" >}}
+
+
+
+## Density plot
+
+```
+<<dd_do>>
+kdensity Women2015
+<</dd_do>>
+```
+
+<<dd_do: quietly>>
+graph export static/img/stata/eda/eda_density1.svg, replace
+<</dd_do>>
+
+{{< figure library="1" src="stata/eda/eda_density1.svg" title="" >}}
+
+
+Similarly, we can overlay a normal density plot over the kernel density plot.
+
+```
+<<dd_do>>
+kdensity Women2015, normal
+<</dd_do>>
+```
+
+<<dd_do: quietly>>
+graph export static/img/stata/eda/eda_density2.svg, replace
+<</dd_do>>
+
+{{< figure library="1" src="stata/eda/eda_density2.svg" title="" >}}
+
+
+## Box plot
+
+```
+<<dd_do>>
+// Life expectancy at birth, 2014 (UNDP 2014)
+graph box UNDP_Life2014, intensity(50)
+<</dd_do>>
+```
+
+<<dd_do: quietly>>
+graph export static/img/stata/eda/eda_box1.svg, replace
+<</dd_do>>
+
+{{< figure library="1" src="stata/eda/eda_box1.svg" title="" >}}
+
+
+## Dot plot
+
+<!--
+First install the package `beamplot`
+
+```
+ssc install beamplot
+``` -->
+
+
+```
+<<dd_do>>
+dotplot fhrate14
+<</dd_do>>
+```
+
+<<dd_do: quietly>>
+graph export static/img/stata/eda/eda_dot1.svg, replace
+<</dd_do>>
+
+{{< figure library="1" src="stata/eda/eda_dot1.svg" title="" >}}

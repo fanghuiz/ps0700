@@ -11,6 +11,356 @@
     <atom:link href="/ps0700/" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>Generating variables</title>
+      <link>https://fanghuiz.github.io/ps0700/tutorial_stata/2_2_data_manipulation/</link>
+      <pubDate>Wed, 20 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://fanghuiz.github.io/ps0700/tutorial_stata/2_2_data_manipulation/</guid>
+      <description>
+
+&lt;!-- ```
+use anes_timeseries_2016.dta, clear
+```
+
+
+&lt;!-- The goal of data manipulation/processing is to get the data ready for analysis. This stage could take up a of time, depending on how &#34;processed&#34; your dataset is when you gained accessed to it.  --&gt;
+
+&lt;!-- ```
+. 
+. 
+``` --&gt;
+
+&lt;h2 id=&#34;cloning-existing-variables&#34;&gt;Cloning existing variables&lt;/h2&gt;
+
+&lt;p&gt;I prefer to keep the orignal dataset untouched, so I would usually create a copy of the variables that I&amp;rsquo;m interested in, and work with the copy. There are two ways to do this:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;clonevar orignal_varName clone_varName&lt;/code&gt; (preferred)
+
+&lt;ul&gt;
+&lt;li&gt;Exact clone, including data values, labels etc.&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;gen orignal_varName clone_varName&lt;/code&gt; or &lt;code&gt;generate&lt;/code&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Only clones the data, not labels&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Let&amp;rsquo;s try using the World Value Survey (Wave 6) data. And make a copy of &lt;code&gt;V10&lt;/code&gt;, a question about subjective happiness.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;use WV6_Data.dta, clear
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code&gt;. gen happiness = V10
+
+. codebook happiness V10, compact
+
+Variable     Obs Unique      Mean  Min  Max  Label
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+happiness  89565      7  1.827209   -5    4  
+V10        89565      7  1.827209   -5    4  Feeling of happiness
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;We see that the values for &lt;code&gt;happiness&lt;/code&gt; (our copy) and &lt;code&gt;V10&lt;/code&gt; are the same, but &lt;code&gt;happiness&lt;/code&gt; does not have any variable labels. Of course, we can always &lt;a href=&#34;https://fanghuiz.github.io/ps0700/tutorial_stata/2_3_data_manipulation/&#34; target=&#34;_blank&#34;&gt;manually create labels&lt;/a&gt; for the new variables.&lt;/p&gt;
+
+&lt;p&gt;Now let&amp;rsquo;s try &lt;code&gt;clonevar&lt;/code&gt;.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;. clonevar happiness = V10
+
+. codebook happiness V10, compact
+
+Variable     Obs Unique      Mean  Min  Max  Label
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+happiness  89565      7  1.827209   -5    4  Feeling of happiness
+V10        89565      7  1.827209   -5    4  Feeling of happiness
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Both values and labels are preserved in our cloned copy of &lt;code&gt;V10&lt;/code&gt;.&lt;/p&gt;
+
+&lt;h2 id=&#34;creating-categorical-variable&#34;&gt;Creating categorical variable&lt;/h2&gt;
+
+&lt;p&gt;Let&amp;rsquo;s create a dichotomous variable for having children (Yes/No) from the original variable that shows how many children someone has.&lt;/p&gt;
+
+&lt;p&gt;We can do this by &lt;code&gt;recode&lt;/code&gt; the original variable&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;. gen have_children = V58
+
+. recode have_children (-5/-1 = .) (1/8 = 1)
+(have_children: 49126 changes made)
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Always check to see the recoding was done correctly.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;. tab V58 have_children, missing
+
+ How many children do |          have_children
+             you have |         0          1          . |     Total
+----------------------+---------------------------------+----------
+                   -5 |         0          0         29 |        29 
+                   -4 |         0          0      1,000 |     1,000 
+                   -2 |         0          0        529 |       529 
+                   -1 |         0          0        109 |       109 
+          No children |    26,142          0          0 |    26,142 
+              1 child |         0     14,297          0 |    14,297 
+           2 children |         0     21,579          0 |    21,579 
+           3 children |         0     12,356          0 |    12,356 
+           4 children |         0      6,292          0 |     6,292 
+           5 children |         0      3,230          0 |     3,230 
+           6 children |         0      1,775          0 |     1,775 
+                    7 |         0        991          0 |       991 
+                    8 |         0      1,236          0 |     1,236 
+----------------------+---------------------------------+----------
+                Total |    26,142     61,756      1,667 |    89,565 
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Or, we can do the same by using &lt;code&gt;replace&lt;/code&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;. gen have_children = .
+(89,565 missing values generated)
+
+. replace have_children = 1 if V58 &amp;gt; 1
+(47,459 real changes made)
+
+. replace have_children = 0 if V58 == 0
+(26,142 real changes made)
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Again, check to see the if new variable was created correctly.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;. tab V58 have_children, missing
+
+ How many children do |          have_children
+             you have |         0          1          . |     Total
+----------------------+---------------------------------+----------
+                   -5 |         0          0         29 |        29 
+                   -4 |         0          0      1,000 |     1,000 
+                   -2 |         0          0        529 |       529 
+                   -1 |         0          0        109 |       109 
+          No children |    26,142          0          0 |    26,142 
+              1 child |         0          0     14,297 |    14,297 
+           2 children |         0     21,579          0 |    21,579 
+           3 children |         0     12,356          0 |    12,356 
+           4 children |         0      6,292          0 |     6,292 
+           5 children |         0      3,230          0 |     3,230 
+           6 children |         0      1,775          0 |     1,775 
+                    7 |         0        991          0 |       991 
+                    8 |         0      1,236          0 |     1,236 
+----------------------+---------------------------------+----------
+                Total |    26,142     47,459     15,964 |    89,565 
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;!-- ## Additional resources --&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Labeling variables</title>
+      <link>https://fanghuiz.github.io/ps0700/tutorial_stata/2_3_data_manipulation/</link>
+      <pubDate>Wed, 20 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://fanghuiz.github.io/ps0700/tutorial_stata/2_3_data_manipulation/</guid>
+      <description>
+
+&lt;!-- ```
+use anes_timeseries_2016.dta, clear
+```
+
+
+&lt;!-- The goal of data manipulation/processing is to get the data ready for analysis. This stage could take up a of time, depending on how &#34;processed&#34; your dataset is when you gained accessed to it.  --&gt;
+
+&lt;!-- ```
+. 
+. 
+``` --&gt;
+
+&lt;h2 id=&#34;variable-label&#34;&gt;Variable label&lt;/h2&gt;
+
+&lt;p&gt;We can create labels to describe what the variable is measuring.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;. gen happiness = V10
+
+. label variable happiness &amp;quot;Feelings of happiness&amp;quot;
+
+. tab happiness
+
+Feelings of |
+  happiness |      Freq.     Percent        Cum.
+------------+-----------------------------------
+         -5 |          6        0.01        0.01
+         -2 |        238        0.27        0.27
+         -1 |        514        0.57        0.85
+          1 |     29,256       32.66       33.51
+          2 |     45,786       51.12       84.63
+          3 |     11,214       12.52       97.15
+          4 |      2,551        2.85      100.00
+------------+-----------------------------------
+      Total |     89,565      100.00
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;value-label&#34;&gt;Value label&lt;/h2&gt;
+
+&lt;p&gt;For categorical variables, we can create labels to show what does each level of the variable represents.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;. // first define the label
+. label define happiness_label 1 &amp;quot;Very Happy&amp;quot; 2 &amp;quot;Rather Happy&amp;quot; 3 &amp;quot;Not very happy&amp;quot; 4 &amp;quot;Not at all happy&amp;quot;
+
+. 
+. // then apply the label to the variable
+. label values happiness happiness_label
+
+. 
+. tab happiness
+
+     Feelings of |
+       happiness |      Freq.     Percent        Cum.
+-----------------+-----------------------------------
+              -5 |          6        0.01        0.01
+              -2 |        238        0.27        0.27
+              -1 |        514        0.57        0.85
+      Very Happy |     29,256       32.66       33.51
+    Rather Happy |     45,786       51.12       84.63
+  Not very happy |     11,214       12.52       97.15
+Not at all happy |      2,551        2.85      100.00
+-----------------+-----------------------------------
+           Total |     89,565      100.00
+
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Recoding variables</title>
+      <link>https://fanghuiz.github.io/ps0700/tutorial_stata/2_1_data_manipulation/</link>
+      <pubDate>Wed, 20 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://fanghuiz.github.io/ps0700/tutorial_stata/2_1_data_manipulation/</guid>
+      <description>
+
+&lt;!-- ```
+use anes_timeseries_2016.dta, clear
+```
+
+
+&lt;!-- The goal of data manipulation/processing is to get the data ready for analysis. This stage could take up a of time, depending on how &#34;processed&#34; your dataset is when you gained accessed to it.  --&gt;
+
+&lt;!-- ```
+. 
+. 
+``` --&gt;
+
+&lt;h2 id=&#34;using-recode&#34;&gt;Using &lt;code&gt;recode&lt;/code&gt;&lt;/h2&gt;
+
+&lt;p&gt;The most frequent use of &lt;code&gt;recode&lt;/code&gt; is to recode the numbers that represent missing values to proper &amp;ldquo;missing value&amp;rdquo; as understood by Stata.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Missing data is coded as &lt;code&gt;.&lt;/code&gt; in Stata&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code&gt;. codebook female
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+female                                                                                                                                                                                                                                                      Sex
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+                  type:  numeric (int)
+                 label:  V240, but 3 nonmissing values are not labeled
+
+                 range:  [-5,2]                       units:  1
+         unique values:  4                        missing .:  0/89,565
+
+            tabulation:  Freq.   Numeric  Label
+                            40        -5  
+                            51        -2  No answer
+                        42,723         1  
+                        46,751         2  
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;To recode the values of a variable, we can use &lt;code&gt;recode var rule&lt;/code&gt;, or &lt;code&gt;recode var (rule) (rule)&lt;/code&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;. // recode -5 and -2 to missing value
+. recode female (-5 -2 = .)
+(female: 91 changes made)
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Always check to see if recoding was done correctly.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;. tab female, missing
+
+                Sex |      Freq.     Percent        Cum.
+--------------------+-----------------------------------
+                  1 |     42,723       47.70       47.70
+                  2 |     46,751       52.20       99.90
+                  . |         91        0.10      100.00
+--------------------+-----------------------------------
+              Total |     89,565      100.00
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;We can also choose to recode the variable to something that makes more sense, or something we prefer, if the recoding does not change what the value represents.&lt;/p&gt;
+
+&lt;p&gt;For nominal variables, we can freely change the values representing each level, without affetcing the substantive meaning.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;. // recode 2 to 1, 1 to 0
+. recode female (2 = 1) (1 = 0)
+(female: 89474 changes made)
+
+. tab female, missing
+
+                Sex |      Freq.     Percent        Cum.
+--------------------+-----------------------------------
+                  0 |     42,723       47.70       47.70
+                  1 |     46,751       52.20       99.90
+                  . |         91        0.10      100.00
+--------------------+-----------------------------------
+              Total |     89,565      100.00
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;using-replace&#34;&gt;Using &lt;code&gt;replace&lt;/code&gt;&lt;/h2&gt;
+
+&lt;p&gt;Another way to recode variable is using the &lt;code&gt;replace&lt;/code&gt; command, combining with logical operators to subset the data.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;. // replace negative values with missing values
+. replace female = . if female &amp;lt;=0
+(91 real changes made, 91 to missing)
+
+. // replace 1 with 0
+. replace female = 0 if female == 1
+(42,723 real changes made)
+
+. // replace 2 with 1
+. replace female = 1 if female == 2
+(46,751 real changes made)
+
+. tab female, missing
+
+                Sex |      Freq.     Percent        Cum.
+--------------------+-----------------------------------
+                  0 |     42,723       47.70       47.70
+                  1 |     46,751       52.20       99.90
+                  . |         91        0.10      100.00
+--------------------+-----------------------------------
+              Total |     89,565      100.00
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;!-- ## Additional resources --&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Q&amp;A Week 8: Sampling and Survey Research</title>
       <link>https://fanghuiz.github.io/ps0700/post/2019-03-01-survey/</link>
       <pubDate>Fri, 01 Mar 2019 00:00:00 -0500</pubDate>

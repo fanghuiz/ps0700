@@ -12,5 +12,35 @@
 	<atom:link href="https://fanghuiz.github.io/ps0700/tutorial_stata/index.xml" rel="self" type="application/rss+xml" />
     
     
+    <item>
+      <title>Generating variables</title>
+      <link>https://fanghuiz.github.io/ps0700/tutorial_stata/2_2_data_manipulation/</link>
+      <pubDate>Wed, 20 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://fanghuiz.github.io/ps0700/tutorial_stata/2_2_data_manipulation/</guid>
+      <description>Cloning existing variables I prefer to keep the orignal dataset untouched, so I would usually create a copy of the variables that I&amp;rsquo;m interested in, and work with the copy. There are two ways to do this:
+ clonevar orignal_varName clone_varName (preferred)  Exact clone, including data values, labels etc.  gen orignal_varName clone_varName or generate  Only clones the data, not labels   Let&amp;rsquo;s try using the World Value Survey (Wave 6) data.</description>
+    </item>
+    
+    <item>
+      <title>Labeling variables</title>
+      <link>https://fanghuiz.github.io/ps0700/tutorial_stata/2_3_data_manipulation/</link>
+      <pubDate>Wed, 20 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://fanghuiz.github.io/ps0700/tutorial_stata/2_3_data_manipulation/</guid>
+      <description>Variable label We can create labels to describe what the variable is measuring.
+. gen happiness = V10 . label variable happiness &amp;quot;Feelings of happiness&amp;quot; . tab happiness Feelings of | happiness | Freq. Percent Cum. ------------+----------------------------------- -5 | 6 0.01 0.01 -2 | 238 0.27 0.27 -1 | 514 0.57 0.85 1 | 29,256 32.66 33.51 2 | 45,786 51.12 84.63 3 | 11,214 12.52 97.15 4 | 2,551 2.</description>
+    </item>
+    
+    <item>
+      <title>Recoding variables</title>
+      <link>https://fanghuiz.github.io/ps0700/tutorial_stata/2_1_data_manipulation/</link>
+      <pubDate>Wed, 20 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://fanghuiz.github.io/ps0700/tutorial_stata/2_1_data_manipulation/</guid>
+      <description>Using recode The most frequent use of recode is to recode the numbers that represent missing values to proper &amp;ldquo;missing value&amp;rdquo; as understood by Stata.
+ Missing data is coded as . in Stata  . codebook female --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- female Sex --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- type: numeric (int) label: V240, but 3 nonmissing values are not labeled range: [-5,2] units: 1 unique values: 4 missing .: 0/89,565 tabulation: Freq. Numeric Label 40 -5 51 -2 No answer 42,723 1 46,751 2  To recode the values of a variable, we can use recode var rule, or recode var (rule) (rule)</description>
+    </item>
+    
   </channel>
 </rss>

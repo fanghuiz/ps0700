@@ -1,0 +1,60 @@
+---
+title: "Data Manipulation"
+toc: true
+type: docs
+
+date: "2019-03-20"
+draft: true
+
+menu:
+  tutorial_stata:
+    name: Data manipulation
+    parent: data_manipulation
+    weight: 11
+
+---
+
+## Generating variables
+
+```
+use anes_timeseries_2016.dta, clear
+```
+
+<<dd_do: quietly>>
+use static/data/stata/anes_timeseries_2016.dta, clear
+<</dd_do>>
+
+```
+<<dd_do>>
+// Feeling thermometer to Clinton and Trump
+codebook V161086 V161087
+<</dd_do>>
+```
+
+```
+<<dd_do>>
+gen FT_clinton = V161086
+gen FT_trump = V161087
+<</dd_do>>
+```
+
+## Creating categorical variable from numerical variable
+
+
+
+## Recoding variables
+
+
+```
+<<dd_do>>
+recode FT_trump -99/-1 =.
+recode FT_clinton -99 -88 =.
+
+summarize FT_trump FT_trump, detail
+<</dd_do>>
+```
+
+## Missing values
+
+
+## Additional resources

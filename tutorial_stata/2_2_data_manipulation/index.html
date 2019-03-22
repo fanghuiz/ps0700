@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Source Themes Academic 3.3.0">
+  <meta name="generator" content="Hugo 0.53" />
+  <meta name="author" content="Research Methods in Political Science">
+
+  
+  
+  
+  
+    
+  
+  <meta name="description" content="Cloning existing variables I prefer to keep the orignal dataset untouched, so I would usually create a copy of the variables that I&rsquo;m interested in, and work with the copy. There are two ways to do this:
+ clonevar orignal_varName clone_varName (preferred)  Exact clone, including data values, labels etc.  gen orignal_varName clone_varName or generate  Only clones the data, not labels   Let&rsquo;s try using the World Value Survey (Wave 6) data.">
+
+  
+  <link rel="alternate" hreflang="en-us" href="https://fanghuiz.github.io/ps0700/tutorial_stata/2_2_data_manipulation/">
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+  
+  <meta name="theme-color" content="#40a990">
+  
+
+  
+  
+  
+  
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha256-eSi1q2PG6J7g7ib17yAaWMcrr5GrtohYChqibrV7PBE=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.0/css/all.css" integrity="sha384-aOkxzJ5uQz7WBObEZcHvV5JvRW3TUc2rNPA7pe3AwnsUohiw1Vj2Rgx2KSOkF5+h" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" integrity="sha256-ygkqlh3CYSUri3LhQxzdcm0n1EQvH2Y+U5S2idbLtxs=" crossorigin="anonymous">
+
+    
+    
+    
+      
+    
+    
+      
+      
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/zenburn.min.css" crossorigin="anonymous">
+      
+    
+
+    
+
+    
+
+  
+
+  
+  
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Montserrat:400,700|Roboto:400,400italic,700|Roboto+Mono">
+  
+
+  <link rel="stylesheet" href="/ps0700/styles.css">
+  
+  <link rel="stylesheet" href="/ps0700/css/custom.css">
+  
+
+  
+  
+    <script>
+      window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+      ga('create', 'UA-134139235-1', 'auto');
+      
+      ga('require', 'eventTracker');
+      ga('require', 'outboundLinkTracker');
+      ga('require', 'urlChangeTracker');
+      ga('send', 'pageview');
+    </script>
+    <script async src="//www.google-analytics.com/analytics.js"></script>
+    
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/autotrack/2.4.1/autotrack.js" integrity="sha512-HUmooslVKj4m6OBu0OgzjXXr+QuFYy/k7eLI5jdeEy/F4RSgMn6XRWRGkFi5IFaFgy7uFTkegp3Z0XnJf3Jq+g==" crossorigin="anonymous"></script>
+    
+  
+  
+
+  
+  <link rel="alternate" href="https://fanghuiz.github.io/ps0700/index.xml" type="application/rss+xml" title="Political Science Research Methods">
+  <link rel="feed" href="https://fanghuiz.github.io/ps0700/index.xml" type="application/rss+xml" title="Political Science Research Methods">
+  
+
+  <link rel="manifest" href="/ps0700/site.webmanifest">
+  <link rel="icon" type="image/png" href="/ps0700/img/icon.png">
+  <link rel="apple-touch-icon" type="image/png" href="/ps0700/img/icon-192.png">
+
+  <link rel="canonical" href="https://fanghuiz.github.io/ps0700/tutorial_stata/2_2_data_manipulation/">
+
+  
+  
+  
+  
+    
+    
+  
+  <meta property="twitter:card" content="summary">
+  
+  <meta property="og:site_name" content="Political Science Research Methods">
+  <meta property="og:url" content="https://fanghuiz.github.io/ps0700/tutorial_stata/2_2_data_manipulation/">
+  <meta property="og:title" content="Generating variables | Political Science Research Methods">
+  <meta property="og:description" content="Cloning existing variables I prefer to keep the orignal dataset untouched, so I would usually create a copy of the variables that I&rsquo;m interested in, and work with the copy. There are two ways to do this:
+ clonevar orignal_varName clone_varName (preferred)  Exact clone, including data values, labels etc.  gen orignal_varName clone_varName or generate  Only clones the data, not labels   Let&rsquo;s try using the World Value Survey (Wave 6) data."><meta property="og:image" content="https://fanghuiz.github.io/ps0700/img/icon-192.png">
+  <meta property="og:locale" content="en-us">
+  
+  <meta property="article:published_time" content="2019-03-20T00:00:00&#43;00:00">
+  
+  <meta property="article:modified_time" content="2019-03-20T00:00:00&#43;00:00">
+  
+
+  
+
+  
+
+  <title>Generating variables | Political Science Research Methods</title>
+
+</head>
+<body id="top" data-spy="scroll" data-target="#TableOfContents" data-offset="71" >
+  <aside class="search-results" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" role="textbox" spellcheck="false" type="search">
+        
+      </div>
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+<nav class="navbar navbar-light fixed-top navbar-expand-lg py-0" id="navbar-main">
+  <div class="container">
+
+    
+      <a class="navbar-brand" href="/ps0700/">Political Science Research Methods</a>
+      
+      <button type="button" class="navbar-toggler" data-toggle="collapse"
+              data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span><i class="fas fa-bars"></i></span>
+      </button>
+      
+
+    
+    <div class="collapse navbar-collapse" id="navbar">
+
+      
+      
+      <ul class="navbar-nav ml-auto">
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link" href="/ps0700/post/">
+            
+            <span>Posts</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link" href="/ps0700/tutorial_stata/">
+            
+            <span>Stata Tutorials</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link" href="/ps0700/tutorial_r/">
+            
+            <span>R Tutorials</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+      
+
+        
+
+        
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link" href="https://github.com/fanghuiz/ps0700" target="_blank" rel="noopener">
+          
+          <span><i class="fab fa-github" style="font-size: 1rem; line-height: 1.25"></i></span>
+          
+          </a>
+        </li>
+
+        
+
+        
+        <li class="nav-item">
+          <a class="nav-link js-search" href="#"><i class="fas fa-search" aria-hidden="true"></i></a>
+        </li>
+        
+
+        
+
+        
+        <li class="nav-item">
+          <a class="nav-link js-dark-toggle" href="#"><i class="fas fa-moon" aria-hidden="true"></i></a>
+        </li>
+        
+
+      </ul>
+
+    </div>
+  </div>
+</nav>
+
+
+
+<div class="container-fluid docs">
+  <div class="row flex-xl-nowrap">
+    <div class="col-12 col-md-3 col-xl-2 docs-sidebar">
+      
+
+
+
+
+<form class="docs-search d-flex align-items-center">
+  <button class="btn docs-toggle d-md-none p-0 mr-3" type="button" data-toggle="collapse" data-target="#docs-nav" aria-controls="docs-nav" aria-expanded="false" aria-label="Toggle section navigation">
+    <span><i class="fas fa-bars"></i></span>
+  </button>
+
+  
+  <input name="q" type="search" class="form-control" id="search-query" placeholder="Search..." autocomplete="off">
+  
+</form>
+
+<nav class="collapse docs-links" id="docs-nav">
+  
+  
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/ps0700/tutorial_stata/">Overview</a>
+
+  </div>
+  
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" >Basics</a>
+
+  </div>
+  
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/ps0700/tutorial_stata/2_1_data_manipulation/">Data Manipulation</a>
+    <ul class="nav docs-sidenav">
+      
+      <li >
+        <a href="/ps0700/tutorial_stata/2_1_data_manipulation/">Recoding variables</a>
+      </li>
+      
+      <li class="active">
+        <a href="/ps0700/tutorial_stata/2_2_data_manipulation/">Generating variables</a>
+      </li>
+      
+      <li >
+        <a href="/ps0700/tutorial_stata/2_3_data_manipulation/">Labeling variables</a>
+      </li>
+      
+    </ul>
+    
+
+  </div>
+  
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" >Descriptive Statistics</a>
+
+  </div>
+  
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" >Exploratory Data Analysis</a>
+
+  </div>
+  
+  
+</nav>
+
+    </div>
+
+    
+    <div class="d-none d-xl-block col-xl-2 docs-toc">
+      
+      <p class="docs-toc-title">On this page</p>
+      
+
+      <nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#cloning-existing-variables">Cloning existing variables</a></li>
+<li><a href="#creating-categorical-variable">Creating categorical variable</a></li>
+</ul></li>
+</ul>
+</nav>
+
+      <ul class="nav toc-top">
+        <li><a href="#">Back to top</a></li>
+      </ul>
+
+      
+    </div>
+    
+
+    <main class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 docs-content" role="main">
+
+      <article class="article" itemscope itemtype="http://schema.org/Article">
+
+        <div class="docs-article-container">
+          <h1 itemprop="name">Generating variables</h1>
+
+          <div class="article-style" itemprop="articleBody">
+            
+
+<!-- ```
+use anes_timeseries_2016.dta, clear
+```
+
+
+<!-- The goal of data manipulation/processing is to get the data ready for analysis. This stage could take up a of time, depending on how "processed" your dataset is when you gained accessed to it.  -->
+
+<!-- ```
+. 
+. 
+``` -->
+
+<h2 id="cloning-existing-variables">Cloning existing variables</h2>
+
+<p>I prefer to keep the orignal dataset untouched, so I would usually create a copy of the variables that I&rsquo;m interested in, and work with the copy. There are two ways to do this:</p>
+
+<ul>
+<li><code>clonevar orignal_varName clone_varName</code> (preferred)
+
+<ul>
+<li>Exact clone, including data values, labels etc.</li>
+</ul></li>
+<li><code>gen orignal_varName clone_varName</code> or <code>generate</code>
+
+<ul>
+<li>Only clones the data, not labels</li>
+</ul></li>
+</ul>
+
+<p>Let&rsquo;s try using the World Value Survey (Wave 6) data. And make a copy of <code>V10</code>, a question about subjective happiness.</p>
+
+<pre><code>use WV6_Data.dta, clear
+</code></pre>
+
+<pre><code>. gen happiness = V10
+
+. codebook happiness V10, compact
+
+Variable     Obs Unique      Mean  Min  Max  Label
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+happiness  89565      7  1.827209   -5    4  
+V10        89565      7  1.827209   -5    4  Feeling of happiness
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+</code></pre>
+
+<p>We see that the values for <code>happiness</code> (our copy) and <code>V10</code> are the same, but <code>happiness</code> does not have any variable labels. Of course, we can always <a href="https://fanghuiz.github.io/ps0700/tutorial_stata/2_3_data_manipulation/" target="_blank">manually create labels</a> for the new variables.</p>
+
+<p>Now let&rsquo;s try <code>clonevar</code>.</p>
+
+<pre><code>. clonevar happiness = V10
+
+. codebook happiness V10, compact
+
+Variable     Obs Unique      Mean  Min  Max  Label
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+happiness  89565      7  1.827209   -5    4  Feeling of happiness
+V10        89565      7  1.827209   -5    4  Feeling of happiness
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+</code></pre>
+
+<p>Both values and labels are preserved in our cloned copy of <code>V10</code>.</p>
+
+<h2 id="creating-categorical-variable">Creating categorical variable</h2>
+
+<p>Let&rsquo;s create a dichotomous variable for having children (Yes/No) from the original variable that shows how many children someone has.</p>
+
+<p>We can do this by <code>recode</code> the original variable</p>
+
+<pre><code>. gen have_children = V58
+
+. recode have_children (-5/-1 = .) (1/8 = 1)
+(have_children: 49126 changes made)
+
+</code></pre>
+
+<p>Always check to see the recoding was done correctly.</p>
+
+<pre><code>. tab V58 have_children, missing
+
+ How many children do |          have_children
+             you have |         0          1          . |     Total
+----------------------+---------------------------------+----------
+                   -5 |         0          0         29 |        29 
+                   -4 |         0          0      1,000 |     1,000 
+                   -2 |         0          0        529 |       529 
+                   -1 |         0          0        109 |       109 
+          No children |    26,142          0          0 |    26,142 
+              1 child |         0     14,297          0 |    14,297 
+           2 children |         0     21,579          0 |    21,579 
+           3 children |         0     12,356          0 |    12,356 
+           4 children |         0      6,292          0 |     6,292 
+           5 children |         0      3,230          0 |     3,230 
+           6 children |         0      1,775          0 |     1,775 
+                    7 |         0        991          0 |       991 
+                    8 |         0      1,236          0 |     1,236 
+----------------------+---------------------------------+----------
+                Total |    26,142     61,756      1,667 |    89,565 
+
+</code></pre>
+
+<p>Or, we can do the same by using <code>replace</code></p>
+
+<pre><code>. gen have_children = .
+(89,565 missing values generated)
+
+. replace have_children = 1 if V58 &gt; 1
+(47,459 real changes made)
+
+. replace have_children = 0 if V58 == 0
+(26,142 real changes made)
+
+</code></pre>
+
+<p>Again, check to see the if new variable was created correctly.</p>
+
+<pre><code>. tab V58 have_children, missing
+
+ How many children do |          have_children
+             you have |         0          1          . |     Total
+----------------------+---------------------------------+----------
+                   -5 |         0          0         29 |        29 
+                   -4 |         0          0      1,000 |     1,000 
+                   -2 |         0          0        529 |       529 
+                   -1 |         0          0        109 |       109 
+          No children |    26,142          0          0 |    26,142 
+              1 child |         0          0     14,297 |    14,297 
+           2 children |         0     21,579          0 |    21,579 
+           3 children |         0     12,356          0 |    12,356 
+           4 children |         0      6,292          0 |     6,292 
+           5 children |         0      3,230          0 |     3,230 
+           6 children |         0      1,775          0 |     1,775 
+                    7 |         0        991          0 |       991 
+                    8 |         0      1,236          0 |     1,236 
+----------------------+---------------------------------+----------
+                Total |    26,142     47,459     15,964 |    89,565 
+
+</code></pre>
+
+<!-- ## Additional resources -->
+
+          </div>
+
+          
+
+        </div>
+
+        <div class="body-footer">
+          Last updated on Mar 20, 2019
+        </div>
+
+      </article>
+
+      <footer class="site-footer">
+  
+
+  <p class="powered-by">
+    &copy; Fanghui Zhao 2019 <i class="fas fa-tree" style="color: #40a990;"></i> &middot; 
+
+    Powered by the
+    <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for
+    <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>.
+
+    
+  </p>
+</footer>
+
+
+    </main>
+  </div>
+</div>
+
+    
+
+    
+    
+    
+    <script src="/ps0700/js/mathjax-config.js"></script>
+    
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha512-+NqPlbbtM1QqiK8ZAo4Yrj2c4lNQoGv8P79DPtKzj++l5jnN39rHA/xsqn8zE9l0uSoxaCdrOgFs6yjyfbBxSg==" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.3/imagesloaded.pkgd.min.js" integrity="sha512-umsR78NN0D23AzgoZ11K7raBD+R6hqKojyBZs1w8WvYlsI+QuKRGBx3LFCwhatzBunCjDuJpDHwxD13sLMbpRA==" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha256-VsEqElsCHSGmnmHXGQzvoWjWwoznFSZc6hs7ARLRacQ=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.4/isotope.pkgd.min.js" integrity="sha512-VDBOIlDbuC4VWxGJNmuFRQ0Li0SKkDpmGyuhAG5LTDLd/dJ/S0WMVxriR2Y+CyPL5gzjpN4f/6iqWVBJlht0tQ==" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js" integrity="sha256-X5PoE3KU5l+JcX+w09p/wHl9AzK333C4hJ2I9S5mD4M=" crossorigin="anonymous"></script>
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js" integrity="sha256-/BfiIkHlHoVihZdc6TFuj7MmJ0TWcWsMXkeDFwhi0zw=" crossorigin="anonymous"></script>
+        
+        <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/r.min.js"></script>
+        
+        <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/markdown.min.js"></script>
+        
+        <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/stata.min.js"></script>
+        
+      
+
+      
+      
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS_CHTML-full" integrity="sha256-GhM+5JHb6QUzOQPXSJLEWP7R73CbkisjzK5Eyij4U9w=" crossorigin="anonymous" async></script>
+      
+    
+
+    
+    
+
+    
+    
+    
+    <script id="dsq-count-scr" src="//fanghuiz.disqus.com/count.js" async></script>
+    
+
+    
+    
+    <script>hljs.initHighlightingOnLoad();</script>
+    
+
+    
+    
+    <script>
+      const search_index_filename = "/ps0700/index.json";
+      const i18n = {
+        'placeholder': "Search...",
+        'results': "results found",
+        'no_results': "No results found"
+      };
+      const content_type = {
+        'post': "Posts",
+        'project': "Projects",
+        'publication' : "Publications",
+        'talk' : "Talks"
+        };
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.1/anchor.min.js" integrity="sha256-pB/deHc9CGfFpJRjC43imB29Rse8tak+5eXqntO94ck=" crossorigin="anonymous"></script>
+    <script>
+      anchors.add();
+    </script>
+    
+
+    
+    
+    <script id="search-hit-fuse-template" type="text/x-template">
+      <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+      </div>
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    <script src="/ps0700/js/academic.min.70f0041f5a24c6a675ac218c98d7ef71.js"></script>
+
+    
+
+  </body>
+</html>
+
+

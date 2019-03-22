@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- This is a Stata 15.1 generated SVG file (http://www.stata.com) -->
+
+<svg version="1.1" width="6.00in" height="4.00in" viewBox="0 0 4320 2880" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<desc>Stata Graph - Graph</desc>
+	<rect x="0" y="0" width="4320" height="2880" style="fill:#FFFFFF;stroke:none"/>
+	<rect x="0.00" y="0.00" width="4320.00" height="2880.00" style="fill:#FFFFFF"/>
+	<rect x="2.88" y="2.88" width="4314.24" height="2874.24" style="fill:none;stroke:#FFFFFF;stroke-width:5.76"/>
+	<rect x="372.87" y="100.85" width="3846.28" height="2538.44" style="fill:#FFFFFF"/>
+	<rect x="375.75" y="103.73" width="3840.53" height="2532.68" style="fill:none;stroke:#FFFFFF;stroke-width:5.76"/>
+	<line x1="372.87" y1="2639.29" x2="4219.15" y2="2639.29" style="stroke:#CDCDCE;stroke-width:5.76"/>
+	<line x1="372.87" y1="2029.76" x2="4219.15" y2="2029.76" style="stroke:#CDCDCE;stroke-width:5.76"/>
+	<line x1="372.87" y1="1420.36" x2="4219.15" y2="1420.36" style="stroke:#CDCDCE;stroke-width:5.76"/>
+	<line x1="372.87" y1="810.96" x2="4219.15" y2="810.96" style="stroke:#CDCDCE;stroke-width:5.76"/>
+	<line x1="372.87" y1="201.56" x2="4219.15" y2="201.56" style="stroke:#CDCDCE;stroke-width:5.76"/>
+	<rect x="587.38" y="353.98" width="568.62" height="2285.32" style="fill:#81C8EB"/>
+	<rect x="590.26" y="356.86" width="562.86" height="2279.56" style="fill:none;stroke:#0390D6;stroke-width:5.76"/>
+	<rect x="1536.97" y="932.86" width="568.62" height="1706.43" style="fill:#81C8EB"/>
+	<rect x="1539.85" y="935.74" width="562.86" height="1700.67" style="fill:none;stroke:#0390D6;stroke-width:5.76"/>
+	<rect x="2486.43" y="1999.38" width="568.62" height="639.91" style="fill:#81C8EB"/>
+	<rect x="2489.31" y="2002.26" width="562.86" height="634.15" style="fill:none;stroke:#0390D6;stroke-width:5.76"/>
+	<rect x="3436.02" y="1511.89" width="568.62" height="1127.40" style="fill:#81C8EB"/>
+	<rect x="3438.90" y="1514.77" width="562.86" height="1121.64" style="fill:none;stroke:#0390D6;stroke-width:5.76"/>
+	<line x1="372.87" y1="2639.29" x2="332.91" y2="2639.29" style="stroke:#CDCDCE;stroke-width:5.76"/>
+	<text x="312.93" y="2667.30" style="font-family:'Helvetica';font-size:79.92px;fill:#9B9B9b" text-anchor="end">0</text>
+	<line x1="372.87" y1="2029.76" x2="332.91" y2="2029.76" style="stroke:#CDCDCE;stroke-width:5.76"/>
+	<text x="312.93" y="2057.76" style="font-family:'Helvetica';font-size:79.92px;fill:#9B9B9b" text-anchor="end">20</text>
+	<line x1="372.87" y1="1420.36" x2="332.91" y2="1420.36" style="stroke:#CDCDCE;stroke-width:5.76"/>
+	<text x="312.93" y="1448.36" style="font-family:'Helvetica';font-size:79.92px;fill:#9B9B9b" text-anchor="end">40</text>
+	<line x1="372.87" y1="810.96" x2="332.91" y2="810.96" style="stroke:#CDCDCE;stroke-width:5.76"/>
+	<text x="312.93" y="838.96" style="font-family:'Helvetica';font-size:79.92px;fill:#9B9B9b" text-anchor="end">60</text>
+	<line x1="372.87" y1="201.56" x2="332.91" y2="201.56" style="stroke:#CDCDCE;stroke-width:5.76"/>
+	<text x="312.93" y="229.56" style="font-family:'Helvetica';font-size:79.92px;fill:#9B9B9b" text-anchor="end">80</text>
+	<line x1="372.87" y1="2639.29" x2="372.87" y2="201.56" style="stroke:#9B9B9B;stroke-width:5.76"/>
+	<text x="176.70" y="1370.00" style="font-family:'Helvetica';font-size:79.92px;fill:#000000" transform="rotate(-90 176.70,1370.00)" text-anchor="middle">frequency</text>
+	<text x="871.70" y="2735.13" style="font-family:'Helvetica';font-size:79.92px;fill:#9B9B9b" text-anchor="middle">Dictatorship</text>
+	<text x="1821.29" y="2735.13" style="font-family:'Helvetica';font-size:79.92px;fill:#9B9B9b" text-anchor="middle">Parliamentary democracy</text>
+	<text x="2770.74" y="2735.13" style="font-family:'Helvetica';font-size:79.92px;fill:#9B9B9b" text-anchor="middle">Mixed executive</text>
+	<text x="3720.33" y="2735.13" style="font-family:'Helvetica';font-size:79.92px;fill:#9B9B9b" text-anchor="middle">Presidential democracy</text>
+</svg>
