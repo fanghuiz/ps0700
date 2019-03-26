@@ -45,17 +45,20 @@ I prefer to keep the orignal dataset untouched, so I would usually create a copy
 
 Let's try using the World Value Survey (Wave 6) data. And make a copy of `V10`, a question about subjective happiness.
 
-```
-use WV6_Data.dta, clear
-```
-
 <<dd_do: quietly>>
 use static/data/stata/WV6_Data.dta, clear
 <</dd_do>>
 
 
+```stata
+use WV6_Data.dta, clear
+
+gen happiness = V10
+codebook happiness V10, compact
 ```
-<<dd_do>>
+
+```stata
+<<dd_do: nocommands>>
 gen happiness = V10
 codebook happiness V10, compact
 <</dd_do>>
@@ -70,8 +73,13 @@ Now let's try `clonevar`.
 drop happiness
 <</dd_do>>
 
+```stata
+clonevar happiness = V10
+codebook happiness V10, compact
 ```
-<<dd_do>>
+
+```stata
+<<dd_do: nocommands>>
 clonevar happiness = V10
 codebook happiness V10, compact
 <</dd_do>>
@@ -84,18 +92,26 @@ Both values and labels are preserved in our cloned copy of `V10`.
 
 Let's create a dichotomous variable for having children (Yes/No) from the original variable that shows how many children someone has.
 
-We can do this by `recode` the original variable
+We can do this by `recode` the original variable.
 
+```stata
+gen have_children = V58
+recode have_children (-5/-1 = .) (1/8 = 1)
 ```
-<<dd_do>>
+
+<<dd_do: quietly>>
 gen have_children = V58
 recode have_children (-5/-1 = .) (1/8 = 1)
 <</dd_do>>
-```
+
 Always check to see the recoding was done correctly.
 
+```stata
+tab V58 have_children, missing
 ```
-<<dd_do>>
+
+```stata
+<<dd_do: nocommands>>
 tab V58 have_children, missing
 <</dd_do>>
 ```
@@ -104,24 +120,29 @@ Or, we can do the same by using `replace`
 
 <<dd_do: quietly>>
 drop have_children
-<</dd_do>>
 
-```
-<<dd_do>>
 gen have_children = .
 replace have_children = 1 if V58 > 1
 replace have_children = 0 if V58 == 0
 <</dd_do>>
+
+```stata
+gen have_children = .
+replace have_children = 1 if V58 > 1
+replace have_children = 0 if V58 == 0
 ```
 
 Again, check to see the if new variable was created correctly.
 
+```stata
+tab V58 have_children, missing
 ```
-<<dd_do>>
+
+```stata
+<<dd_do: nocommands>>
 tab V58 have_children, missing
 <</dd_do>>
 ```
-
 
 
 

@@ -11,6 +11,121 @@
     <atom:link href="/ps0700/" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>When Does Box Plot Hide Information?</title>
+      <link>https://fanghuiz.github.io/ps0700/post/2019-03-23-boxplot/</link>
+      <pubDate>Fri, 22 Mar 2019 00:00:00 -0400</pubDate>
+      
+      <guid>https://fanghuiz.github.io/ps0700/post/2019-03-23-boxplot/</guid>
+      <description>&lt;!-- ```stata
+histogram Fox_dnone
+``` --&gt;
+
+&lt;!-- Histogram and box plots are both good visual ways to quickly get a feel of the distribution of our data.
+
+For histograms, we can overlay a normal density curve on top of the hisorgram to see if the distribution is approximatley symmetrical or skewed. --&gt;
+
+&lt;p&gt;Box plot is a powerful way to visualize the distribution of a continuous variable. However, it hides crucial information when our data is not uni-modal (i.e. has more than one peak in the distribution).&lt;/p&gt;
+
+&lt;p&gt;Box plot is a very information-rich. From the graph, we can see:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;The median value, as shown by the bar in the middle.&lt;/li&gt;
+&lt;li&gt;The inter-quartile range, shown by the total length of the box.&lt;/li&gt;
+&lt;li&gt;The 1st quartile (25th percentile) and the 3rd quartile (75th percentile), indicated respectively by the lower boundary and the upper boundary of the box.&lt;/li&gt;
+&lt;li&gt;Outlier values, as indicated by individual dots plotted outside of the whiskers range.&lt;/li&gt;
+&lt;li&gt;The approximate degree of dispersion in the data, shown by the length of the box
+
+&lt;ul&gt;
+&lt;li&gt;Shorter box indicates a smaller variance in the data, and longer box indicates a larger variance.&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Whether the distribution is symmetrical or skewed
+
+&lt;ul&gt;
+&lt;li&gt;If the position of the median bar is closer to the middle, then the distribution is approximately symmetrical; and if the bar is positioned towards the side, then the distribution is skewed.&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+
+
+
+  
+
+&lt;figure&gt;
+
+&lt;img src=&#34;https://fanghuiz.github.io/ps0700/ps0700/img/stata/govtExp_box.svg&#34; alt=&#34;Symmetrical distribution; Relatively low variance; Outlier value&#34; /&gt;
+
+
+
+&lt;figcaption data-pre=&#34;Figure &#34; data-post=&#34;:&#34; &gt;
+  
+  &lt;p&gt;
+    Symmetrical distribution; Relatively low variance; Outlier value
+    
+    
+    
+  &lt;/p&gt; 
+&lt;/figcaption&gt;
+
+&lt;/figure&gt;
+
+
+
+
+  
+
+&lt;figure&gt;
+
+&lt;img src=&#34;https://fanghuiz.github.io/ps0700/ps0700/img/stata/lifeExp_female_box.svg&#34; alt=&#34;Skewed distribution; Slightly higher variance; No outlier&#34; /&gt;
+
+
+
+&lt;figcaption data-pre=&#34;Figure &#34; data-post=&#34;:&#34; &gt;
+  
+  &lt;p&gt;
+    Skewed distribution; Slightly higher variance; No outlier
+    
+    
+    
+  &lt;/p&gt; 
+&lt;/figcaption&gt;
+
+&lt;/figure&gt;
+
+&lt;p&gt;However, box plot has one drawback &amp;ndash; it hides the shape of the distribution if our data is &lt;strong&gt;bi-modal&lt;/strong&gt; (or multi-modal).&lt;/p&gt;
+
+&lt;p&gt;For example, here we have some data that has a bi-modal distribution &amp;ndash; the size of the Christian population as a percentage of a country&amp;rsquo;s total population.&lt;/p&gt;
+
+
+
+
+  
+
+&lt;figure&gt;
+
+&lt;img src=&#34;https://fanghuiz.github.io/ps0700/ps0700/img/stata/pctChristian_hist.svg&#34; /&gt;
+
+
+&lt;/figure&gt;
+
+&lt;p&gt;If we draw a box plot for this data, this bi-modal property is completely hidden.&lt;/p&gt;
+
+
+
+
+  
+
+&lt;figure&gt;
+
+&lt;img src=&#34;https://fanghuiz.github.io/ps0700/ps0700/img/stata/pctChristian_box.svg&#34; /&gt;
+
+
+&lt;/figure&gt;
+
+&lt;p&gt;So if our data has more than one peak, then box plot would not be the most appropriate graph to display the distrbution shape. Good old histogram is a better choice in this context.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Generating variables</title>
       <link>https://fanghuiz.github.io/ps0700/tutorial_stata/2_2_data_manipulation/</link>
       <pubDate>Wed, 20 Mar 2019 00:00:00 +0000</pubDate>
@@ -49,12 +164,13 @@ use anes_timeseries_2016.dta, clear
 
 &lt;p&gt;Let&amp;rsquo;s try using the World Value Survey (Wave 6) data. And make a copy of &lt;code&gt;V10&lt;/code&gt;, a question about subjective happiness.&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;use WV6_Data.dta, clear
+&lt;pre&gt;&lt;code class=&#34;language-stata&#34;&gt;use WV6_Data.dta, clear
+
+gen happiness = V10
+codebook happiness V10, compact
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;pre&gt;&lt;code&gt;. gen happiness = V10
-
-. codebook happiness V10, compact
+&lt;pre&gt;&lt;code class=&#34;language-stata&#34;&gt;
 
 Variable     Obs Unique      Mean  Min  Max  Label
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -68,9 +184,11 @@ V10        89565      7  1.827209   -5    4  Feeling of happiness
 
 &lt;p&gt;Now let&amp;rsquo;s try &lt;code&gt;clonevar&lt;/code&gt;.&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;. clonevar happiness = V10
+&lt;pre&gt;&lt;code class=&#34;language-stata&#34;&gt;clonevar happiness = V10
+codebook happiness V10, compact
+&lt;/code&gt;&lt;/pre&gt;
 
-. codebook happiness V10, compact
+&lt;pre&gt;&lt;code class=&#34;language-stata&#34;&gt;
 
 Variable     Obs Unique      Mean  Min  Max  Label
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -86,19 +204,18 @@ V10        89565      7  1.827209   -5    4  Feeling of happiness
 
 &lt;p&gt;Let&amp;rsquo;s create a dichotomous variable for having children (Yes/No) from the original variable that shows how many children someone has.&lt;/p&gt;
 
-&lt;p&gt;We can do this by &lt;code&gt;recode&lt;/code&gt; the original variable&lt;/p&gt;
+&lt;p&gt;We can do this by &lt;code&gt;recode&lt;/code&gt; the original variable.&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;. gen have_children = V58
-
-. recode have_children (-5/-1 = .) (1/8 = 1)
-(have_children: 49126 changes made)
-
+&lt;pre&gt;&lt;code class=&#34;language-stata&#34;&gt;gen have_children = V58
+recode have_children (-5/-1 = .) (1/8 = 1)
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;Always check to see the recoding was done correctly.&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;. tab V58 have_children, missing
+&lt;pre&gt;&lt;code class=&#34;language-stata&#34;&gt;tab V58 have_children, missing
+&lt;/code&gt;&lt;/pre&gt;
 
+&lt;pre&gt;&lt;code class=&#34;language-stata&#34;&gt;
  How many children do |          have_children
              you have |         0          1          . |     Total
 ----------------------+---------------------------------+----------
@@ -122,21 +239,17 @@ V10        89565      7  1.827209   -5    4  Feeling of happiness
 
 &lt;p&gt;Or, we can do the same by using &lt;code&gt;replace&lt;/code&gt;&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;. gen have_children = .
-(89,565 missing values generated)
-
-. replace have_children = 1 if V58 &amp;gt; 1
-(47,459 real changes made)
-
-. replace have_children = 0 if V58 == 0
-(26,142 real changes made)
-
+&lt;pre&gt;&lt;code class=&#34;language-stata&#34;&gt;gen have_children = .
+replace have_children = 1 if V58 &amp;gt; 1
+replace have_children = 0 if V58 == 0
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;Again, check to see the if new variable was created correctly.&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;. tab V58 have_children, missing
+&lt;pre&gt;&lt;code class=&#34;language-stata&#34;&gt;tab V58 have_children, missing
+&lt;/code&gt;&lt;/pre&gt;
 
+&lt;pre&gt;&lt;code class=&#34;language-stata&#34;&gt;
  How many children do |          have_children
              you have |         0          1          . |     Total
 ----------------------+---------------------------------+----------
@@ -184,42 +297,53 @@ use anes_timeseries_2016.dta, clear
 
 &lt;h2 id=&#34;variable-label&#34;&gt;Variable label&lt;/h2&gt;
 
-&lt;p&gt;We can create labels to describe what the variable is measuring.&lt;/p&gt;
+&lt;p&gt;Variable label helps us to know what the variable is about. This label will also conviently shows up as axis name if we were to draw a graph,&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;. gen happiness = V10
+&lt;pre&gt;&lt;code class=&#34;language-stata&#34;&gt;describe happiness
+&lt;/code&gt;&lt;/pre&gt;
 
-. label variable happiness &amp;quot;Feelings of happiness&amp;quot;
+&lt;pre&gt;&lt;code class=&#34;language-stata&#34;&gt;
+              storage   display    value
+variable name   type    format     label      variable label
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+happiness       float   %9.0g                 
 
-. tab happiness
+&lt;/code&gt;&lt;/pre&gt;
 
-Feelings of |
-  happiness |      Freq.     Percent        Cum.
-------------+-----------------------------------
-         -5 |          6        0.01        0.01
-         -2 |        238        0.27        0.27
-         -1 |        514        0.57        0.85
-          1 |     29,256       32.66       33.51
-          2 |     45,786       51.12       84.63
-          3 |     11,214       12.52       97.15
-          4 |      2,551        2.85      100.00
-------------+-----------------------------------
-      Total |     89,565      100.00
+&lt;p&gt;We can create labels to describe what the variable is measuring using &lt;code&gt;label variable var_name&lt;/code&gt;.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-stata&#34;&gt;label variable happiness &amp;quot;Feelings of happiness&amp;quot;
+describe happiness
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-stata&#34;&gt;
+
+              storage   display    value
+variable name   type    format     label      variable label
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+happiness       float   %9.0g                 Feelings of happiness
 
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;h2 id=&#34;value-label&#34;&gt;Value label&lt;/h2&gt;
 
-&lt;p&gt;For categorical variables, we can create labels to show what does each level of the variable represents.&lt;/p&gt;
+&lt;p&gt;For categorical variables, we can create labels to show what does each level of the variable represents. This is helpful when we do a frequency table or fraw a graph.&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;. // first define the label
-. label define happiness_label 1 &amp;quot;Very Happy&amp;quot; 2 &amp;quot;Rather Happy&amp;quot; 3 &amp;quot;Not very happy&amp;quot; 4 &amp;quot;Not at all happy&amp;quot;
+&lt;p&gt;To define the labels, we first use the command &lt;code&gt;label define label_name&lt;/code&gt; to create a new label and give it a name. Then we specify the numerical value representing the category/level, then specify the label using a character string enclosed in &lt;code&gt;&amp;quot; &amp;quot;&lt;/code&gt; double quotes.&lt;/p&gt;
 
-. 
-. // then apply the label to the variable
-. label values happiness happiness_label
+&lt;p&gt;Lastly, we need to apply the &lt;em&gt;label&lt;/em&gt; we have created (&lt;code&gt;happiness_label&lt;/code&gt;) to the corresponding &lt;em&gt;variable&lt;/em&gt; (&lt;code&gt;happiness&lt;/code&gt;).&lt;/p&gt;
 
-. 
-. tab happiness
+&lt;pre&gt;&lt;code class=&#34;language-stata&#34;&gt;// first define the label
+label define happiness_label 1 &amp;quot;Very Happy&amp;quot; 2 &amp;quot;Rather Happy&amp;quot; 3 &amp;quot;Not very happy&amp;quot; 4 &amp;quot;Not at all happy&amp;quot;
+
+// then apply the label to the variable
+label values happiness happiness_label
+
+tab happiness
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-stata&#34;&gt;
+
 
      Feelings of |
        happiness |      Freq.     Percent        Cum.
@@ -262,12 +386,14 @@ use anes_timeseries_2016.dta, clear
 
 &lt;p&gt;The most frequent use of &lt;code&gt;recode&lt;/code&gt; is to recode the numbers that represent missing values to proper &amp;ldquo;missing value&amp;rdquo; as understood by Stata.&lt;/p&gt;
 
-&lt;ul&gt;
-&lt;li&gt;Missing data is coded as &lt;code&gt;.&lt;/code&gt; in Stata&lt;/li&gt;
-&lt;/ul&gt;
+&lt;p&gt;Very often at the coding stage, missing values (e.g. non-response, no available data) are coded as extreme numbers such as &lt;code&gt;99&lt;/code&gt;, &lt;code&gt;-99&lt;/code&gt;. However, without telling Stata those numbers represent missing data, Stata will treat them as numerical values, which will create problems in analysis. So we need to recode those values as &lt;code&gt;.&lt;/code&gt;, which tells Stata to treat those observations as &amp;ldquo;missing&amp;rdquo;.&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;. codebook female
+&lt;p&gt;Different datasets will have different conventions in how they initiall code the missing data, so we will need to examine the data first to determine which numbers represent missing data.&lt;/p&gt;
 
+&lt;pre&gt;&lt;code class=&#34;language-stata&#34;&gt;codebook female
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-stata&#34;&gt;
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 female                                                                                                                                                                                                                                                      Sex
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -286,18 +412,20 @@ female                                                                          
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;To recode the values of a variable, we can use &lt;code&gt;recode var rule&lt;/code&gt;, or &lt;code&gt;recode var (rule) (rule)&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;In this case, we have missing values coded as &lt;code&gt;-5&lt;/code&gt; and &lt;code&gt;-2&lt;/code&gt;, and there are 91 observations that have missing data.&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;. // recode -5 and -2 to missing value
-. recode female (-5 -2 = .)
-(female: 91 changes made)
+&lt;p&gt;To recode the values of a variable, we can use &lt;code&gt;recode var rule&lt;/code&gt;, or &lt;code&gt;recode var (rule) (rule)&lt;/code&gt;, where the syntax for &lt;code&gt;rule&lt;/code&gt; takes the form &lt;code&gt;original value = recoded value&lt;/code&gt;.&lt;/p&gt;
 
+&lt;pre&gt;&lt;code class=&#34;language-stata&#34;&gt;// Recode -5 and -2 to missing value
+recode female (-5 -2 = .)
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;Always check to see if recoding was done correctly.&lt;/p&gt;
+&lt;p&gt;Always check to see if recoding was done correctly. Use &lt;code&gt;tab var, missing&lt;/code&gt; to display a frequency table including &lt;code&gt;.&lt;/code&gt; the missing data.&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;. tab female, missing
+&lt;pre&gt;&lt;code class=&#34;language-stata&#34;&gt;tab female, missing
+&lt;/code&gt;&lt;/pre&gt;
 
+&lt;pre&gt;&lt;code class=&#34;language-stata&#34;&gt;
                 Sex |      Freq.     Percent        Cum.
 --------------------+-----------------------------------
                   1 |     42,723       47.70       47.70
@@ -308,15 +436,21 @@ female                                                                          
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;We can also choose to recode the variable to something that makes more sense, or something we prefer, if the recoding does not change what the value represents.&lt;/p&gt;
+&lt;p&gt;Here we see that we no longer have &lt;code&gt;-5&lt;/code&gt; and &lt;code&gt;-2&lt;/code&gt; in the data, and all 91 missing values have been properly recoded to &lt;code&gt;.&lt;/code&gt;&lt;/p&gt;
 
-&lt;p&gt;For nominal variables, we can freely change the values representing each level, without affetcing the substantive meaning.&lt;/p&gt;
+&lt;p&gt;We can also choose to recode the variable to something that makes more intuitive sense, or something we prefer, if the recoding does not change what the value represents.&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;. // recode 2 to 1, 1 to 0
-. recode female (2 = 1) (1 = 0)
-(female: 89474 changes made)
+&lt;p&gt;One such case is when we have a nominal variable. Since nominal variable has categories with no inherent order or ranking, we can freely change the value that represents each category, without affetcing the substantive meaning.&lt;/p&gt;
 
-. tab female, missing
+&lt;p&gt;For example, the variable &lt;code&gt;female&lt;/code&gt; initially has &lt;code&gt;1&lt;/code&gt; representing category &amp;ldquo;Male&amp;rdquo;, and &lt;code&gt;2&lt;/code&gt; representing category &amp;ldquo;Female&amp;rdquo;. Very often, it is more intuitive to code a dichotomous variable &amp;ldquo;Yes/No&amp;rdquo; as &lt;code&gt;1/0&lt;/code&gt;.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-stata&#34;&gt;// Recode 2 to 1, 1 to 0
+recode female (2 = 1) (1 = 0)
+tab female, missing
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-stata&#34;&gt;(female: 89474 changes made)
+
 
                 Sex |      Freq.     Percent        Cum.
 --------------------+-----------------------------------
@@ -332,19 +466,24 @@ female                                                                          
 
 &lt;p&gt;Another way to recode variable is using the &lt;code&gt;replace&lt;/code&gt; command, combining with logical operators to subset the data.&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;. // replace negative values with missing values
-. replace female = . if female &amp;lt;=0
-(91 real changes made, 91 to missing)
+&lt;pre&gt;&lt;code class=&#34;language-stata&#34;&gt;// Recode all negative values to missing values
+replace female = . if female &amp;lt;=0
 
-. // replace 1 with 0
-. replace female = 0 if female == 1
+// Recode 1 to 0
+replace female = 0 if female == 1
+
+// Recode 2 to 1
+replace female = 1 if female == 2
+
+tab female, missing
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-stata&#34;&gt;(91 real changes made, 91 to missing)
+
 (42,723 real changes made)
 
-. // replace 2 with 1
-. replace female = 1 if female == 2
 (46,751 real changes made)
 
-. tab female, missing
 
                 Sex |      Freq.     Percent        Cum.
 --------------------+-----------------------------------
@@ -357,6 +496,222 @@ female                                                                          
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;!-- ## Additional resources --&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Univariate Distribution</title>
+      <link>https://fanghuiz.github.io/ps0700/tutorial_stata/3_2_eda_univariate_graph/</link>
+      <pubDate>Tue, 19 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://fanghuiz.github.io/ps0700/tutorial_stata/3_2_eda_univariate_graph/</guid>
+      <description>
+
+&lt;!-- ```
+use Norris_Democracy_CrossNational_09092015.dta, clear
+``` --&gt;
+
+&lt;h2 id=&#34;bar-plot&#34;&gt;Bar plot&lt;/h2&gt;
+
+&lt;p&gt;To draw a bar plot, we simply use the command &lt;code&gt;graph bar var&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;The default setting for &lt;code&gt;graph bar&lt;/code&gt; is to set y-axis as percent. The full command behind the scene is in fact &lt;code&gt;graph bar (percent)&lt;/code&gt;, where the &lt;code&gt;percent&lt;/code&gt; option is omitted by default.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-stata&#34;&gt;// Default bar plot, percent
+graph bar, over(Cheibub4Type)
+&lt;/code&gt;&lt;/pre&gt;
+
+
+
+
+  
+
+&lt;figure&gt;
+
+&lt;img src=&#34;https://fanghuiz.github.io/ps0700/ps0700/img/stata/eda/eda_barplot1.svg&#34; /&gt;
+
+
+&lt;/figure&gt;
+
+&lt;p&gt;We can change the default setting, and change the y-axis to frequency / count.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-stata&#34;&gt;// Frequency bar plot
+graph bar (count), over(Cheibub4Type)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;We can also rotate the graph to display horizontal bars, using &lt;code&gt;graph hbar&lt;/code&gt;. This is helpful when we want to plot a variable with many categories. If we have too many categories, the category names tends to get crowded in a vertical bar plot, whereas the horizontal display gives us enough space to display the category names properly.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-stata&#34;&gt;// Horizontal bar plot
+graph hbar, over(Cheibub6Type)
+&lt;/code&gt;&lt;/pre&gt;
+
+
+
+
+  
+
+&lt;figure&gt;
+
+&lt;img src=&#34;https://fanghuiz.github.io/ps0700/ps0700/img/stata/eda/eda_barplot3.svg&#34; /&gt;
+
+
+&lt;/figure&gt;
+
+&lt;h2 id=&#34;histogram&#34;&gt;Histogram&lt;/h2&gt;
+
+&lt;p&gt;To draw a histogram, we can use &lt;code&gt;histogram&lt;/code&gt; or the abbreviated &lt;code&gt;hist&lt;/code&gt; command.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-stata&#34;&gt;// Percentage of women in lower house, 2015 (IPU)
+hist UNDP_Life2014
+&lt;/code&gt;&lt;/pre&gt;
+
+
+
+
+  
+
+&lt;figure&gt;
+
+&lt;img src=&#34;https://fanghuiz.github.io/ps0700/ps0700/img/stata/eda/eda_hist1.svg&#34; /&gt;
+
+
+&lt;/figure&gt;
+
+&lt;p&gt;The default is density. We can change it to &lt;code&gt;frequency&lt;/code&gt;, &lt;code&gt;fraction&lt;/code&gt;, or &lt;code&gt;percent&lt;/code&gt;.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-stata&#34;&gt;hist UNDP_Life2014, freq
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Some prefer to draw a frequency histogram with overlaid normal density curve to see if the observed distribution is aprroximatley symmetrical.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-stata&#34;&gt;hist UNDP_Life2014, normal
+&lt;/code&gt;&lt;/pre&gt;
+
+
+
+
+  
+
+&lt;figure&gt;
+
+&lt;img src=&#34;https://fanghuiz.github.io/ps0700/ps0700/img/stata/eda/eda_hist2.svg&#34; /&gt;
+
+
+&lt;/figure&gt;
+
+&lt;h2 id=&#34;density-plot&#34;&gt;Density plot&lt;/h2&gt;
+
+&lt;p&gt;Density plot is similar to histogram, but is more &amp;ldquo;smoothed over&amp;rdquo;. To draw this, we use &lt;code&gt;kdensity&lt;/code&gt;, stands for &amp;ldquo;kernel density&amp;rdquo;.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-stata&#34;&gt;kdensity UNDP_Life2014
+&lt;/code&gt;&lt;/pre&gt;
+
+
+
+
+  
+
+&lt;figure&gt;
+
+&lt;img src=&#34;https://fanghuiz.github.io/ps0700/ps0700/img/stata/eda/eda_density1.svg&#34; /&gt;
+
+
+&lt;/figure&gt;
+
+&lt;p&gt;Similarly, we can overlay a normal density plot over the kernel density plot.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-stata&#34;&gt;kdensity UNDP_Life2014, normal
+&lt;/code&gt;&lt;/pre&gt;
+
+
+
+
+  
+
+&lt;figure&gt;
+
+&lt;img src=&#34;https://fanghuiz.github.io/ps0700/ps0700/img/stata/eda/eda_density2.svg&#34; /&gt;
+
+
+&lt;/figure&gt;
+
+&lt;h2 id=&#34;box-plot&#34;&gt;Box plot&lt;/h2&gt;
+
+&lt;p&gt;See this &lt;a href=&#34;https://fanghuiz.github.io/ps0700/post/2019-03-23-boxplot/&#34; target=&#34;_blank&#34;&gt;post&lt;/a&gt; for more discussions on how to read a box plot, and its drawback.&lt;/p&gt;
+
+&lt;p&gt;We can use &lt;code&gt;graph box&lt;/code&gt; to draw a box plot.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-stata&#34;&gt;// Life expectancy at birth, 2014 (UNDP 2014)
+graph box UNDP_Life2014
+&lt;/code&gt;&lt;/pre&gt;
+
+
+
+
+  
+
+&lt;figure&gt;
+
+&lt;img src=&#34;https://fanghuiz.github.io/ps0700/ps0700/img/stata/eda/eda_box1.svg&#34; /&gt;
+
+
+&lt;/figure&gt;
+
+&lt;p&gt;For a one variable box plot, the default graph does not look very nice. There are various aesthetic changes we can make. For example, we can use &lt;code&gt;outergap()&lt;/code&gt; to increase the gap between the box and the margin (i.e. makes the box narrower), and use &lt;code&gt;intensity()&lt;/code&gt; to change the intensity/transparency of the fill color of the box.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-stata&#34;&gt;// Life expectancy at birth, 2014 (UNDP 2014)
+graph box UNDP_Life2014, outergap(100) intensity(50)
+&lt;/code&gt;&lt;/pre&gt;
+
+
+
+
+  
+
+&lt;figure&gt;
+
+&lt;img src=&#34;https://fanghuiz.github.io/ps0700/ps0700/img/stata/eda/eda_box2.svg&#34; /&gt;
+
+
+&lt;/figure&gt;
+
+&lt;p&gt;We can also rotate the box plot horizontally by telling Stata to draw &lt;code&gt;graph hbox&lt;/code&gt;.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-stata&#34;&gt;graph hbox UNDP_Life2014, outergap(100) intensity(50)
+&lt;/code&gt;&lt;/pre&gt;
+
+
+
+
+  
+
+&lt;figure&gt;
+
+&lt;img src=&#34;https://fanghuiz.github.io/ps0700/ps0700/img/stata/eda/eda_box3.svg&#34; /&gt;
+
+
+&lt;/figure&gt;
+
+&lt;h2 id=&#34;dot-plot&#34;&gt;Dot plot&lt;/h2&gt;
+
+&lt;p&gt;We can think of a uni-variate dot plot as a one-way scatter plot, where each observation is represented as a dot and plotted individually.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-stata&#34;&gt;dotplot UNDP_Life2014
+&lt;/code&gt;&lt;/pre&gt;
+
+
+
+
+  
+
+&lt;figure&gt;
+
+&lt;img src=&#34;https://fanghuiz.github.io/ps0700/ps0700/img/stata/eda/eda_dot1.svg&#34; /&gt;
+
+
+&lt;/figure&gt;
+
+&lt;p&gt;While dot plot is a good way to display all the data (we can see each observation individually), it tends to get cluttered when we have a large sample size.&lt;/p&gt;
 </description>
     </item>
     

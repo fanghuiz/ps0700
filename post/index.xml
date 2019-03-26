@@ -13,6 +13,17 @@
     
     
     <item>
+      <title>When Does Box Plot Hide Information?</title>
+      <link>https://fanghuiz.github.io/ps0700/post/2019-03-23-boxplot/</link>
+      <pubDate>Fri, 22 Mar 2019 00:00:00 -0400</pubDate>
+      
+      <guid>https://fanghuiz.github.io/ps0700/post/2019-03-23-boxplot/</guid>
+      <description>Box plot is a powerful way to visualize the distribution of a continuous variable. However, it hides crucial information when our data is not uni-modal (i.e. has more than one peak in the distribution).
+Box plot is a very information-rich. From the graph, we can see:
+ The median value, as shown by the bar in the middle. The inter-quartile range, shown by the total length of the box. The 1st quartile (25th percentile) and the 3rd quartile (75th percentile), indicated respectively by the lower boundary and the upper boundary of the box.</description>
+    </item>
+    
+    <item>
       <title>Q&amp;A Week 8: Sampling and Survey Research</title>
       <link>https://fanghuiz.github.io/ps0700/post/2019-03-01-survey/</link>
       <pubDate>Fri, 01 Mar 2019 00:00:00 -0500</pubDate>

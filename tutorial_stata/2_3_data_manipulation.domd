@@ -36,27 +36,58 @@ use static/data/stata/anes_timeseries_2016.dta, clear
 
 ## Variable label
 
-We can create labels to describe what the variable is measuring.
-
 <<dd_do: quietly>>
 use static/data/stata/WV6_Data.dta, clear
+gen happiness = V10
 <</dd_do>>
 
+Variable label helps us to know what the variable is about. This label will also conviently shows up as axis name if we were to draw a graph,
+
+```stata
+describe happiness
 ```
-<<dd_do>>
-gen happiness = V10
+
+```stata
+<<dd_do: nocommands>>
+describe happiness
+<</dd_do>>
+```
+
+We can create labels to describe what the variable is measuring using `label variable var_name`.
+
+```stata
 label variable happiness "Feelings of happiness"
-tab happiness
+describe happiness
+```
+
+```stata
+<<dd_do: nocommands>>
+label variable happiness "Feelings of happiness"
+describe happiness
 <</dd_do>>
 ```
 
 
 ## Value label
 
-For categorical variables, we can create labels to show what does each level of the variable represents.
+For categorical variables, we can create labels to show what does each level of the variable represents. This is helpful when we do a frequency table or fraw a graph.
 
+To define the labels, we first use the command ` label define label_name` to create a new label and give it a name. Then we specify the numerical value representing the category/level, then specify the label using a character string enclosed in `" "` double quotes.
+
+Lastly, we need to apply the *label* we have created (`happiness_label`) to the corresponding *variable* (`happiness`).
+
+```stata
+// first define the label
+label define happiness_label 1 "Very Happy" 2 "Rather Happy" 3 "Not very happy" 4 "Not at all happy"
+
+// then apply the label to the variable
+label values happiness happiness_label
+
+tab happiness
 ```
-<<dd_do>>
+
+```stata
+<<dd_do: nocommands>>
 // first define the label
 label define happiness_label 1 "Very Happy" 2 "Rather Happy" 3 "Not very happy" 4 "Not at all happy"
 

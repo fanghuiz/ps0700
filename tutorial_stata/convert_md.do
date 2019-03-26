@@ -21,4 +21,9 @@ dyntext content/tutorial_stata/2_2_data_manipulation.domd, saving(content/tutori
 
 dyntext content/tutorial_stata/2_3_data_manipulation.domd, saving(content/tutorial_stata/2_3_data_manipulation.md) replace
 
-dyntext content/tutorial_stata/4_2_eda_univariate.domd, saving(content/tutorial_stata/4_2_eda_univariate.md) replace
+dyntext content/tutorial_stata/3_2_eda_univariate_graph.domd, saving(content/tutorial_stata/3_2_eda_univariate_graph.md) replace
+
+
+// dyntext content/post/2019-03-22-mean-median/index.domd, saving(content/post/2019-03-22-mean-median/index.md) replace
+
+dyntext content/post/2019-03-23-boxplot/index.domd, saving(content/post/2019-03-23-boxplot/index.md) replace

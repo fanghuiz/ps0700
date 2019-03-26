@@ -1,0 +1,210 @@
+---
+title: "Univariate Distribution"
+toc: true
+type: docs
+
+date: "2019-03-19"
+draft: false
+
+menu:
+  tutorial_stata:
+    name: Univariate distribution
+    parent: eda
+    weight: 32
+
+highlight_languages: "stata"
+---
+
+<!-- ```
+use Norris_Democracy_CrossNational_09092015.dta, clear
+``` -->
+
+<<dd_do: quietly>>
+//set scheme plotplainblind
+//ssc install beamplot
+set scheme plotplain
+use static/data/stata/Norris_Democracy_CrossNational_09092015.dta, clear
+<</dd_do>>
+
+
+## Bar plot
+
+To draw a bar plot, we simply use the command `graph bar var`.
+
+The default setting for `graph bar` is to set y-axis as percent. The full command behind the scene is in fact `graph bar (percent)`, where the `percent` option is omitted by default.
+
+```stata
+// Default bar plot, percent
+graph bar, over(Cheibub4Type)
+```
+
+<<dd_do: quietly>>
+graph bar, over(Cheibub4Type) bar(1, color(gs6))
+graph export static/img/stata/eda/eda_barplot1.svg, replace
+<</dd_do>>
+
+{{< figure library="1" src="stata/eda/eda_barplot1.svg" title="" >}}
+
+
+We can change the default setting, and change the y-axis to frequency / count.
+
+```stata
+// Frequency bar plot
+graph bar (count), over(Cheibub4Type)
+```
+
+
+We can also rotate the graph to display horizontal bars, using `graph hbar`. This is helpful when we want to plot a variable with many categories. If we have too many categories, the category names tends to get crowded in a vertical bar plot, whereas the horizontal display gives us enough space to display the category names properly.
+
+```stata
+// Horizontal bar plot
+graph hbar, over(Cheibub6Type)
+```
+
+<<dd_do: quietly>>
+graph hbar, over(Cheibub6Type) bar(1, color(gs6))
+graph export static/img/stata/eda/eda_barplot3.svg, replace
+<</dd_do>>
+
+{{< figure library="1" src="stata/eda/eda_barplot3.svg" title="" >}}
+
+
+## Histogram
+
+To draw a histogram, we can use `histogram` or the abbreviated `hist` command.
+
+```stata
+// Percentage of women in lower house, 2015 (IPU)
+hist Women2015
+```
+
+<<dd_do: quietly>>
+hist Women2015
+graph export static/img/stata/eda/eda_hist1.svg, replace
+<</dd_do>>
+
+{{< figure library="1" src="stata/eda/eda_hist1.svg" title="" >}}
+
+
+The default is density. We can change it to `frequency`, `fraction`, or `percent`.
+
+```stata
+hist Women2015, freq
+```
+
+Some prefer to draw a frequency histogram with overlaid normal density curve to see if the observed distribution is aprroximatley symmetrical.
+
+```stata
+hist Women2015, normal
+```
+
+<<dd_do: quietly>>
+// hist Women2015, freq normal normopts(lcolor(red))
+hist Women2015, normal
+graph export static/img/stata/eda/eda_hist2.svg, replace
+<</dd_do>>
+
+{{< figure library="1" src="stata/eda/eda_hist2.svg" title="" >}}
+
+
+
+## Density plot
+
+Density plot is similar to histogram, but is more "smoothed over". To draw this, we use `kdensity`, stands for "kernel density".
+
+```stata
+kdensity Women2015
+```
+
+<<dd_do: quietly>>
+kdensity Women2015
+graph export static/img/stata/eda/eda_density1.svg, replace
+<</dd_do>>
+
+{{< figure library="1" src="stata/eda/eda_density1.svg" title="" >}}
+
+
+Similarly, we can overlay a normal density plot over the kernel density plot.
+
+```stata
+kdensity Women2015, normal
+```
+
+<<dd_do: quietly>>
+kdensity Women2015, normal
+graph export static/img/stata/eda/eda_density2.svg, replace
+<</dd_do>>
+
+{{< figure library="1" src="stata/eda/eda_density2.svg" title="" >}}
+
+
+## Box plot
+
+<<dd_do: quietly>>
+graph box UNDP_Life2014
+graph export static/img/stata/eda/eda_box1.svg, replace
+
+graph box UNDP_Life2014, outergap(100) intensity(50)
+graph export static/img/stata/eda/eda_box2.svg, replace
+
+graph hbox UNDP_Life2014, outergap(100) intensity(50)
+graph export static/img/stata/eda/eda_box3.svg, replace
+<</dd_do>>
+
+
+See this [post]({{< ref "post/2019-03-23-boxplot/index.md">}}) for more discussions on how to read a box plot, and its drawback.
+
+We can use `graph box` to draw a box plot.
+
+```stata
+// Life expectancy at birth, 2014 (UNDP 2014)
+graph box UNDP_Life2014
+```
+
+{{< figure library="1" src="stata/eda/eda_box1.svg" title="" >}}
+
+
+For a one variable box plot, the default graph does not look very nice. There are various aesthetic changes we can make. For example, we can use `outergap()` to increase the gap between the box and the margin (i.e. makes the box narrower), and use `intensity()` to change the intensity/transparency of the fill color of the box.
+
+```stata
+// Life expectancy at birth, 2014 (UNDP 2014)
+graph box UNDP_Life2014, outergap(100) intensity(50)
+```
+
+{{< figure library="1" src="stata/eda/eda_box2.svg" title="" >}}
+
+We can also rotate the box plot horizontally by telling Stata to draw `graph hbox`.
+
+```stata
+graph hbox UNDP_Life2014, outergap(100) intensity(50)
+```
+
+{{< figure library="1" src="stata/eda/eda_box3.svg" title="" >}}
+
+
+## Dot plot
+
+<!--
+First install the package `beamplot`
+
+```
+ssc install beamplot
+``` -->
+
+We can think of a uni-variate dot plot as a one-way scatter plot, where each observation is represented as a dot and plotted individually.
+
+```stata
+dotplot UNDP_Life2014
+```
+
+<<dd_do: quietly>>
+dotplot UNDP_Life2014
+//dotplot fhrate14
+//dotplot Cheibub4Type
+graph export static/img/stata/eda/eda_dot1.svg, replace
+<</dd_do>>
+
+
+{{< figure library="1" src="stata/eda/eda_dot1.svg" title="" >}}
+
+While dot plot is a good way to display all the data (we can see each observation individually), it tends to get cluttered when we have a large sample size.

@@ -16,7 +16,7 @@
     
   
   <meta name="description" content="Using recode The most frequent use of recode is to recode the numbers that represent missing values to proper &ldquo;missing value&rdquo; as understood by Stata.
- Missing data is coded as . in Stata  . codebook female --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- female Sex --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- type: numeric (int) label: V240, but 3 nonmissing values are not labeled range: [-5,2] units: 1 unique values: 4 missing .: 0/89,565 tabulation: Freq. Numeric Label 40 -5 51 -2 No answer 42,723 1 46,751 2  To recode the values of a variable, we can use recode var rule, or recode var (rule) (rule)">
+Very often at the coding stage, missing values (e.g. non-response, no available data) are coded as extreme numbers such as 99, -99. However, without telling Stata those numbers represent missing data, Stata will treat them as numerical values, which will create problems in analysis. So we need to recode those values as .">
 
   
   <link rel="alternate" hreflang="en-us" href="https://fanghuiz.github.io/ps0700/tutorial_stata/2_1_data_manipulation/">
@@ -122,7 +122,7 @@
   <meta property="og:url" content="https://fanghuiz.github.io/ps0700/tutorial_stata/2_1_data_manipulation/">
   <meta property="og:title" content="Recoding variables | Political Science Research Methods">
   <meta property="og:description" content="Using recode The most frequent use of recode is to recode the numbers that represent missing values to proper &ldquo;missing value&rdquo; as understood by Stata.
- Missing data is coded as . in Stata  . codebook female --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- female Sex --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- type: numeric (int) label: V240, but 3 nonmissing values are not labeled range: [-5,2] units: 1 unique values: 4 missing .: 0/89,565 tabulation: Freq. Numeric Label 40 -5 51 -2 No answer 42,723 1 46,751 2  To recode the values of a variable, we can use recode var rule, or recode var (rule) (rule)"><meta property="og:image" content="https://fanghuiz.github.io/ps0700/img/icon-192.png">
+Very often at the coding stage, missing values (e.g. non-response, no available data) are coded as extreme numbers such as 99, -99. However, without telling Stata those numbers represent missing data, Stata will treat them as numerical values, which will create problems in analysis. So we need to recode those values as ."><meta property="og:image" content="https://fanghuiz.github.io/ps0700/img/icon-192.png">
   <meta property="og:locale" content="en-us">
   
   <meta property="article:published_time" content="2019-03-20T00:00:00&#43;00:00">
@@ -344,12 +344,20 @@
   </div>
   
   <div class="docs-toc-item">
-    <a class="docs-toc-link" >Descriptive Statistics</a>
+    <a class="docs-toc-link" href="/ps0700/tutorial_stata/3_2_eda_univariate_graph/">Exploratory Data Analysis</a>
+    <ul class="nav docs-sidenav">
+      
+      <li >
+        <a href="/ps0700/tutorial_stata/3_2_eda_univariate_graph/">Univariate distribution</a>
+      </li>
+      
+    </ul>
+    
 
   </div>
   
   <div class="docs-toc-item">
-    <a class="docs-toc-link" >Exploratory Data Analysis</a>
+    <a class="docs-toc-link" >Inferential Statistics</a>
 
   </div>
   
@@ -408,12 +416,14 @@ use anes_timeseries_2016.dta, clear
 
 <p>The most frequent use of <code>recode</code> is to recode the numbers that represent missing values to proper &ldquo;missing value&rdquo; as understood by Stata.</p>
 
-<ul>
-<li>Missing data is coded as <code>.</code> in Stata</li>
-</ul>
+<p>Very often at the coding stage, missing values (e.g. non-response, no available data) are coded as extreme numbers such as <code>99</code>, <code>-99</code>. However, without telling Stata those numbers represent missing data, Stata will treat them as numerical values, which will create problems in analysis. So we need to recode those values as <code>.</code>, which tells Stata to treat those observations as &ldquo;missing&rdquo;.</p>
 
-<pre><code>. codebook female
+<p>Different datasets will have different conventions in how they initiall code the missing data, so we will need to examine the data first to determine which numbers represent missing data.</p>
 
+<pre><code class="language-stata">codebook female
+</code></pre>
+
+<pre><code class="language-stata">
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 female                                                                                                                                                                                                                                                      Sex
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -432,18 +442,20 @@ female                                                                          
 
 </code></pre>
 
-<p>To recode the values of a variable, we can use <code>recode var rule</code>, or <code>recode var (rule) (rule)</code></p>
+<p>In this case, we have missing values coded as <code>-5</code> and <code>-2</code>, and there are 91 observations that have missing data.</p>
 
-<pre><code>. // recode -5 and -2 to missing value
-. recode female (-5 -2 = .)
-(female: 91 changes made)
+<p>To recode the values of a variable, we can use <code>recode var rule</code>, or <code>recode var (rule) (rule)</code>, where the syntax for <code>rule</code> takes the form <code>original value = recoded value</code>.</p>
 
+<pre><code class="language-stata">// Recode -5 and -2 to missing value
+recode female (-5 -2 = .)
 </code></pre>
 
-<p>Always check to see if recoding was done correctly.</p>
+<p>Always check to see if recoding was done correctly. Use <code>tab var, missing</code> to display a frequency table including <code>.</code> the missing data.</p>
 
-<pre><code>. tab female, missing
+<pre><code class="language-stata">tab female, missing
+</code></pre>
 
+<pre><code class="language-stata">
                 Sex |      Freq.     Percent        Cum.
 --------------------+-----------------------------------
                   1 |     42,723       47.70       47.70
@@ -454,15 +466,21 @@ female                                                                          
 
 </code></pre>
 
-<p>We can also choose to recode the variable to something that makes more sense, or something we prefer, if the recoding does not change what the value represents.</p>
+<p>Here we see that we no longer have <code>-5</code> and <code>-2</code> in the data, and all 91 missing values have been properly recoded to <code>.</code></p>
 
-<p>For nominal variables, we can freely change the values representing each level, without affetcing the substantive meaning.</p>
+<p>We can also choose to recode the variable to something that makes more intuitive sense, or something we prefer, if the recoding does not change what the value represents.</p>
 
-<pre><code>. // recode 2 to 1, 1 to 0
-. recode female (2 = 1) (1 = 0)
-(female: 89474 changes made)
+<p>One such case is when we have a nominal variable. Since nominal variable has categories with no inherent order or ranking, we can freely change the value that represents each category, without affetcing the substantive meaning.</p>
 
-. tab female, missing
+<p>For example, the variable <code>female</code> initially has <code>1</code> representing category &ldquo;Male&rdquo;, and <code>2</code> representing category &ldquo;Female&rdquo;. Very often, it is more intuitive to code a dichotomous variable &ldquo;Yes/No&rdquo; as <code>1/0</code>.</p>
+
+<pre><code class="language-stata">// Recode 2 to 1, 1 to 0
+recode female (2 = 1) (1 = 0)
+tab female, missing
+</code></pre>
+
+<pre><code class="language-stata">(female: 89474 changes made)
+
 
                 Sex |      Freq.     Percent        Cum.
 --------------------+-----------------------------------
@@ -478,19 +496,24 @@ female                                                                          
 
 <p>Another way to recode variable is using the <code>replace</code> command, combining with logical operators to subset the data.</p>
 
-<pre><code>. // replace negative values with missing values
-. replace female = . if female &lt;=0
-(91 real changes made, 91 to missing)
+<pre><code class="language-stata">// Recode all negative values to missing values
+replace female = . if female &lt;=0
 
-. // replace 1 with 0
-. replace female = 0 if female == 1
+// Recode 1 to 0
+replace female = 0 if female == 1
+
+// Recode 2 to 1
+replace female = 1 if female == 2
+
+tab female, missing
+</code></pre>
+
+<pre><code class="language-stata">(91 real changes made, 91 to missing)
+
 (42,723 real changes made)
 
-. // replace 2 with 1
-. replace female = 1 if female == 2
 (46,751 real changes made)
 
-. tab female, missing
 
                 Sex |      Freq.     Percent        Cum.
 --------------------+-----------------------------------
@@ -644,6 +667,8 @@ female                                                                          
     
     <script src="/ps0700/js/academic.min.70f0041f5a24c6a675ac218c98d7ef71.js"></script>
 
+    
+    <script src="/ps0700/js/copy_code.js"></script>
     
 
   </body>

@@ -4,6 +4,14 @@
     
     <url>
     
+      <loc>https://fanghuiz.github.io/ps0700/post/2019-03-23-boxplot/</loc>
+      <lastmod>2019-03-22T00:00:00-04:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
       <loc>https://fanghuiz.github.io/ps0700/tutorial_stata/2_2_data_manipulation/</loc>
       <lastmod>2019-03-20T00:00:00+00:00</lastmod>
     </url>
@@ -22,6 +30,14 @@
     
       <loc>https://fanghuiz.github.io/ps0700/tutorial_stata/2_1_data_manipulation/</loc>
       <lastmod>2019-03-20T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>https://fanghuiz.github.io/ps0700/tutorial_stata/3_2_eda_univariate_graph/</loc>
+      <lastmod>2019-03-19T00:00:00+00:00</lastmod>
     </url>
     
   
@@ -69,7 +85,7 @@
     <url>
     
       <loc>https://fanghuiz.github.io/ps0700/tutorial_stata/</loc>
-      <lastmod>2019-02-07T00:00:00-05:00</lastmod>
+      <lastmod>2019-03-23T00:00:00-04:00</lastmod>
     </url>
     
   
@@ -118,6 +134,15 @@
     
       <loc>https://fanghuiz.github.io/ps0700/tags/comparative-studies/</loc>
       <lastmod>2019-03-18T00:00:00-04:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>https://fanghuiz.github.io/ps0700/tags/descriptive-statistics/</loc>
+      <lastmod>2019-03-22T00:00:00-04:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -243,6 +268,15 @@
     
       <loc>https://fanghuiz.github.io/ps0700/tags/</loc>
       <lastmod>2019-03-18T00:00:00-04:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>https://fanghuiz.github.io/ps0700/tags/visualization/</loc>
+      <lastmod>2019-03-22T00:00:00-04:00</lastmod>
       <priority>0</priority>
     </url>
     

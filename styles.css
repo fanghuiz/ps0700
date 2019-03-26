@@ -18,19 +18,20 @@
  *  https://github.com/gcushen/hugo-academic
  **************************************************/
 
+
 /*************************************************
  *  Core
  **************************************************/
 
 html {
   font-family: 'Open Sans', sans-serif;
-  font-size: 16px;
+  font-size: 14px;
   color: rgba(0,0,0,0.8);
   line-height: 1.65;
 }
 @media screen and (min-width: 58em) {
   html {
-    font-size: 20px;
+    font-size: 18px;
   }
 }
 
@@ -177,19 +178,29 @@ figcaption h4 {
   margin: 0;
 }
 
-pre,
-code {
-  font-family: 'Source Code Pro', monospace;
-  color: #c7254e;
-  background-color: #f9f2f4;
-}
-
-pre {
+/* pre {
   margin: 0 0 1rem 0;
+  /* background-color: #AED6F1; */
   background-color: rgb(248, 248, 248); /* Match default highlight theme. */
   border-color: rgb(248, 248, 248);
   font-size: 0.7rem;
   border-radius: 4px;
+} */
+
+pre {
+  margin: 0 0 1rem 0;
+  /* background-color: #AED6F1; */
+  background-color: rgb(248, 248, 248); /* Match default highlight theme. */
+  border-color: rgb(248, 248, 248);
+  font-size: 0.7rem;
+  border-radius: 4px;
+}
+
+pre,
+code {
+  font-family: 'Menlo', monospace;
+  color: #c7254e;
+  background-color: #f9f2f4;
 }
 
 pre code {
@@ -257,6 +268,30 @@ small,
 .responsive-wrap iframe {
   max-width: 100%;
 }
+
+.highlight-copy-btn {
+    position: relative;
+    display:block;
+    margin-left:  auto;
+    margin-right: 0;
+    /* bottom: 2px; */
+    /* right: 2px; */
+    border: 0;
+    border-radius: 4px;
+    padding: 1px;
+    font-family: Source code pro;
+    font-size: 0.8em;
+    line-height: 1.8;
+    color: #fff;
+    background-color: #777;
+    min-width: 55px;
+    text-align: center;
+}
+
+.highlight-copy-btn:hover {
+    background-color: #666;
+}
+
 
 /*************************************************
  *  Search.
@@ -1240,7 +1275,7 @@ article .article-metadata {
 /*************************************************
  *  Accomplishments
  **************************************************/
- 
+
 .course {
   margin-bottom: -0.5rem;
 }
@@ -1596,7 +1631,7 @@ a.badge:hover {
 
 .dropdown-menu,
 nav#navbar-main li.nav-item {
-  font-size: 16px;
+  font-size: 14px;
 }
 
 .navbar-light .navbar-nav>.nav-item>.nav-link,

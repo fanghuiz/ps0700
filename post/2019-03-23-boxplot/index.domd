@@ -1,0 +1,78 @@
++++
+title = "When Does Box Plot Hide Information?"
+# subtitle = ""
+
+date = 2019-03-22T00:00:00
+lastmod = 2019-03-22T00:00:00
+draft = false
+
+# Authors. Comma separated list, e.g. `["Bob Smith", "David Jones"]`.
+authors = []
+
+tags = ["Descriptive statistics", "Visualization"]
+summary = "Box plot is a powerful way to visualize the distribution of a continuous variable. However, it hides crucial information when our data is not uni-modal."
++++
+
+
+<<dd_do: quietly>>
+set scheme plotplain
+use static/data/stata/Norris_Democracy_CrossNational_09092015.dta, clear
+
+label variable Fox_dctotal "Christian Population in a Country (%)"
+
+//hist LifeF2002, normal
+//graph export static/img/stata/lifeExp_female_hist.svg, replace
+
+graph hbox LifeF2002, outergap(100)
+graph export static/img/stata/lifeExp_female_box.svg, replace
+
+graph hbox Cengov2006, outergap(100)
+graph export static/img/stata/govtExp_box.svg, replace
+
+histogram Fox_dctotal
+graph export static/img/stata/pctChristian_hist.svg, replace
+
+graph hbox Fox_dctotal, outergap(100)
+graph export static/img/stata/pctChristian_box.svg, replace
+<</dd_do>>
+
+<!-- ```stata
+histogram Fox_dnone
+``` -->
+
+<!-- Histogram and box plots are both good visual ways to quickly get a feel of the distribution of our data.
+
+For histograms, we can overlay a normal density curve on top of the hisorgram to see if the distribution is approximatley symmetrical or skewed. -->
+
+Box plot is a powerful way to visualize the distribution of a continuous variable. However, it hides crucial information when our data is not uni-modal (i.e. has more than one peak in the distribution).
+
+Box plot is a very information-rich. From the graph, we can see:
+
+* The median value, as shown by the bar in the middle.
+* The inter-quartile range, shown by the total length of the box.
+* The 1st quartile (25th percentile) and the 3rd quartile (75th percentile), indicated respectively by the lower boundary and the upper boundary of the box.
+* Outlier values, as indicated by individual dots plotted outside of the whiskers range.
+* The approximate degree of dispersion in the data, shown by the length of the box
+  * Shorter box indicates a smaller variance in the data, and longer box indicates a larger variance.
+* Whether the distribution is symmetrical or skewed
+  * If the position of the median bar is closer to the middle, then the distribution is approximately symmetrical; and if the bar is positioned towards the side, then the distribution is skewed.
+
+
+{{< figure library="1" src="stata/govtExp_box.svg" caption="Symmetrical distribution; Relatively low variance; Outlier value" >}}
+
+
+{{< figure library="1" src="stata/lifeExp_female_box.svg" caption="Skewed distribution; Slightly higher variance; No outlier" >}}
+
+
+However, box plot has one drawback -- it hides the shape of the distribution if our data is **bi-modal** (or multi-modal).
+
+For example, here we have some data that has a bi-modal distribution -- the size of the Christian population as a percentage of a country's total population.
+
+{{< figure library="1" src="stata/pctChristian_hist.svg" caption="" >}}
+
+If we draw a box plot for this data, this bi-modal property is completely hidden.
+
+{{< figure library="1" src="stata/pctChristian_box.svg" caption="" >}}
+
+
+So if our data has more than one peak, then box plot would not be the most appropriate graph to display the distrbution shape. Good old histogram is a better choice in this context.

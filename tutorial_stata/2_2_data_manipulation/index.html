@@ -344,12 +344,20 @@
   </div>
   
   <div class="docs-toc-item">
-    <a class="docs-toc-link" >Descriptive Statistics</a>
+    <a class="docs-toc-link" href="/ps0700/tutorial_stata/3_2_eda_univariate_graph/">Exploratory Data Analysis</a>
+    <ul class="nav docs-sidenav">
+      
+      <li >
+        <a href="/ps0700/tutorial_stata/3_2_eda_univariate_graph/">Univariate distribution</a>
+      </li>
+      
+    </ul>
+    
 
   </div>
   
   <div class="docs-toc-item">
-    <a class="docs-toc-link" >Exploratory Data Analysis</a>
+    <a class="docs-toc-link" >Inferential Statistics</a>
 
   </div>
   
@@ -423,12 +431,13 @@ use anes_timeseries_2016.dta, clear
 
 <p>Let&rsquo;s try using the World Value Survey (Wave 6) data. And make a copy of <code>V10</code>, a question about subjective happiness.</p>
 
-<pre><code>use WV6_Data.dta, clear
+<pre><code class="language-stata">use WV6_Data.dta, clear
+
+gen happiness = V10
+codebook happiness V10, compact
 </code></pre>
 
-<pre><code>. gen happiness = V10
-
-. codebook happiness V10, compact
+<pre><code class="language-stata">
 
 Variable     Obs Unique      Mean  Min  Max  Label
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -442,9 +451,11 @@ V10        89565      7  1.827209   -5    4  Feeling of happiness
 
 <p>Now let&rsquo;s try <code>clonevar</code>.</p>
 
-<pre><code>. clonevar happiness = V10
+<pre><code class="language-stata">clonevar happiness = V10
+codebook happiness V10, compact
+</code></pre>
 
-. codebook happiness V10, compact
+<pre><code class="language-stata">
 
 Variable     Obs Unique      Mean  Min  Max  Label
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -460,19 +471,18 @@ V10        89565      7  1.827209   -5    4  Feeling of happiness
 
 <p>Let&rsquo;s create a dichotomous variable for having children (Yes/No) from the original variable that shows how many children someone has.</p>
 
-<p>We can do this by <code>recode</code> the original variable</p>
+<p>We can do this by <code>recode</code> the original variable.</p>
 
-<pre><code>. gen have_children = V58
-
-. recode have_children (-5/-1 = .) (1/8 = 1)
-(have_children: 49126 changes made)
-
+<pre><code class="language-stata">gen have_children = V58
+recode have_children (-5/-1 = .) (1/8 = 1)
 </code></pre>
 
 <p>Always check to see the recoding was done correctly.</p>
 
-<pre><code>. tab V58 have_children, missing
+<pre><code class="language-stata">tab V58 have_children, missing
+</code></pre>
 
+<pre><code class="language-stata">
  How many children do |          have_children
              you have |         0          1          . |     Total
 ----------------------+---------------------------------+----------
@@ -496,21 +506,17 @@ V10        89565      7  1.827209   -5    4  Feeling of happiness
 
 <p>Or, we can do the same by using <code>replace</code></p>
 
-<pre><code>. gen have_children = .
-(89,565 missing values generated)
-
-. replace have_children = 1 if V58 &gt; 1
-(47,459 real changes made)
-
-. replace have_children = 0 if V58 == 0
-(26,142 real changes made)
-
+<pre><code class="language-stata">gen have_children = .
+replace have_children = 1 if V58 &gt; 1
+replace have_children = 0 if V58 == 0
 </code></pre>
 
 <p>Again, check to see the if new variable was created correctly.</p>
 
-<pre><code>. tab V58 have_children, missing
+<pre><code class="language-stata">tab V58 have_children, missing
+</code></pre>
 
+<pre><code class="language-stata">
  How many children do |          have_children
              you have |         0          1          . |     Total
 ----------------------+---------------------------------+----------
@@ -674,6 +680,8 @@ V10        89565      7  1.827209   -5    4  Feeling of happiness
     
     <script src="/ps0700/js/academic.min.70f0041f5a24c6a675ac218c98d7ef71.js"></script>
 
+    
+    <script src="/ps0700/js/copy_code.js"></script>
     
 
   </body>

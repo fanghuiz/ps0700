@@ -4,7 +4,7 @@ toc: true
 type: docs
 
 date: "2019-03-19"
-draft: true
+draft: false
 
 menu:
   tutorial_stata:
@@ -12,6 +12,7 @@ menu:
     parent: eda
     weight: 42
 
+highlight_languages: "stata"
 ---
 
 <!-- ```
@@ -30,7 +31,7 @@ use static/data/stata/Norris_Democracy_CrossNational_09092015.dta, clear
 
 The default setting for `graph bar` is to set y-axis as percent. The full command behind the scene is in fact `graph bar (percent)`, where the `percent` option is omitted by default.
 
-```
+```stata
 // Default bar plot, percent
 graph bar, over(Cheibub4Type)
 ```
@@ -45,7 +46,7 @@ graph export static/img/stata/eda/eda_barplot1.svg, replace
 
 We can change the default setting, and change the y-axis to frequency / count.
 
-```
+```stata
 // Frequency bar plot
 graph bar (count), over(Cheibub4Type)
 ```
@@ -53,7 +54,7 @@ graph bar (count), over(Cheibub4Type)
 
 We can also rotate the graph to display horizontal bars, using `graph hbar`. This is helpful when we want to plot a variable with many categories. If we have too many categories, the category names tends to get crowded in a vertical bar plot, whereas the horizontal display gives us enough space to display the category names properly.
 
-```
+```stata
 // Horizontal bar plot
 graph hbar, over(Cheibub6Type)
 ```
@@ -68,7 +69,7 @@ graph export static/img/stata/eda/eda_barplot3.svg, replace
 
 ## Histogram
 
-```
+```stata
 <<dd_do>>
 // Percentage of women, lower house, 2015 (IPU)
 hist Women2015
@@ -84,13 +85,13 @@ graph export static/img/stata/eda/eda_hist1.svg, replace
 
 The default is density. We can change it to `frequency`, `fraction`, or `percent`.
 
-```
+```stata
 hist Women2015, freq
 ```
 
 Some prefer to draw a frequency histogram with overlaid normal density curve to xxxx.
 
-```
+```stata
 <<dd_do>>
 hist Women2015, freq normal
 <</dd_do>>
@@ -107,7 +108,7 @@ graph export static/img/stata/eda/eda_hist2.svg, replace
 
 ## Density plot
 
-```
+```stata
 <<dd_do>>
 kdensity Women2015
 <</dd_do>>
@@ -122,7 +123,7 @@ graph export static/img/stata/eda/eda_density1.svg, replace
 
 Similarly, we can overlay a normal density plot over the kernel density plot.
 
-```
+```stata
 <<dd_do>>
 kdensity Women2015, normal
 <</dd_do>>
@@ -137,7 +138,7 @@ graph export static/img/stata/eda/eda_density2.svg, replace
 
 ## Box plot
 
-```
+```stata
 <<dd_do>>
 // Life expectancy at birth, 2014 (UNDP 2014)
 graph box UNDP_Life2014, intensity(50)
@@ -161,7 +162,7 @@ ssc install beamplot
 ``` -->
 
 
-```
+```stata
 <<dd_do>>
 dotplot fhrate14
 <</dd_do>>

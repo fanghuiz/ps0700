@@ -12,6 +12,7 @@ menu:
     parent: data_manipulation
     weight: 11
 
+highlight_languages: "stata"
 ---
 
 
@@ -33,49 +34,76 @@ use static/data/stata/anes_timeseries_2016.dta, clear
 <</dd_do>>
 ``` -->
 
+<<dd_do: quietly>>
+use static/data/stata/WV6_Data.dta, clear
+clonevar female = V240
+
+//label define female_label 1 "Male" 2 "Female", replace
+//label values female female_label
+<</dd_do>>
+
+
 ## Using `recode`
 
 The most frequent use of `recode` is to recode the numbers that represent missing values to proper "missing value" as understood by Stata.
 
-  * Missing data is coded as `.` in Stata
+Very often at the coding stage, missing values (e.g. non-response, no available data) are coded as extreme numbers such as `99`, `-99`. However, without telling Stata those numbers represent missing data, Stata will treat them as numerical values, which will create problems in analysis. So we need to recode those values as `.`, which tells Stata to treat those observations as "missing".
 
+Different datasets will have different conventions in how they initiall code the missing data, so we will need to examine the data first to determine which numbers represent missing data.
 
-<<dd_do: quietly>>
-use static/data/stata/WV6_Data.dta, clear
-clonevar female = V240
-<</dd_do>>
-
-
+```stata
+codebook female
 ```
-<<dd_do>>
+
+```stata
+<<dd_do: nocommands>>
 codebook female
 <</dd_do>>
 ```
 
-To recode the values of a variable, we can use `recode var rule`, or `recode var (rule) (rule)`
+In this case, we have missing values coded as `-5` and `-2`, and there are 91 observations that have missing data.
 
+To recode the values of a variable, we can use `recode var rule`, or `recode var (rule) (rule)`, where the syntax for `rule` takes the form `original value = recoded value`.
+
+```stata
+// Recode -5 and -2 to missing value
+recode female (-5 -2 = .)
 ```
-<<dd_do>>
-// recode -5 and -2 to missing value
+
+<<dd_do: quietly>>
+// Recode -5 and -2 to missing value
 recode female (-5 -2 = .)
 <</dd_do>>
+
+Always check to see if recoding was done correctly. Use `tab var, missing` to display a frequency table including `.` the missing data.
+
+```stata
+tab female, missing
 ```
 
-Always check to see if recoding was done correctly.
-
-```
-<<dd_do>>
+```stata
+<<dd_do: nocommands>>
 tab female, missing
 <</dd_do>>
 ```
 
-We can also choose to recode the variable to something that makes more sense, or something we prefer, if the recoding does not change what the value represents.
+Here we see that we no longer have `-5` and `-2` in the data, and all 91 missing values have been properly recoded to `.`
 
-For nominal variables, we can freely change the values representing each level, without affetcing the substantive meaning.
+We can also choose to recode the variable to something that makes more intuitive sense, or something we prefer, if the recoding does not change what the value represents.
 
+One such case is when we have a nominal variable. Since nominal variable has categories with no inherent order or ranking, we can freely change the value that represents each category, without affetcing the substantive meaning.
+
+For example, the variable `female` initially has `1` representing category "Male", and `2` representing category "Female". Very often, it is more intuitive to code a dichotomous variable "Yes/No" as `1/0`.
+
+```stata
+// Recode 2 to 1, 1 to 0
+recode female (2 = 1) (1 = 0)
+tab female, missing
 ```
-<<dd_do>>
-// recode 2 to 1, 1 to 0
+
+```stata
+<<dd_do: nocommands>>
+// Recode 2 to 1, 1 to 0
 recode female (2 = 1) (1 = 0)
 tab female, missing
 <</dd_do>>
@@ -91,17 +119,34 @@ drop female
 clonevar female = V240
 <</dd_do>>
 
-```
-<<dd_do>>
-// replace negative values with missing values
+```stata
+// Recode all negative values to missing values
 replace female = . if female <=0
-// replace 1 with 0
+
+// Recode 1 to 0
 replace female = 0 if female == 1
-// replace 2 with 1
+
+// Recode 2 to 1
 replace female = 1 if female == 2
+
+tab female, missing
+```
+
+```stata
+<<dd_do: nocommands>>
+// Recode all negative values to missing values
+replace female = . if female <=0
+
+// Recode 1 to 0
+replace female = 0 if female == 1
+
+// Recode 2 to 1
+replace female = 1 if female == 2
+
 tab female, missing
 <</dd_do>>
 ```
+
 
 
 <!-- ## Additional resources -->
